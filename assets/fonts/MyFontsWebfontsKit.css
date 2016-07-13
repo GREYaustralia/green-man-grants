@@ -1,0 +1,33 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3248327, 2016-07-11T03:49:50-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: Nanami-Bold by Thinkdust
+ * URL: http://www.myfonts.com/fonts/thinkdust/nanami/bold/
+ *
+ * Webfont: Nanami-ExtraLight by Thinkdust
+ * URL: http://www.myfonts.com/fonts/thinkdust/nanami/extra-light/
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3248327
+ * Licensed pageviews: 10,000
+ * Webfonts copyright: Copyright (c) 2013 by Thinkdust. All rights reserved.
+ *
+ * © 2016 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3190c7");
+
+
+@font-face {font-family: 'Nanami-Bold';src: url('webfonts/3190C7_0_0.eot');src: url('webfonts/3190C7_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3190C7_0_0.woff2') format('woff2'),url('webfonts/3190C7_0_0.woff') format('woff'),url('webfonts/3190C7_0_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'Nanami-ExtraLight';src: url('webfonts/3190C7_1_0.eot');src: url('webfonts/3190C7_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3190C7_1_0.woff2') format('woff2'),url('webfonts/3190C7_1_0.woff') format('woff'),url('webfonts/3190C7_1_0.ttf') format('truetype');}

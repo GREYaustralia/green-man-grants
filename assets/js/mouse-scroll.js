@@ -1,34 +1,36 @@
-$('section').height($(window).height());
 
-$('section').first().addClass('active');
+  $('section').height($(window).height());
 
-$(document).on('mousewheel DOMMouseScroll', function (event){
-  event.preventDefault();
+  $('section').first().addClass('active');
 
-  var active = $('section.active');
+  $(document).on('mousewheel DOMMouseScroll', function (event){
+    event.preventDefault();
 
-  var direction = event.originalEvent.detail < 0 || event.originalEvent.wheelData > 0 ? 1 : -1;
+    var active = $('section.active');
 
-  if (direction < 0){
-    next = active.next();
+    var direction = event.originalEvent.detail < 0 || event.originalEvent.wheelData > 0 ? 1 : -1;
 
-    if (next.length){
-      var timer = setTimeout(function(){
-        $('body, html').animate({
-          scrollTop:next.offset().top}, 'slow');
-        next.addClass('active').siblings().removeClass('active');
-        clearTimeout(timer);
-        }, 800);
-      } else {
-        previous = active.prev()
-        if(previous.length){
-          var timer = setTimeout(function(){
-            $('body, html').animate({
-              scrollTop: previous.offset().top}, 'slow');
-            previous.addClass('active').siblings().removeClass('active');
-            clearTimeout(timer);
+    if (direction < 0){
+      next = active.next();
+
+      if (next.length){
+        console.log('im here')
+        var timer = setTimeout(function(){
+          $('body, html').animate({
+            scrollTop:next.offset().top}, 'slow');
+          next.addClass('active').siblings().removeClass('active');
+          clearTimeout(timer);
           }, 800);
+        } else {
+          previous = active.prev()
+          if(previous.length){
+            var timer = setTimeout(function(){
+              $('body, html').animate({
+                scrollTop: previous.offset().top}, 'slow');
+              previous.addClass('active').siblings().removeClass('active');
+              clearTimeout(timer);
+            }, 800);
+          }
         }
-      }
-  }
-})
+    }
+  });
