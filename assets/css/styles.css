@@ -368,7 +368,7 @@ color:#35e1a2;
 
 #enter{
   width:100%;
-  height:50%;
+  height:10 0%;
   background-color: #29f8bc;
 }
 
@@ -486,7 +486,7 @@ figure {
 
 #contact{
   width:100%;
-  height:35%;
+  height:100%;
   background-color: #35e1a2;
 }
 
@@ -495,7 +495,7 @@ figure {
 }
 #signoff{
   width:100%;
-  height:55%;
+  height:90%;
   background-image: url(../images/signoff.png);
   background-size:cover;
 }
