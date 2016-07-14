@@ -60,6 +60,35 @@ footer thing - nanami Extra light - 53.3px - green
 footer text -Roboto Thin - 22.6 - green
 
 
+**************BREAKPOINTS****************
+
+1030 width (1024 to be exact)
+  Noticed:
+    - Buttons text miss align
+800 width(799)
+  Noticed:
+    -Brief box goes to two columns
+      Solution:
+        -Display None
+        - start working on JS for the scroll next functionallity
+    -Entries goes to pairs of 2
+      Solution:
+        - Display None
+        - Start working on JS Scroll for next funtionallity
+    -Entries padding right
+      Solution:
+        -remove padding right
+    - fix spacing for How to enter icons
+
+414 width ()
+  Noticed:
+    padding onFirst page
+      - change padding - vh???
+    more height on footer
+    smaller text on signoff
+*********************************************
+
+
 
 
 
@@ -368,7 +397,7 @@ color:#35e1a2;
 
 #enter{
   width:100%;
-  height:10 0%;
+  height:100%;
   background-color: #29f8bc;
 }
 
