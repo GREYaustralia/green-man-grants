@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
     <!--***** Fonts *****-->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,700,100' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="MyFontsWebfontsKit.css">
+    <link rel="stylesheet" type="text/css" href="assets/fonts/MyFontsWebfontsKit.css">
 
     <!-- <script type="text/javascript" src="assets/js/mouse-scroll.js"></script> -->
   </head>
@@ -69,15 +69,15 @@
         <section>
           <a href="#" name='brief'></a>
           <div class=' test content' id='header-content' >
-            <h2>BRIEFS</h2>
+            <h1>BRIEFS</h1>
             <p>Do you have an idea that could make the roads safer? Something outside the box, that'll make you and your mates look out for each other?</p>
             <p>If you're 18-25, just answer one of the briefs in a creative way - it could be a film, a sculpture, an app, whatever you can dream up - and you could win up to $50,000 to make your idea a reality.</p>
           </div>
           <div id='box-wrapper'>
-            <div class='test' id='box-container'>
+            <div class='test box-container' id='briefs-box'>
               <div class='box' id='vehicle-safety'>
                 <h1>Vehicle Safety</h1>
-                <h3>How would you get your friends into safer vehicles?</h3>
+                <p>How would you get your friends into safer vehicles?</p>
                 <a href='#'>
                   <div class='btn'>
                     <h6>BRIEF IN FULL</h6>
@@ -86,7 +86,7 @@
               </div>
               <div class='box' id='mistakes-vulnerability'>
                 <h1>Mistakes Vulnerability</h1>
-                <h3>How would you stop people from texting while driving?</h3>
+                <p>How would you stop people from texting while driving?</p>
                 <a href='#'>
                   <div class='btn'>
                     <h6>BRIEF IN FULL</h6>
@@ -95,7 +95,7 @@
               </div>
               <div class='box' id='shared-responsibilty'>
                 <h1>Shared Responsibilty</h1>
-                <h3>How would you convince your friends that a zero road toll is not only achievable, but that they can make it happen?</h3>
+                <p>How would you convince your friends that a zero road toll is not only achievable, but that they can make it happen?</p>
                 <a href='#'>
                   <div class='btn'>
                     <h6>BRIEF IN FULL</h6>
@@ -118,7 +118,7 @@
         <section>
           <a href="#" name='enter'></a>
           <div class='content'>
-            <h2>How To Enter</h2>
+            <h1>HOW TO ENTER</h1>
             <p>Can you answer one of these briefs in a creative way? Whether it's with a painting, a video or an app we want to hear it.</p>
             <div class='box-wrapper'>
               <div class='test box-container' id=''>
@@ -159,28 +159,107 @@
     </div>
 
     <div class='container test' id='entries'>
-      <div class='wrapper'>
-        <a href="#" name='entries'></a>
-        <div class='content'>
+      <a href="#" name='entries'></a>
+      <div class=''id='entries-header'>
           <h1>ENTRIES</h1>
           <p>Check out the Competition</p>
-        </div>
       </div>
+      <!-- <div class='wrapper'> -->
+        <section>
+          <div class='box-wrapper'>
+            <div class='test box-container'>
+              <div class='box greenoverlay' >
+                <!-- style='background-image: url(assets/images/footer.);' -->
+                <!-- <div class='greenoverlay'>
+                </div> -->
+                <figure>
+                  <img class='greenoverlay'src="assets/images/footer.jpg">
+
+                  <!-- <figcaption>VIDEO</figcaption> -->
+                </figure>
+              </div>
+              <div class='box' style='background-image: url(assets/images/thumbnail_entry1.png);'>
+                <figure>
+                  <!-- <img src="assets/images/thumbnail_entry1.png"> -->
+                  <!-- <figcaption>AUDIO</figcaption> -->
+                </figure>
+              </div>
+              <div class='box' style='background-image: url(assets/images/thumbnail_entry2.png);'>
+                <figure>
+                  <!-- <img src="assets/images/thumbnail_entry2.png"> -->
+                  <!-- <figcaption>IMAGE</figcaption> -->
+                </figure>
+              </div>
+              <div class='box' style='background-image: url(assets/images/thumbnail_entry3.png);'>
+                <figure>
+                  <!-- <img src="assets/images/thumbnail_entry3.png"> -->
+                  <!-- <figcaption>TEXT</figcaption> -->
+                </figure>
+              </div>
+              <div class='box' style='background-image: url(assets/images/thumbnail_entry4.png); '>
+                <figure>
+                  <!-- <figcaption>VIDEO</figcaption> -->
+                </figure>
+              </div>
+              <div class='box' style='background-image: url(assets/images/thumbnail_entry5.png);'>
+                <figure>
+                  <!-- <img src="assets/images/thumbnail_entry5.png"> -->
+                  <!-- <figcaption>AUDIO</figcaption> -->
+                </figure>
+              </div>
+              <div class='box' style='background-image: url(assets/images/thumbnail_entry6.png);'>
+                <figure>
+                  <!-- <img src="assets/images/thumbnail_entry6.png"> -->
+                  <!-- <figcaption>IMAGE</figcaption> -->
+                </figure>
+              </div>
+              <div class='box' style='background-image: url(assets/images/thumbnail_entry7.png);'>
+                <figure>
+                  <!-- <img src="assets/images/thumbnail_entry7.png"> -->
+                  <!-- <figcaption>TEXT</figcaption> -->
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div id='entries-footer'>
+            <h6> SEE ALL ENTRIES HERE</h6>
+          </div>
+        </section>
+
+      <!-- </div> -->
     </div>
+
+
 
     <div class='container test' id='contact'>
       <div class='wrapper'>
         <a href="#" name='contact'></a>
+        <div class='content'>
+          <h1>CONTACT US</h1>
+          <p>If you require more information about Green Man Grants please submit your details here.</p>
+          <form>
+            <input placeholder='Name' name='name'>
+            <input placeholder='Email' name='email'>
+            <textarea placeholder='Message' name='message'></textarea>
+            <input class='btn' type='submit' value='Send'>
+          </form>
+        </div>
       </div>
     </div>
 
-    <div class='container test' id='share'>
+    <div class='container test' id='signoff'>
       <div class='wrapper'>
         <a href="#" name='share'></a>
+          <div style="display:table;width:100vw;height:60vh;">
+            <div style="display:table-cell;vertical-align:middle;">
+              <div style="text-align:center;"><h1>Thanks for checking out The Green Man Grants. Now go have some fun.</h1></div>
+            </div>
+          </div>
       </div>
     </div>
 
     <footer>
+      <p>TAC / VANESSA / HOW SAFE IS YOUR FIRST CAR?  / TOWARDS ZERO / TERMS AND CONDITIONS</p>
     </footer>
 
   </body>
