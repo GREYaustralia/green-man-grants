@@ -65,6 +65,10 @@ footer text -Roboto Thin - 22.6 - green
 1030 width (1024 to be exact)
   Noticed:
     - Buttons text miss align
+      Solution:
+        remove the previous media queries
+    - Fix Briefs Section containers miss aligned
+
 800 width(799)
   Noticed:
     -Brief box goes to two columns
@@ -97,12 +101,19 @@ footer text -Roboto Thin - 22.6 - green
 
 */
 .greenoverlay {
-    background: green;
+    background: #14523a;
+    opacity: 0.5;
     z-index:;
     height:34vh;
+    margin-bottom: -34vh;
 }
 
 .dotoverlay{
+  background-image: url(../images/Dots.png);
+  height:100vh;
+  margin-bottom: -100vh;
+  width: 100vw;
+  padding-left: 0;
 
 }
 
@@ -114,11 +125,13 @@ h1{
   font-weight: normal;
   font-style: normal;
   text-align: center;
+  /*min font size 18px*/
 }
 
 h2{
   color:#35e1a2;
   font-size: 30px;
+  /*min font size 12px*/
 }
 
 h3 {
@@ -207,7 +220,7 @@ padding-top:12vh;
   position: relative;
   width:100%;
   height:100%;
-  background-image: url(../images/Dots.png);
+  /*background-image: url(../images/Dots.png);*/
 }
 #header-logo{
   margin:0 auto;
@@ -218,6 +231,7 @@ padding-top:12vh;
   max-width: 33vw;
   height:auto;
   margin:0 auto;
+  min-width: 250px;
 }
 #header h1{
   text-align: center;
@@ -246,22 +260,22 @@ padding-top:12vh;
 .btn{
   height:10vh;
   width:20vw;
-  min-height:65px;
-  min-width:240px;
+  /*min-height:65px;*/
+/*  min-width:240px;*/
   border: 2px solid #35e1a2;
-  left: 0;
-  right: 0;
+/*  left: 0;
+  right: 0;*/
   margin: auto;
   display:table-cell;
   vertical-align:middle;
 }
 
 .btn:hover{
-  height:65px;
-  width:240px;
+  /*height:65px;*/
+  /*width:240px;*/
   border: 2px solid #35e1a2;
-  margin:0 auto;
-  margin-top: 40px;
+  /*margin:0 auto;*/
+  /*margin-top: 40px;*/
   background-color: #35e1a2;
 }
 
@@ -312,7 +326,9 @@ line-height: 10vh;
 
 }
 
-#brief .box{
+#brief .box .btn{
+position: absolute;
+bottom:10vh;
 
 }
 
@@ -349,7 +365,7 @@ color:#35e1a2;
   height: 60vh;
 }
 
-#box-wrapper{
+.box-wrapper{
     margin:0px auto;
     width:100%;
 }
@@ -364,8 +380,8 @@ color:#35e1a2;
   margin:0 auto;
   background-image: url(../images/vehicle_safety.png);
   background-size: cover;
-  padding-left: 4vw;
-  padding-right: 4vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
 
 }
 #mistakes-vulnerability{
@@ -374,14 +390,16 @@ color:#35e1a2;
   margin:0 auto;
   background-image: url(../images/mistakes_vulnerability.png);
   background-size: cover;
-  padding-left: 4vw;
-  padding-right: 4vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
 
 }
 #shared-responsibilty{
   margin:0 auto;
   background-image: url(../images/shared_responsibilty.png);
   background-size: cover;
+    padding-left: 2vw;
+  padding-right: 2vw;
 
 }
 #shared-responsibilty h1{
@@ -398,7 +416,8 @@ color:#35e1a2;
 #enter{
   width:100%;
   height:100%;
-  background-color: #29f8bc;
+  background-image: url(../images/greenbackground.png);
+  background-size: cover;
 }
 
 #enter h1{
@@ -411,11 +430,19 @@ color:#35e1a2;
 
 #enter .btn{
   border: 2px solid #fff;
+  position: absolute;
+  bottom: 10vh;
+  left:0;
+  right:0;
 }
 
 #enter .btn h6{
   color: #fff;
 }
+#enter .box-wrapper{
+  margin-top:20vh;
+}
+
 
 .box-container {
   display: flex;
@@ -507,6 +534,28 @@ figure {
   max-height: 350px;
   background-size: cover;
 }
+.icon{
+  display:table;
+  width:25vw;
+  height:20vh;
+}
+.icon div{
+  display:table-cell;
+  vertical-align:middle;
+}
+.icon img{
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#entries .box h1{
+  padding-top:2vh;
+font-size: 4vh
+}
+
+#entries .box img{
+max-height: 12vh;
+}
 
 #entries-footer h6 {
   line-height:10vh;
@@ -516,7 +565,8 @@ figure {
 #contact{
   width:100%;
   height:100%;
-  background-color: #35e1a2;
+  background-image: url(../images/contact-background.png);
+  background-size: cover;
 }
 
 #contact h1{
@@ -550,7 +600,7 @@ footer p{
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
-#logo img{
+/*#logo img{
   padding-left: 0%;
   max-height:65px;
 }
@@ -637,23 +687,63 @@ font-weight: 700;
 }
 #enter{
   height:100%;
-}
+}*/
 
 }
 
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width : 321px) {
+
 /* Styles */
 }
 
 /* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 320px) {
+@media only screen and (max-width : 684px) {
 /* Styles */
+  .btn{
+    width: 90vw;
+  }
+#header h1{
+  width:80vw;
+  font-size: 3vh;
+}
+#header p{
+width:90vw;
+}
+#brief p{
+/*margin: 0 auto;*/
+
+margin:0 auto;
+
+}
+
+#enter p{
+  width:94vw;
+  margin:0 auto;
+  /*14px*/
+}
+
+#enter .box-wrapper {
+  margin-top: 10vh;
+}
+
+#signoff h1{
+  padding-left: 8vw;
+  padding-right: 8vw;
+  font-size: 3vh;
+/*17px*/
+}
+footer p{
+font-size: 6px;
+
+}
 }
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  #logo img{
+
+
+ /* #logo img{
   padding-left: 0%;
   max-height:65px;
 }
@@ -743,12 +833,25 @@ padding-top: 23px;
 #enter{
   height:100%;
 }
-
+*/
 }
 
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 /* Styles */
+
+  #brief .box{
+    padding-left: 2vw;
+    padding-right: 2vw;
+    width: calc(30% - 10px);
+  }
+  #breif .box{
+    position:relative;
+  }
+
+  #brief .box .btn{
+    width:25vw;
+  }
 }
 
 /* iPads (portrait) ----------- */
@@ -770,9 +873,32 @@ padding-top: 23px;
 @media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
 /* Styles */
 }
+@media only screen and (max-device-width : 800px ){
+  #brief .box-wrapper{
+    display:none;
+  }
+  #entries .box-wrapper{
+    display:none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-height : 700px ){
   .test {
     outline-color:blue;
   }
 }
+
+
+
+
