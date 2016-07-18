@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <META NAME="viewport" CONTENT="width=device-width, height=device-height, initial-scale=1, user-scalable=no"/>
+    <style>
+      #top-bar{
+        background-color: black;
+      }
+      #entry-form{
+        height:100vh;
+        background-color: #27e9a6;
+      }
+      #entry-form h1{
+        padding-top: 12vh;
+        color:white;
+      }
+      #entry-form form{
+        width:33vw;
+        /*height:100vw;*/
+        /*display:inline;*/
+        position: relative;
+        margin:0 auto;
+      }
+      #entry-form input{
+        width:100%;
+        padding:2%;
+        margin:1px;
+      }
+      #entry-form input[type=checkbox]{
+        margin:3vh;
+      }
+      #info-box{
+        border: 2px solid white;
+      }
+      #info-box input{
+        /*display:inline-block;*/
+        position: absolute;
+      }
+
+      .entry-form{
+        position: absolute;
+        padding-top:6vh;
+      }
+      #dob{
+        float:left;
+      }
+      #postcode{
+        float:right;
+      }
+      #info-box{
+        margin-top: 1vh;
+      }
+      #info-box p{
+        padding-left: 5vw;
+        text-align:  left;
+
+      }
+
+      .btn{
+        background-color: black;
+        color: white;
+        font-size: 18px;
+        font-family: Nanami-Bold;
+      }
+      #form-upload{
+
+        margin-top: 1vh;
+        border:1px solid white;
+
+
+      }
+      #form-upload h1{
+        padding-top:1vh;
+
+      }
+      #form-select select{
+        background-color: black;
+        color: #35e1a2;
+        font-size: 18px;
+        font-family: Nanami-Bold;
+        text-align: center;
+        padding-left: 11vw;
+        height:8vh;
+          }
+
+
+
+    </style>
+    <title>The Green Man's Grants | Young Driver Safety Package</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="assets/js/nav.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" media="all" href="assets/css/app.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+    <!--***** Fonts *****-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,700,100' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="assets/fonts/MyFontsWebfontsKit.css">
+
+    <!-- <script type="text/javascript" src="assets/js/mouse-scroll.js"></script> -->
+  </head>
+  <body>
+    <div class='test' id='top-bar'>
+      <div class=''id='logo'>
+        <a href='#home'>
+          <img src='assets/images/gmg_header_logo.png'></img>
+        </a>
+      </div>
+      <div class='' id='menu'>
+        <a href='#menu'>
+          <img src='assets/images/menu.png'></img>
+        </a>
+        <div class="nav" style="display:none;">
+          <ul>
+            <li><a href="#">WHAT ARE GREEN MAN GRANTS?</a>
+
+            </li>
+            <li><a href="#">ENTRY GUIDELINES</a>
+
+            </li>
+            <li><a href="#">THE BRIEFS</a>
+
+            </li>
+            <li><a href="#">VOTE FOR THE PEDESTRIAN'S CHOICE AND YOU COULD WIN $1,000</a>
+
+            </li>
+            <li><a href="#">ENTRY FORM</a>
+
+            </li>
+            <li><a href="#">CONTACT US</a>
+
+            </li>
+            <li><a href="#"></a>
+
+            </li>
+          </ul>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <div id='entry-form'>
+      <div class='dotoverlay'>
+        <h1>READY?</h1>
+        <p>Tell us your idea here.</p>
+        <form>
+          <div class='row'>
+            <div class='large-12 columns'>
+              <input type='text' placeholder='YOUR NAME'>
+            </div>
+            <div class='large-12 columns'>
+              <input type='text' placeholder='CONTACT PHONE NUMBER'>
+            </div>
+            <div class='large-12 columns'>
+              <input type='text' placeholder='EMAIL ADDRESS'>
+            </div>
+            <div class='large-12 columns'>
+              <input type='text' placeholder='IDEA NAME (MAX 30 CHARACTERS)' maxlength='30'>
+            </div>
+            <div class='large-6 columns'>
+              <input type='text' placeholder='DOB'>
+            </div>
+            <div class='large-6 columns'>
+              <input type='text' placeholder='POSTCODE'>
+            </div>
+            <div class='large-12 columns' id='info-box'>
+              <input type='checkbox'>
+              <p>Check this box if you would like to receive further information about road safety</p>
+            </div>
+            <div id='form-upload' class='large-12 columns'>
+              <h1>UPLOAD YOUR ENTRY</h1>
+              <div id='form-select' class='large-12 columns'>
+                <select>
+                  <option value="disabled selected"> Upload Type</option>
+                  <option value="Text">Text</option>
+                  <option value="Audio">Audio</option>
+                  <option value="Video">Video</option>
+                  <option value="Photo">Photo</option>
+                </select>
+              </div>
+              <div id='upload-field'></div>
+              <input class=' large-12 columns btn' type='submit'>
+            </div>
+          </div>
+          <!-- <div id='name'>
+            <input name='name' placeholder='YOUR NAME'>
+          </div>
+          <div id='phone'>
+            <input name='phone' placeholder='CONTACT PHONE NUMBER'>
+          </div>
+          <div id='email'>
+            <input name='email' placeholder='EMAIL ADDRESS'>
+          </div>
+          <div id='idea'>
+            <input name='idea' placeholder='IDEA NAME (MAX 30 CHARACTERS)' maxlength='30'>
+          </div>
+          <div class='med-input' id='dob'>
+            <input class='med-input' name='dob' placeholder='D.O.B'>
+          </div>
+          <div class='med-input' id='postcode'>
+            <input  name='postcode' placeholder='POSTCODE'>
+          </div>
+
+          <div id='inital-dropdown'>
+            <input type='dropdown'>
+          </div> -->
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

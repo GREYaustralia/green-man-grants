@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <META NAME="viewport" CONTENT="width=device-width, height=device-height, initial-scale=1, user-scalable=no"/>
     <style>
-      .test{
-        outline-color: red;
-        outline-width: 1px;
-        outline-style: solid;
+
+    .active{
+      background-color: black;
+      /*display:none;*/
+      width: 35vw !important;
+      right:0;
+    }
+    .active img{
+      margin-top:1vh;
+    }
+      .nav{
+        padding-top:10vh;
       }
-      .box{
-        /*background-color:red;*/
-        /*width:25%;*/
+      .nav a{
+        color:#FFF;
+      }
+      .nav ul{
+
+        float:right;
+        background-color: #2fc78f;
+        width: 35vw;
+        /*text-align: center;*/
+        padding-top: 1vh;
+        height:100vh  ;
 
       }
-      #entries .box-contatiner{
-        height:80vh;
-      }
-/*      .box-wrapper{
-        height:50%;
-      }
-      .box-container{
-        height:50%;
-      }*/
-/*      @media screen and (min-width: 50em){
-        .thing {
-        width: calc(25% - 0px);
-        }*/
-      }
+      .nav li{
+        padding-left: 2vw;
+        height: 5vh ;
+        /*border-top: 2px solid #3cfdb6;*/
+        border-bottom: 2px solid #3cfdb6;
 
+      }
+      .nav li:hover{
+        /*border: 2px solid #35e1a2;*/
+      }
     </style>
+    <META NAME="viewport" CONTENT="width=device-width, height=device-height, initial-scale=1, user-scalable=no"/>
+
     <title>The Green Man's Grants | Young Driver Safety Package</title>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
 
@@ -39,21 +51,74 @@
     <!-- <script type="text/javascript" src="assets/js/mouse-scroll.js"></script> -->
   </head>
   <body>
+    <div class='test' id='top-bar'>
+      <div class=''id='logo'>
+        <a href='#home'>
+          <img src='assets/images/gmg_header_logo.png'></img>
+        </a>
+      </div>
+      <div class='' id='menu'>
+        <a href='#menu'>
+          <img src='assets/images/menu.png'></img>
+        </a>
+        <div class="nav">
+          <ul>
+            <li><a href="#">Home</a>
 
+            </li>
+            <li><a href="#">News</a>
 
+            </li>
+            <li><a href="#">Blog</a>
 
+            </li>
+            <li><a href="#">About</a>
 
-          <div class='container test' id='entries'>
-            <section>
-              <a href="#" name='entries'></a>
-              <div class=''id='entries-header'>
-                <!-- <div class='wrapper'> -->
-                <h1>ENTRIES</h1>
-                <p>Check out the Competition</p>
-              <!-- </div> -->
+            </li>
+            <li><a href="#">Services</a>
+
+            </li>
+            <li><a href="#">Products</a>
+
+            </li>
+            <li><a href="#">FAQ</a>
+
+            </li>
+            <li><a href="#">Contact</a>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class='container' id='header'>
+      <div class='wrapper dotoverlay'>
+        <section>
+          <div class='test content' id='header-content' >
+            <div class=''>
+              <a href="#" name='header'></a>
+              <div id='header-logo'>
+               <img src="assets/images/gmg_header_logo.png">
+             </div>
+              <h1>Make the road safer and you could get the green light for up to $50,000 funding</h1>
+              <p>Entering the Green Man grants is easy. Simply choose whichever brief gets your creative juices flowing, come up with an amazing idea and submit it.</p>
+              <p>It can be anything from an app to an event; the only requirement is that it answers the brief while encouraging you and your friends to work towards a zero road toll.</p>
+              <a href='#brief'>
+                <div class='btn'>
+                  <h6>SEE THE BRIEFS</h6>
+                </div>
+              </a>
+              <div class='arrow'>
+                <a href='#brief'>
+                  <img src="assets/images/arrow.png">
+                </a>
               </div>
-            </section>
+            </div>
           </div>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
 
