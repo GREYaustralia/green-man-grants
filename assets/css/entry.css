@@ -1,0 +1,149 @@
+.borders{
+  margin-left: 1vw !important;
+  margin-right: 1vw !important;
+
+}
+#form-select{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+
+#top-bar{
+  background-color: black;
+}
+#entry-form{
+  height:100vh;
+  background-color: #27e9a6;
+}
+#entry-form h1{
+  padding-top: 12vh;
+  color:white;
+}
+#entry-form form{
+  width:33vw;
+  /*height:100vw;*/
+  /*display:inline;*/
+  position: relative;
+  margin:0 auto;
+}
+#entry-form input{
+  padding:2%;
+  margin:1px;
+  font-family: Nanami-Light;
+}
+#entry-form input[type=checkbox]{
+  margin:3vh;
+}
+#info-box{
+  border: 2px solid white;
+}
+#info-box input{
+  /*display:inline-block;*/
+  position: absolute;
+}
+
+.entry-form{
+  position: absolute;
+  padding-top:6vh;
+}
+#dob{
+  float:left;
+}
+#postcode{
+  float:right;
+}
+#info-box{
+  margin-top: 1vh;
+}
+#info-box p{
+  padding-left: 5vw;
+  text-align:  left;
+
+}
+
+#entry-form .btn{
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  font-family: Nanami-Bold !important;
+  width:100%;
+  border:none;
+  margin:0px;
+  margin-bottom: 1vw;
+}
+#form-upload{
+
+  margin-top: 1vh;
+  border:1px solid white;
+
+
+}
+#form-upload h1{
+  padding-top:1vh;
+
+}
+#form-select select{
+  background-color: black;
+  color: #35e1a2;
+  font-size: 18px;
+  font-family: Nanami-Bold;
+  text-align: center;
+  /*padding-left: 11vw;*/
+  height:8vh;
+    }
+#text-submission{
+  height:50vh;
+
+}
+#description{
+  height:30vh;
+}
+input{
+  border-radius:0px !important;
+}
+@media only screen and (max-width : 684px) {
+
+
+  #form-upload h1{
+    display:none;
+  }
+  #entry-form h1{
+    padding-top: 12vh;
+    color:black;
+    margin-bottom: 0px
+  }
+  #entry-form p{
+    color:black;
+  }
+  #entry-form form{
+    width:80vw;
+  }
+  #entry-form input{
+    font-size:4vw;
+  }
+  #info-box p {
+    padding-left: 12vw;
+    padding-top: 2vh;
+  }
+  #info-box{
+    border: none;
+  }
+  #form-select{
+    padding-left:0px;
+    padding-right:0px;
+  }
+  #form-upload{
+    border:none;
+  }
+  #form-select select{
+    border:none;
+    border-radius:0px;
+    background-color: #0a362f;
+  }
+  #upload{
+
+    margin-bottom: 3px;
+  }
+
+}

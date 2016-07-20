@@ -1,0 +1,38 @@
+Searching 27 files for "a href="#">WHAT ARE" (regex)
+
+/Users/nathanmicic/Documents/Contract/Gray/greenManGrants/about.html:
+  112          <div class="nav" style="display:none;">
+  113            <ul>
+  114:             <li><a href="about.html">WHAT ARE GREEN MAN GRANTS?</a>
+  115
+  116              </li>
+
+/Users/nathanmicic/Documents/Contract/Gray/greenManGrants/briefs.html:
+  204          <div class="nav" style="display:none;">
+  205            <ul>
+  206:             <li><a href="about.html">WHAT ARE GREEN MAN GRANTS?</a>
+  207
+  208              </li>
+
+/Users/nathanmicic/Documents/Contract/Gray/greenManGrants/entry-form.html:
+   38          <div class="nav" style="display:none;">
+   39            <ul>
+   40:             <li><a href="about.html">WHAT ARE GREEN MAN GRANTS?</a>
+   41
+   42              </li>
+
+/Users/nathanmicic/Documents/Contract/Gray/greenManGrants/index.html:
+   34          <div class="nav" style="display:none;">
+   35            <ul>
+   36:             <li><a href="about.html">WHAT ARE GREEN MAN GRANTS?</a>
+   37
+   38              </li>
+
+/Users/nathanmicic/Documents/Contract/Gray/greenManGrants/template.html:
+   67          <div class="nav" style="display:none;">
+   68            <ul>
+   69:             <li><a href="about.html">WHAT ARE GREEN MAN GRANTS?</a>
+   70
+   71              </li>
+
+5 matches across 5 files

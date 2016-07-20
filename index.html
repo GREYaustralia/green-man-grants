@@ -8,13 +8,15 @@
     <title>The Green Man's Grants | Young Driver Safety Package</title>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
     <script type="text/javascript" src="assets/js/nav.js"></script>
+    <script type="text/javascript" src="assets/js/mobile-home.js"></script>
+
 
 
     <link rel="stylesheet" type="text/css" media="all" href="assets/css/app.css" />
     <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.css" />
     <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-    <!--***** Fonts *****-->
+    <!--***** Fonts ***** -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,700,100' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="assets/fonts/MyFontsWebfontsKit.css">
 
@@ -23,7 +25,7 @@
   <body>
     <div class='test' id='top-bar'>
       <div class=''id='logo'>
-        <a href='#home'>
+        <a href='index.html'>
           <img src='assets/images/gmg_header_logo.png'></img>
         </a>
       </div>
@@ -33,26 +35,29 @@
         </a>
         <div class="nav" style="display:none;">
           <ul>
-            <li><a href="#">WHAT ARE GREEN MAN GRANTS?</a>
-
+            <li>
+              <a href="about.html">WHAT ARE GREEN MAN GRANTS?</a>
             </li>
-            <li><a href="#">ENTRY GUIDELINES</a>
-
+            <li>
+              <a href="guidelines.html">ENTRY GUIDELINES</a>
             </li>
-            <li><a href="#">THE BRIEFS</a>
-
+            <li>
+              <a href="briefs.html">THE BRIEFS</a>
             </li>
-            <li><a href="#">VOTE FOR THE PEDESTRIAN'S CHOICE AND YOU COULD WIN $1,000</a>
-
+            <li>
+              <a href="judging.html">JUDGING</a>
             </li>
-            <li><a href="#">ENTRY FORM</a>
-
+            <li>
+              <a href="#">VOTE FOR THE PEDESTRIAN'S CHOICE AND YOU COULD WIN $1,000</a>
             </li>
-            <li><a href="#">CONTACT US</a>
-
+            <li>
+              <a href="entry.html">ENTRY FORM</a>
             </li>
-            <li><a href="#"></a>
-
+            <li>
+              <a href="contact.html">CONTACT US</a>
+            </li>
+            <li>
+              <a href="#"></a>
             </li>
           </ul>
           <p></p>
@@ -75,7 +80,7 @@
               <p>And to top it off, you'll receive a $5,000 cash prize for this major achievement.</p>
               <p>Imagine having a genuine project of major significance on your CV - your dream career could start here.</p>
               <a href='#brief'>
-                <div class='btn'>
+                <div class='btn btn-header'>
                   <h6>SEE THE BRIEFS</h6>
                 </div>
               </a>
@@ -94,19 +99,19 @@
       <div class='wrapper dotoverlay'>
         <section>
           <a href="#" name='brief'></a>
-          <div class=' test content' id='header-content' >
+          <div class=' test content' id='something' >
             <h1>BRIEFS</h1>
             <p>Do you have an idea that could make the roads safer? Something outside the box, that'll make you and your mates look out for each other?</p>
             <p>If you're 18-25, just answer one of the briefs in a creative way - it could be a film, a sculpture, an app, whatever you can dream up - and you could win up to $50,000 to make your idea a reality.</p>
           </div>
-          <div class='box-wrapper'>
-            <div class='test box-container' id='briefs-box'>
+          <div id='theBriefs'>
+            <div class='box-container' id='briefs-box'>
               <div class='box' id='vehicle-safety'>
                 <div class='dotoverlay'></div>
                 <h1>Vehicle Safety</h1>
                 <p>How would you get your peers to understand the importance of buying a safe car?</p>
                 <a href='#'>
-                  <div class='btn'>
+                  <div class='btn btn-briefs'>
                     <h6>BRIEF IN FULL</h6>
                   </div>
                 </a>
@@ -116,7 +121,7 @@
                 <h1>Vulnerability</h1>
                 <p>How would you get your peers to understand the importance of buying a safe car?</p>
                 <a href='#'>
-                  <div class='btn'>
+                  <div class='btn btn-briefs'>
                     <h6>BRIEF IN FULL</h6>
                   </div>
                 </a>
@@ -126,13 +131,13 @@
                 <h1>Shared Responsibilty</h1>
                  <p>How would you inspire your generation to unite in a belief that zero deaths and serious injuries on our roads could become a reality?</p>
                 <a href='#'>
-                  <div class='btn'>
+                  <div class='btn btn-briefs'>
                     <h6>BRIEF IN FULL</h6>
                   </div>
                 </a>
               </div>
           </div>
-        </div>
+
           <div class='arrow'>
             <a href='#enter'>
               <img src="assets/images/arrow.png">
@@ -177,8 +182,8 @@
                 </div>
               </div>
             </div>
-            <a href='#'>
-              <div class='btn'>
+            <a href='entry.html'>
+              <div class='btn btn-enter'>
                 <h6>ENTER HERE</h6>
               </div>
             </a>
@@ -200,88 +205,56 @@
               <div class='box'style='background-image: url(assets/images/footer.jpg);'>
                 <div class='greenoverlay dotoverlay'></div>
                   <h1>Nullam libero tellus</h1>
-                  <div class='icon'>
-                    <div>
-                      <img src="assets/images/video.png">
-                    </div>
-                  </div>
+                      <img class='icon' src="assets/images/video.png">
                 <figure>
                 </figure>
               </div>
               <div class='box'style='background-image: url(assets/images/footer.jpg);'>
                 <div class='greenoverlay dotoverlay'></div>
                   <h1>Nullam libero tellus</h1>
-                  <div class='icon'>
-                    <div>
-                      <img src="assets/images/video.png">
-                    </div>
-                  </div>
+                      <img class='icon' src="assets/images/video.png">
                 <figure>
                 </figure>
               </div>
               <div class='box'style='background-image: url(assets/images/footer.jpg);'>
                 <div class='greenoverlay dotoverlay'></div>
                   <h1>Nullam libero tellus</h1>
-                  <div class='icon'>
-                    <div>
-                      <img src="assets/images/video.png">
-                    </div>
-                  </div>
+                      <img class='icon' src="assets/images/video.png">
                 <figure>
                 </figure>
               </div>
               <div class='box'style='background-image: url(assets/images/footer.jpg);'>
                 <div class='greenoverlay dotoverlay'></div>
                   <h1>Nullam libero tellus</h1>
-                  <div class='icon'>
-                    <div>
-                      <img src="assets/images/video.png">
-                    </div>
-                  </div>
+                      <img class='icon' src="assets/images/video.png">
                 <figure>
                 </figure>
               </div>
               <div class='box'style='background-image: url(assets/images/footer.jpg);'>
                 <div class='greenoverlay dotoverlay'></div>
                   <h1>Nullam libero tellus</h1>
-                  <div class='icon'>
-                    <div>
-                      <img src="assets/images/video.png">
-                    </div>
-                  </div>
+                      <img class='icon' src="assets/images/video.png">
                 <figure>
                 </figure>
               </div>
               <div class='box'style='background-image: url(assets/images/footer.jpg);'>
                 <div class='greenoverlay dotoverlay'></div>
                   <h1>Nullam libero tellus</h1>
-                  <div class='icon'>
-                    <div>
-                      <img src="assets/images/video.png">
-                    </div>
-                  </div>
+                      <img class='icon' src="assets/images/video.png">
                 <figure>
                 </figure>
               </div>
               <div class='box'style='background-image: url(assets/images/footer.jpg);'>
                 <div class='greenoverlay dotoverlay'></div>
                   <h1>Nullam libero tellus</h1>
-                  <div class='icon'>
-                    <div>
-                      <img src="assets/images/video.png">
-                    </div>
-                  </div>
+                      <img class='icon' src="assets/images/video.png">
                 <figure>
                 </figure>
               </div>
               <div class='box'style='background-image: url(assets/images/footer.jpg);'>
                 <div class='greenoverlay dotoverlay'></div>
                   <h1>Nullam libero tellus</h1>
-                  <div class='icon'>
-                    <div>
-                      <img src="assets/images/video.png">
-                    </div>
-                  </div>
+                    <img class='icon' src="assets/images/video.png">
                 <figure>
                 </figure>
               </div>
@@ -305,14 +278,29 @@
           <h1>CONTACT US</h1>
           <p>If you require more information about Green Man Grants please submit your details here.</p>
           <form>
-            <div>
+            <div class='row'>
+              <div class='large-4 columns'>
+                <input type='text' placeholder='NAME'>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='large-4 columns'>
+                <input type='text' placeholder='EMAIL'>
+              </div>
+              <div class='large-6 columns' style='height:10vh;'>
+                <textarea placeholder='MESSAGE' name='message' id='message'></textarea>
+              </div>
+                <input class='large-2 columns btn-contact' type='submit' value='SEND'>
+            </div>
+
+            <!-- <div>
               <input placeholder='Name' name='name'>
               <input placeholder='Email' name='email'>
             </div>
             <div>
               <textarea placeholder='Message' name='message'></textarea>
             </div>
-            <input class='btn' type='submit' value='Send'>
+            <input class='btn' type='submit' value='Send'> -->
           </form>
         </div>
       </div>
