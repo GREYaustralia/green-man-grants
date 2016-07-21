@@ -28,7 +28,7 @@
 // })
 $(document).ready(function(){
   $('.entries-box').find('.btn').hide();
-  $('.box').on('mouseover', function(){
+  $('.entries-box').find('.box').on('mouseover', function(){
     if($('.box').hasClass('video')){
         $(this).find('.icon').hide()
         $(this).find('.btn').toggle().show()
@@ -53,7 +53,7 @@ $(document).ready(function(){
         $(this).find('.greenoverlay').css('background-color', '#45ffb7')
     }
   }).on('mouseout', function(){
-        $('.btn').hide();
+        $('.entries-box').find('.btn').hide();
         $('.greenoverlay').css('background-color', '#14523a')
         $(this).find('p').css('margin-top', '30vh')
         $('.icon').show()
