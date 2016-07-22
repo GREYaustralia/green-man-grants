@@ -30,7 +30,9 @@
 #entry-form input{
   padding:2%;
   margin:1px;
-  font-family: Nanami-Light;
+  font-family: Nanami-ExtraLight;
+  font-weight: normal;
+  font-style: normal;
 }
 #entry-form input[type=checkbox]{
   margin:3vh;
@@ -90,7 +92,8 @@
   font-family: Nanami-Bold;
   text-align: center;
   /*padding-left: 11vw;*/
-  height:8vh;
+  padding-right: 2vw;
+  height:5vh;
     }
 #text-submission{
   height:50vh;
@@ -140,6 +143,7 @@ input{
     border:none;
     border-radius:0px;
     background-color: #0a362f;
+    /*height:5vh;*/
   }
   #upload{
 
