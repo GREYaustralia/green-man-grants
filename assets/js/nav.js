@@ -20,7 +20,7 @@ $(document).ready(function(){
     }else{
       $(this).find('img').attr('src','assets/images/menu.png')
     }
-    $('.nav').toggle('display')
+    $('.nav').fadeToggle('display')
   })
 });
 
