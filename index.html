@@ -4,24 +4,25 @@
     <META NAME="viewport" CONTENT="width=device-width, height=device-height, initial-scale=1, user-scalable=no"/>
     <style>
     .white-text{
-      color:  white;
+      color:  black;
     }
 
     #intro h1{
-     color:  white;
+     color:  black;
     }
 
     #intro h2{
       text-align: left;
-      color: white;
+      color: black;
       font-size: 3vh;
       margin:0 auto;
+      padding-top:2vh;
     }
 
     .btn-white{
     background-color: transparent;
-    color: white;
-    border:2px solid white;
+    color: black;
+    border:2px solid black;
     }
 
     .btn-try{
@@ -47,7 +48,7 @@
     }
     .btn-white:hover{
       background-color: #000;
-      color:#FFF;
+      color:#35e1a2;
       border:none;
     }
 
@@ -59,7 +60,7 @@
       position: absolute;
     }
     .votes{
-      bottom:0;
+      bottom:1vh;
       position: absolute;
       width:100%;
     }
@@ -86,7 +87,7 @@
       position: absolute;
     }
     .votes-center{
-      left:0vw;
+      left:1vw;
       right:0;
       bottom:0;
       position: absolute;
@@ -192,13 +193,13 @@
         <a href="#" name='intro'></a>
         <div class='test content white' id='intro-content' >
           <h1>INTRODUCTION</h1>
-            <p class='longer'>Entering Green Man Grants is pretty simple. There are three briefs for you to choose from. Just pick the one that inspires you the most and get cracking on your concept. It can be anything from an app to an event; but importantly, it must answer the brief.</p>
-            <h2 class='left-align shorter bold'>Entering</h2>
-            <p class='left-align shorter'>At this initial stage, you will only need to provide a summary of your concept. To make sure that our judging panel understands and shares your vision, be sure to articulate the idea as much as possible.</p>
-            <h2 class='left-align shorter bold'>Shortlist</h2>
-            <p class='left-align shorter'>If your idea is shortlisted, you will be invited to present to our panel. At this time you will be required to present a more developed outline including a detailed breakdown of the funds you are requesting (up to $50,000).</p>
-            <h2 class='left-align shorter bold'>Winners<h2>
-            <p class='left-align shorter'>There will be 10 winners selected across the three categories below. Each winner will be partnered with a leading industry expert, who will guide and mentor you through the process of bringing your idea to life.</p>
+            <p class='left-align longer'>Entering Green Man Grants is pretty simple. There are three briefs for you to choose from. Just pick the one that inspires you the most and get cracking on your concept. It can be anything from an app to an event; but importantly, it must answer the brief.</p>
+            <h2 class='left-align longer bold'>Entering</h2>
+            <p class='left-align longer'>At this initial stage, you will only need to provide a summary of your concept. To make sure that our judging panel understands and shares your vision, be sure to articulate the idea as much as possible.</p>
+            <h2 class='left-align longer bold'>Shortlist</h2>
+            <p class='left-align longer'>If your idea is shortlisted, you will be invited to present to our panel. At this time you will be required to present a more developed outline including a detailed breakdown of the funds you are requesting (up to $50,000).</p>
+            <h2 class='left-align longer bold'>Winners</h2>
+            <p class='left-align longer'>There will be 10 winners selected across the three categories below. Each winner will be partnered with a leading industry expert, who will guide and mentor you through the process of bringing your idea to life.</p>
             <p><b>Entries close at 5pm on 15th September 2016.</b></p>
 
             <a class='btn-white btn-try btn-btm' href='entry.html'>ENTER HERE</a>
@@ -223,9 +224,19 @@
       <div class='wrapper dotoverlay'>
           <a href="#" name='brief'></a>
           <div class=' test content' id='something' >
+          <div class='arrow-right'>
+            <a href='#enter'>
+              <img src="assets/images/arrow-right.png">
+            </a>
+          </div>
             <h1>BRIEFS</h1>
             <p class='brief-text'>Do you have an idea that could make the roads safer? Something outside the box, that'll make you and your mates look out for each other?</p>
             <p class='brief-text'>If you're 18-25, just answer one of the briefs in a creative way - it could be a film, a sculpture, an app, whatever you can dream up - and you could win up to $50,000 to make your idea a reality.</p>
+          </div>
+          <div class='mobile-brief'>
+             <h1>Vehicle Safety</h1>
+                <p>How would you get your peers to understand the importance of buying a safe car?</p>
+                <a class='btn-green btn-try btn-briefs' href='vehiclesafety.html'>BRIEF IN FULL</a>
           </div>
           <!-- <div id='theBriefs'> -->
             <div class='box-container' id='briefs-box'>
@@ -250,6 +261,8 @@
               <img src="assets/images/arrow.png">
             </a>
           </div>
+
+          </div>
       </div>
     </div>
 
@@ -270,26 +283,30 @@
               <div class='test box-container' id=''>
                 <div class='box' id='video'>
                   <figure>
-                    <img src="assets/images/video.png">
+                    <img src="assets/images/video-black.png">
                     <figcaption>VIDEO</figcaption>
+                    <figcaption>(MAX 60 SECONDS)</figcaption>
                   </figure>
                 </div>
                 <div class='box' id='audio'>
                   <figure>
-                    <img src="assets/images/audio.png">
+                    <img src="assets/images/audio-black.png">
                     <figcaption>AUDIO</figcaption>
+                    <figcaption>(MAX 60 SECONDS)</figcaption>
                   </figure>
                 </div>
                 <div class='box' id='image'>
                   <figure>
-                    <img src="assets/images/image.png">
+                    <img src="assets/images/image-black.png">
                     <figcaption>IMAGE</figcaption>
+                    <figcaption>(PLUS MAXIMUM OF 1000 CHARACTERS)</figcaption>
                   </figure>
                 </div>
                 <div class='box' id='text'>
                   <figure>
-                    <img src="assets/images/text.png">
+                    <img src="assets/images/text-black.png">
                     <figcaption>TEXT</figcaption>
+                    <figcaption>(MAXIMUM OF 1000 CHARACTERS)</figcaption>
                   </figure>
                 </div>
               </div>
@@ -318,17 +335,16 @@
         <div class=''id='entries-header'>
             <h1>ENTRIES</h1>
             <p>Check out the Competition</p>
-
-          <div class='test box-container entries-box'>
+         <div class='test box-container entries-box entries-mobile'>
             <div class='box video'style='background-image: url(assets/images/footer.jpg);'>
               <div class='greenoverlay dotoverlay'></div>
               <h1>Nullam libero tellus</h1>
               <div class="btn-box btn" href="video-entry.html">VIEW ENTRY</div>
-              <img class='icon' src='assets/images/video.png'>
+              <img class='icon' src='assets/images/video-green.png'>
              <div class='votes'>
                 <span class='votes-left'><img src="assets/images/face.png">3k</span>
                 <span><img src="assets/images/twit.png">250</span>
-                <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6,997</span>votes</span>
+                <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6.9K</span>
               </div>
             </div>
 
@@ -336,66 +352,114 @@
               <div class='greenoverlay dotoverlay'></div>
               <h1>Nullam libero tellus</h1>
               <div class="btn-box btn" href="video-entry.html">VIEW ENTRY</div>
-              <img class='icon' src='assets/images/video.png'>
+              <img class='icon' src='assets/images/video-green.png'>
              <div class='votes'>
                 <span class='votes-left'><img src="assets/images/face.png">3k</span>
                 <span><img src="assets/images/twit.png">250</span>
-                <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6,997</span>votes</span>
+                <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6.9K</span>
               </div>
             </div>
             <div class='box text' style='background-image: url(assets/images/footer.jpg);'>
               <div class='greenoverlay dotoverlay'></div>
               <h1>Nullam libero tellus</h1>
               <div class="btn-box btn" href="text-entry.html">VIEW ENTRY</div>
-              <img class='icon' src='assets/images/text.png'>
+              <img class='icon' src='assets/images/text-green.png'>
              <div class='votes'>
                 <span class='votes-left'><img src="assets/images/face.png">3k</span>
                 <span><img src="assets/images/twit.png">250</span>
-                <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6,997</span>votes</span>
+                <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6.9K</span>
               </div>
             </div>
             <div class='box audio' style='background-image: url(assets/images/footer.jpg);'>
               <div class='greenoverlay dotoverlay'></div>
               <h1>Nullam libero tellus</h1>
               <div class="btn-box btn" href="audio-entry.html">VIEW ENTRY</div>
-              <img class='icon' src='assets/images/audio.png'>
+              <img class='icon' src='assets/images/audio-green.png'>
              <div class='votes'>
                 <span class='votes-left'><img src="assets/images/face.png">3k</span>
                 <span><img src="assets/images/twit.png">250</span>
-                <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6,997</span>votes</span>
+                <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6.9K</span>
               </div>
             </div>
-            <div class='box image' style='background-image: url(assets/images/footer.jpg);'>
+          </div>
+
+          <div class='box-container entries-box entries-home'>
+            <div class='box video'style='background-image: url(assets/images/footer.jpg);'>
               <div class='greenoverlay dotoverlay'></div>
               <h1>Nullam libero tellus</h1>
-              <div class="btn-box btn" href="image-entry.html">VIEW ENTRY</div>
-              <img class='icon' src='assets/images/image.png'>
+              <div class="btn-box btn" href="video-entry.html">VIEW ENTRY</div>
+              <img class='icon' src='assets/images/video-green.png'>
              <div class='votes'>
                 <span class='votes-left'><img src="assets/images/face.png">3k</span>
                 <span><img src="assets/images/twit.png">250</span>
-                <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6,997</span>votes</span>
+                <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6,997</span></span>
               </div>
             </div>
-            <div class='box image' style='background-image: url(assets/images/footer.jpg);'>
+
+            <div class='box video' style='background-image: url(assets/images/footer.jpg);'>
               <div class='greenoverlay dotoverlay'></div>
               <h1>Nullam libero tellus</h1>
-              <div class="btn-box btn" href="image-entry.html">VIEW ENTRY</div>
-              <img class='icon' src='assets/images/image.png'>
+              <div class="btn-box btn" href="video-entry.html">VIEW ENTRY</div>
+              <img class='icon' src='assets/images/video-green.png'>
              <div class='votes'>
                 <span class='votes-left'><img src="assets/images/face.png">3k</span>
                 <span><img src="assets/images/twit.png">250</span>
-                <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6,997</span>votes</span>
+                <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6,997</span></span>
               </div>
             </div>
             <div class='box text' style='background-image: url(assets/images/footer.jpg);'>
               <div class='greenoverlay dotoverlay'></div>
               <h1>Nullam libero tellus</h1>
               <div class="btn-box btn" href="text-entry.html">VIEW ENTRY</div>
-              <img class='icon' src='assets/images/text.png'>
+              <img class='icon' src='assets/images/text-green.png'>
+             <div class='votes'>
+                <span class='votes-left'><img src="assets/images/face.png">3k</span>
+                <span><img src="assets/images/twit.png">250</span>
+                <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6,997</span></span>
+              </div>
+            </div>
+            <div class='box audio' style='background-image: url(assets/images/footer.jpg);'>
+              <div class='greenoverlay dotoverlay'></div>
+              <h1>Nullam libero tellus</h1>
+              <div class="btn-box btn" href="audio-entry.html">VIEW ENTRY</div>
+              <img class='icon' src='assets/images/audio-green.png'>
+             <div class='votes'>
+                <span class='votes-left'><img src="assets/images/face.png">3k</span>
+                <span><img src="assets/images/twit.png">250</span>
+                <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6,997</span></span>
+              </div>
+            </div>
+            <div class='box image' style='background-image: url(assets/images/footer.jpg);'>
+              <div class='greenoverlay dotoverlay'></div>
+              <h1>Nullam libero tellus</h1>
+              <div class="btn-box btn" href="image-entry.html">VIEW ENTRY</div>
+              <img class='icon' src='assets/images/image-green.png'>
+             <div class='votes'>
+                <span class='votes-left'><img src="assets/images/face.png">3k</span>
+                <span><img src="assets/images/twit.png">250</span>
+                <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6,997</span></span>
+              </div>
+            </div>
+            <div class='box image' style='background-image: url(assets/images/footer.jpg);'>
+              <div class='greenoverlay dotoverlay'></div>
+              <h1>Nullam libero tellus</h1>
+              <div class="btn-box btn" href="image-entry.html">VIEW ENTRY</div>
+              <img class='icon' src='assets/images/image-green.png'>
+             <div class='votes'>
+                <span class='votes-left'><img src="assets/images/face.png">3k</span>
+                <span><img src="assets/images/twit.png">250</span>
+                <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6,997</span></span>
+              </div>
+            </div>
+            <div class='box text' style='background-image: url(assets/images/footer.jpg);'>
+              <div class='greenoverlay dotoverlay'></div>
+              <h1>Nullam libero tellus</h1>
+              <div class="btn-box btn" href="text-entry.html">VIEW ENTRY</div>
+              <img class='icon' src='assets/images/text-green.png'>
               <div class='votes'>
                 <span class='votes-left'><img src="assets/images/face.png">3k</span>
                 <span class='votes-center'><img src="assets/images/twit.png">250</span>
-                <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6,997</span>votes</span>
+                <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6,997</span></span>
               </div>
             </div>
             <div class='box'>
@@ -437,7 +501,7 @@
               </div>
             </div>
               <div class='row'>
-                <input class='large-2 columns btn-white btn-try btn-contact' type='submit' value='SEND'>
+                <input class='large-12 columns btn-white btn-try btn-contact' type='submit' value='SEND'>
               </div>
           </form>
           <div class='arrow'>

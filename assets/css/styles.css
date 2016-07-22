@@ -24,6 +24,17 @@
   background-color: #35e1a2;
 }
 
+.arrow-right{
+ display:none;
+
+
+}
+.entries-mobile .box{
+  display:none;
+}
+.mobile-brief{
+    display:none;
+  }
 
 /*
 ************* FONT
@@ -128,6 +139,69 @@ footer text -Roboto Thin - 22.6 - green
 
 
 */
+
+input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #555555;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #555555;
+   opacity:  1;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #555555;
+   opacity:  1;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #555555;
+}
+textarea::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #555555;
+}
+textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #555555;
+   opacity:  1;
+}
+textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #555555;
+   opacity:  1;
+}
+textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #555555;
+}
+
+
+
+    .votes{
+      bottom:1vh;
+      position: absolute;
+      width:100%;
+    }
+    .box span{
+      color:#35e1a2;
+    }
+    .votes-right{
+      position: absolute;
+      right:1vw;
+      bottom:0;
+    }
+    .votes-left{
+      left:1vw;
+      bottom:0;
+      position: absolute;
+    }
+    .votes-center{
+      left:1vw;
+      right:0;
+      bottom:0;
+      position: absolute;
+    }
+.entries-mobile .box{
+  width: 50% !important;
+}
+.entries-mobile .box .btn{
+  width: 40vw !important;
+  margin-top: 50%;
+}
 footer a{
 color:#35e1a2;
 }
@@ -220,7 +294,7 @@ h6 {
 }
 
 p {
-  color:white;
+  color:black;
   font-size:2vh;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -353,6 +427,10 @@ padding-top:12vh;
   /*background-image: url(../images/Dots.png);*/
 }
 
+#header-content{
+  padding-top:7vh;
+}
+
 #header-logo{
   margin:0 auto;
   max-width:530px;
@@ -379,6 +457,7 @@ padding-top:12vh;
   width:60vw  ;
   margin:0 auto;
   color:#35e1a2;
+  padding-bottom: 2vh;
   /*font-weight: lighter;*/
 }
 
@@ -420,7 +499,9 @@ margin:0 auto;
 
   text-align: center;
 }
-
+#brief p{
+ color:white;
+}
 
 #briefs-box h1{
   color:  white;
@@ -447,8 +528,21 @@ margin:0 auto;
 }
 
 
-
+#briefs-box{
+  margin-top: 2vh;
+}
 #briefs-box p{
+font-size: 2.5vh;
+font-weight: 400;
+color:#35e1a2;
+}
+.mobile-brief h1{
+  color:  white;
+  text-align: center;
+  padding-top:5vh;
+
+}
+.mobile-brief p{
 font-size: 2.5vh;
 font-weight: 400;
 color:#35e1a2;
@@ -465,7 +559,7 @@ color:#35e1a2;
 }
 
 #brief .box{
-  height: 60vh;
+  height: 55vh;
   position:relative;
 }
 
@@ -536,7 +630,7 @@ color:#35e1a2;
 }
 
 #enter h1{
-  color: white;
+  color: black;
   text-align: center;
 }
 #enter p{
@@ -545,13 +639,10 @@ color:#35e1a2;
   font-size: 2.5vh;
   line-height:5vh;
 }
-
-#enter .btn{
+#enter figcaption{
+  color:black;
 }
 
-#enter .btn h6{
-  color: #fff;
-}
 #enter .box-wrapper{
   margin-top:15vh;
 }
@@ -629,15 +720,17 @@ figure {
 }
 
 #image img{
-  padding-bottom: 5px;
+  padding-bottom: 3vh;
+}
+#text img{
+  padding-bottom: 1vh;
 }
 
 
 
 
-
 #entries-header{
-  height: 30vw;
+  height: 20vw;
   background-image: url(../images/entries_header.png);
   background-size: cover;
   top:0;
@@ -675,7 +768,8 @@ figure {
   margin:0 auto;
   text-align: center;
   width: 70vw;
-  font-size: 2.5vh
+  font-size: 2.5vh;
+  color:white;
 }
 
 
@@ -711,7 +805,7 @@ figure {
 }
 
 #contact h1{
-  color: white;
+  color: black;
 }
 #contact p{
   margin:0 auto;
@@ -720,9 +814,9 @@ figure {
   font-size: 2.5vh
 }
 #contact form{
-margin-top:20vh;
 width: 40vw;
 margin:0 auto;
+padding-top: 7vh;
 }
 
 #contact #message{
@@ -736,6 +830,7 @@ margin:0 auto;
     display:block;
     float: right;
     margin-right: 1vw;
+    width: 38vw;
 }
 
 
@@ -781,9 +876,13 @@ footer p{
 /* Smartphones (portrait) ----------- */
 
 /* Styles */
-#entries .box{
+.entries-home{
   display:none;
 }
+.entries-mobile{
+  display:flex  ;
+}
+
 #header{
   height:120vh;
 }
@@ -828,7 +927,15 @@ margin-left: 0
   font-size: 2.5vh;
   margin-left:10vw;
 }
+  #brief{
+    background-image: url(../images/vehicle_safety2.png) !important ;
+    background-size: cover;
+    background-position:center;
 
+  }
+  #brief p{
+
+  }
 
 
 
@@ -847,9 +954,10 @@ font-size: 2.5vh;
 top:0;
 left:0;
 }
-#entries .box{
+.entries-home{
   display:none;
 }
+
 
 
 
@@ -908,6 +1016,19 @@ footer p{
 font-size: 6px;
 
 }
+.arrow-right{
+  right:0;
+  display: block;
+  top:50% ;
+  position: absolute;
+
+}
+.entries-mobile .box{
+  display:block;
+}
+.mobile-brief{
+    display:block;
+  }
 
 
 
@@ -977,9 +1098,24 @@ font-size: 6px;
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
 /* Styles */
+    #brief{
+    background-image: url(../images/vehicle_safety2.png) !important ;
+    background-size: cover;
+    background-position:center;
+
+  }
+
+
   .btn-try{
   width:25vw;
   }
+  .arrow-right{
+  right:0;
+  display: block;
+  top:50% ;
+  position: absolute;
+
+}
 
   .shorter{
   width:80vw;
@@ -1076,9 +1212,16 @@ font-size: 6px;
   #entry-form form{
     width:70vw;
   }
-  #entries .box{
+  .entries-home{
   display:none;
 }
+
+.entries-mobile .box{
+  display:block;
+}
+.mobile-brief{
+    display:block;
+  }
 
 }
 
@@ -1107,9 +1250,6 @@ font-size: 6px;
   left:0;
   width:100vw !important
 }
-  #top-bar .active{
-    ;
-  }
   .nav{
     width:100vw;
 
@@ -1144,8 +1284,158 @@ font-size: 6px;
 
 @media only screen and (max-width : 320px) {
 /* Smartphones (portrait) ----------- */
+  .btn-try{
+  width: 50vw;
+  }
+  .arrow-right{
+  right:0;
+  display: block;
+  top:50% ;
+  position: absolute;
+
+}
+
+  .shorter{
+  width:80vw;
+  }
+  .longer{
+    width:80vw;
+  }
+  .btn-contact{
+    width:38vw;
+  }
+  #intro{
+  height:130vh;
+  }
+  #enter .box-wrapper {
+    margin-top: 10vh;
+  }
+  #contact form {
+    width:80vw;
+  }
+  #contact .btn-contact{
+  margin-top:0vh;
+  width: 74vw;
+  margin-right: 3vw;
+  }
+
+  #guidelines-page article {
+  margin-left: 0
+  }
+  #guidelines-page li {
+    padding-left:2vw;
+  }
+  #guidelines-page p{
+    font-size: 2.5vh;
+  }
+  #guidelines-page p:nth-child(4){
+    font-size: 2.5vh;
+    margin-left:10vw;
+  }
+
+  #voting-page article {
+  margin-left: 0;
+  margin-right: 0;
+  width: 80vw;
+  margin: 0 auto
+  }
+  #voting-page p {
+  font-size: 2.5vh;
+  }
+  #button-section {
+    position:relative;
+  top:0;
+  left:0;
+  }
+
+  #entry-form form{
+  width:75vw !important;
+  }
+  #entry-form input[type=checkbox]{
+    margin-left:1vw !important;
+    margin-top: 3vh !important;
+  }
+/*  #entries .box{
+    display:none;
+  }*/
+
+  #header h1{
+    width:80vw;
+  }
+  #header p{
+  width: 85vw;
+  }
+  #header .btn{
+    width:33vw;
+  }
+  #signoff h1{
+    padding-left: 10vw;
+    padding-right: 10vw;
+
+  }
+  #top-bar{
+    left:0;
+    width:100vw !important
+  }
+  #top-bar .active{
+    ;
+  }
+  .nav{
+    width:100vw;
+
+  }
+  .nav ul{
+    width:100vw;
+}
+  #entry-form form{
+    width:70vw;
+  }
+  .entries-home{
+  display:none;
+}
+
+.entries-mobile .box{
+  display:block;
+}
+.mobile-brief{
+    display:block;
+  }
+
+  #intro{
+    height:170vh;
+  }
   #enter .box img{
     height:15vh;
+  }
+  #entries-header {
+    height: 50vw;
+  }
+
+  #brief{
+    background-image: url(../images/vehicle_safety2.png) !important ;
+    background-size: cover;
+    background-position:center;
+
+  }
+  #vehicle-safety{
+    display:block;
+  }
+  .arrow-right{
+  right:0;
+  display: block;
+  top:50% ;
+  position: absolute;
+
+}
+.entries-mobile .box{
+  display:block;
+}
+.mobile-brief{
+    display:block;
+  }
+  .mobile-brief h1{
+
+  padding-top:3vh;
   }
 }
 
