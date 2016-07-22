@@ -3,7 +3,99 @@
   <head>
     <META NAME="viewport" CONTENT="width=device-width, height=device-height, initial-scale=1, user-scalable=no"/>
     <style>
+    .white-text{
+      color:  white;
+    }
 
+    #intro h1{
+     color:  white;
+    }
+
+    #intro h2{
+      text-align: left;
+      color: white;
+      font-size: 3vh;
+      margin:0 auto;
+    }
+
+    .btn-white{
+    background-color: transparent;
+    color: white;
+    border:2px solid white;
+    }
+
+    .btn-try{
+    height: 8vh;
+    width: 15vw;
+    font-family: Nanami-Bold;
+    font-size: 18px;
+    line-height:8vh;
+    bottom: 15vh;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center
+
+    }
+    .btn-green{
+    color: #35e1a2;
+    border:2px solid #35e1a2;
+    }
+    .btn-green:hover{
+    color:#000;
+    /*border:2px solid #35e1a2;*/
+    background-color:#35e1a2;
+    }
+    .btn-white:hover{
+      background-color: #000;
+      color:#FFF;
+      border:none;
+    }
+
+    .btn-btm{
+      left: 0;
+      right: 0;
+      bottom: 50px;
+      margin: auto;
+      position: absolute;
+    }
+    .votes{
+      bottom:0;
+      position: absolute;
+      width:100%;
+    }
+    .brief-text{
+      font-size: 2.5vh;
+      width:80vw;
+      margin-bottom: 0;
+      margin:0 auto;
+    }
+    .brief-text:nth-child(3){
+      margin-bottom: 2vh;
+    }
+    .box span{
+      color:#35e1a2;
+    }
+    .votes-right{
+      position: absolute;
+      right:1vw;
+      bottom:0;
+    }
+    .votes-left{
+      left:1vw;
+      bottom:0;
+      position: absolute;
+    }
+    .votes-center{
+      left:0vw;
+      right:0;
+      bottom:0;
+      position: absolute;
+    }
+
+    .nav li a{
+      width:100%;
+      display:block;
+    }
     </style>
     <title>The Green Man's Grants | Young Driver Safety Package</title>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
@@ -27,7 +119,7 @@
     <nav id='top-bar'>
       <div class=''id='logo'>
         <a href='index.html'>
-          <img src='assets/images/gmg_header_logo.png'></img>
+          <img src='assets/images/gmg_header_logo.png' draggable="false">
         </a>
       </div>
       <div class='' id='menu'>
@@ -42,20 +134,18 @@
             <li>
               <a href="guidelines.html">ENTRY GUIDELINES</a>
             </li>
-            <li>
-              <a href="briefs.html">THE BRIEFS</a>
-            </li>
+
             <li>
               <a href="judging.html">JUDGING</a>
             </li>
             <li>
-              <a href="voting.html">VOTE FOR THE PEDESTRIAN'S CHOICE AND YOU COULD WIN $1,000</a>
+              <a href="voting.html">THE PEDESTRIAN'S CHOICE</a>
             </li>
             <li>
               <a href="entry.html">ENTRY FORM</a>
             </li>
             <li>
-              <a href="contact.html">CONTACT US</a>
+              <a href="index.html#contact">CONTACT US</a>
             </li>
             <li>
               <a href="#"></a>
@@ -67,25 +157,24 @@
     </nav>
 
     <div class='container' id='header'>
+    <!-- <video autoplay loop class='container' id='header'>
+       <source src="assets/video/greenmangrants_webwicdeo_720p_low.webm" type="video/webm">
+    </video> -->
       <div class='wrapper dotoverlay'>
           <div class='test content' id='header-content' >
             <div class=''>
               <a href="#" name='header'></a>
               <div id='header-logo'>
-               <img src="assets/images/gmg_header_logo.png">
+               <img src="assets/images/gmg_header_logo.png" draggable="false">
              </div>
               <h1>MAKE THE ROADS SAFER AND YOU COULD GET THE GREEN LIGHT FOR UP TO $50,000 FUNDING PLUS A BONUS $5,000 CASH PRIZE</h1>
               <p>Do you have an idea that could make the roads safer? Something outside the box, that'll make you and your mates look out for each other? If you're 18-25, simply answer one of the briefs in a creative way - it could be a film, a sculpture, an app, whatever you can dream up - and you could receive up to $50,000 funding.</p>
               <p>If you're successful, you'll be partnered with a leading industry expert to guide and mentor you through the process of bringing your idea to life.</p>
               <p>And to top it off, you'll receive a $5,000 cash prize for this major achievement.</p>
               <p>Imagine having a genuine project of major significance on your CV - your dream career could start here.</p>
-              <a href='#brief'>
-                <div class='btn btn-header'>
-                  <h6>SEE THE BRIEFS</h6>
-                </div>
-              </a>
+              <a class='btn-try btn-btm btn-green' href='#brief'>SEE THE BRIEFS</a>
               <div class='arrow'>
-                <a href='#brief'>
+                <a href='#intro'>
                   <img src="assets/images/arrow.png">
                 </a>
               </div>
@@ -94,45 +183,66 @@
       </div>
     </div>
 
+
+
+
+
+    <div class='container' id='intro'>
+      <div class='wrapper '>
+        <a href="#" name='intro'></a>
+        <div class='test content white' id='intro-content' >
+          <h1>INTRODUCTION</h1>
+            <p class='longer'>Entering Green Man Grants is pretty simple. There are three briefs for you to choose from. Just pick the one that inspires you the most and get cracking on your concept. It can be anything from an app to an event; but importantly, it must answer the brief.</p>
+            <h2 class='left-align shorter bold'>Entering</h2>
+            <p class='left-align shorter'>At this initial stage, you will only need to provide a summary of your concept. To make sure that our judging panel understands and shares your vision, be sure to articulate the idea as much as possible.</p>
+            <h2 class='left-align shorter bold'>Shortlist</h2>
+            <p class='left-align shorter'>If your idea is shortlisted, you will be invited to present to our panel. At this time you will be required to present a more developed outline including a detailed breakdown of the funds you are requesting (up to $50,000).</p>
+            <h2 class='left-align shorter bold'>Winners<h2>
+            <p class='left-align shorter'>There will be 10 winners selected across the three categories below. Each winner will be partnered with a leading industry expert, who will guide and mentor you through the process of bringing your idea to life.</p>
+            <p><b>Entries close at 5pm on 15th September 2016.</b></p>
+
+            <a class='btn-white btn-try btn-btm' href='entry.html'>ENTER HERE</a>
+
+
+
+          <div class='arrow'>
+            <a href='#brief'>
+              <img src="assets/images/arrow.png">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
     <div class='container test' id='brief'>
       <div class='wrapper dotoverlay'>
           <a href="#" name='brief'></a>
           <div class=' test content' id='something' >
             <h1>BRIEFS</h1>
-            <p>Do you have an idea that could make the roads safer? Something outside the box, that'll make you and your mates look out for each other?</p>
-            <p>If you're 18-25, just answer one of the briefs in a creative way - it could be a film, a sculpture, an app, whatever you can dream up - and you could win up to $50,000 to make your idea a reality.</p>
+            <p class='brief-text'>Do you have an idea that could make the roads safer? Something outside the box, that'll make you and your mates look out for each other?</p>
+            <p class='brief-text'>If you're 18-25, just answer one of the briefs in a creative way - it could be a film, a sculpture, an app, whatever you can dream up - and you could win up to $50,000 to make your idea a reality.</p>
           </div>
           <!-- <div id='theBriefs'> -->
             <div class='box-container' id='briefs-box'>
               <div class='box' id='vehicle-safety'>
-                <div class='dotoverlay'></div>
                 <h1>Vehicle Safety</h1>
                 <p>How would you get your peers to understand the importance of buying a safe car?</p>
-                <a href='vehiclesafety.html'>
-                  <div class='btn btn-briefs'>
-                    <h6>BRIEF IN FULL</h6>
-                  </div>
-                </a>
+                <a class='btn-green btn-try btn-briefs' href='vehiclesafety.html'>BRIEF IN FULL</a>
               </div>
               <div class='box' id='mistakes-vulnerability'>
-                <div class='dotoverlay'></div>
                 <h1>Vulnerability</h1>
                 <p>How would you get your peers to understand the importance of buying a safe car?</p>
-                <a href='vulnerability.html'>
-                  <div class='btn btn-briefs'>
-                    <h6>BRIEF IN FULL</h6>
-                  </div>
-                </a>
+                <a class='btn-green btn-try btn-briefs' href='vulnerability.html'>BRIEF IN FULL</a>
               </div>
               <div class='box' id='shared-responsibilty'>
-                <div class='dotoverlay'></div>
                 <h1>Shared Responsibilty</h1>
                  <p>How would you inspire your generation to unite in a belief that zero deaths and serious injuries on our roads could become a reality?</p>
-                <a href='sharedresponsibility.html'>
-                  <div class='btn btn-briefs'>
-                    <h6>BRIEF IN FULL</h6>
-                  </div>
-                </a>
+                <a class='btn-green btn-try btn-briefs' href='sharedresponsibility.html'>BRIEF IN FULL</a>
               </div>
           </div>
           <div class='arrow'>
@@ -143,12 +253,19 @@
       </div>
     </div>
 
+
+
+
+
+
+
+
     <div class='container test' id='enter'>
       <div class='wrapper'>
           <a href="#" name='enter'></a>
           <div class='content'>
             <h1>HOW TO ENTER</h1>
-            <p>Can you answer one of these briefs in a creative way? Whether it's with a painting, a video or an app we want to hear it.</p>
+            <p class='shorter'>Can you answer one of these briefs in a creative way? Whether it's with a painting, a video or an app we want to hear it.</p>
             <div class='box-wrapper'>
               <div class='test box-container' id=''>
                 <div class='box' id='video'>
@@ -177,87 +294,127 @@
                 </div>
               </div>
             </div>
-            <a href='entry.html'>
-              <div class='btn btn-enter'>
-                <h6>ENTER HERE</h6>
-              </div>
-            </a>
+            <a class='btn-white btn-try btn-btm' href='entry.html'>ENTER HERE</a>
+            <div class='arrow'>
+              <a href='#enteries'>
+                <img src="assets/images/arrow.png">
+              </a>
+            </div>
           </div>
       </div>
     </div>
+
+
+
+
+
+
+
+
 
     <div class='container test' id='entries'>
-      <a href="#" name='entries'></a>
-      <div class=''id='entries-header'>
-          <h1>ENTRIES</h1>
-          <p>Check out the Competition</p>
-      </div>
-      <!-- <div class='wrapper'> -->
-            <div class='test box-container entries-box'>
-              <div class='box video'style='background-image: url(assets/images/footer.jpg);'>
-                <div class='greenoverlay dotoverlay'></div>
-                <h1>Nullam libero tellus</h1>
-                <div class="btn-box btn" href="video-entry.html">VIEW ENTRY</div>
-                <img class='icon' src='assets/images/video.png'>
-                <p>3K   250  6,997 votes</p>
-              </div>
+      <div class='wrapper'>
+        <a href="#" name='entries'></a>
+        <div class=''id='entries-header'>
+            <h1>ENTRIES</h1>
+            <p>Check out the Competition</p>
 
-              <div class='box video' style='background-image: url(assets/images/footer.jpg);'>
-                <div class='greenoverlay dotoverlay'></div>
-                <h1>Nullam libero tellus</h1>
-                <div class="btn-box btn" href="video-entry.html">VIEW ENTRY</div>
-                <img class='icon' src='assets/images/video.png'>
-                <p>3K   250  6,997 votes</p>
-              </div>
-              <div class='box text' style='background-image: url(assets/images/footer.jpg);'>
-                <div class='greenoverlay dotoverlay'></div>
-                <h1>Nullam libero tellus</h1>
-                <div class="btn-box btn" href="text-entry.html">VIEW ENTRY</div>
-                <img class='icon' src='assets/images/text.png'>
-                <p>3K   250  6,997 votes</p>
-              </div>
-              <div class='box audio' style='background-image: url(assets/images/footer.jpg);'>
-                <div class='greenoverlay dotoverlay'></div>
-                <h1>Nullam libero tellus</h1>
-                <div class="btn-box btn" href="audio-entry.html">VIEW ENTRY</div>
-                <img class='icon' src='assets/images/audio.png'>
-                <p>3K   250  6,997 votes</p>
-              </div>
-              <div class='box image' style='background-image: url(assets/images/footer.jpg);'>
-                <div class='greenoverlay dotoverlay'></div>
-                <h1>Nullam libero tellus</h1>
-                <div class="btn-box btn" href="image-entry.html">VIEW ENTRY</div>
-                <img class='icon' src='assets/images/image.png'>
-                <p>3K   250  6,997 votes</p>
-              </div>
-              <div class='box image' style='background-image: url(assets/images/footer.jpg);'>
-                <div class='greenoverlay dotoverlay'></div>
-                <h1>Nullam libero tellus</h1>
-                <div class="btn-box btn" href="image-entry.html">VIEW ENTRY</div>
-                <img class='icon' src='assets/images/image.png'>
-                <p>3K   250  6,997 votes</p>
-              </div>
-              <div class='box text' style='background-image: url(assets/images/footer.jpg);'>
-                <div class='greenoverlay dotoverlay'></div>
-                <h1>Nullam libero tellus</h1>
-                <div class="btn-box btn" href="text-entry.html">VIEW ENTRY</div>
-                <img class='icon' src='assets/images/text.png'>
-                <p style='position:absolute; bottom:3;'>3K       250      6,997 votes</p>
-              </div>
-              <div class='box video' style='background-image: url(assets/images/footer.jpg);'>
-                <div class='greenoverlay dotoverlay'></div>
-                <h1>Nullam libero tellus</h1>
-                <div class="btn-box btn" href="video-entry.html">VIEW ENTRY</div>
-                <img class='icon' src='assets/images/video.png'>
-                <p>3K   250  6,997 votes</p>
+          <div class='test box-container entries-box'>
+            <div class='box video'style='background-image: url(assets/images/footer.jpg);'>
+              <div class='greenoverlay dotoverlay'></div>
+              <h1>Nullam libero tellus</h1>
+              <div class="btn-box btn" href="video-entry.html">VIEW ENTRY</div>
+              <img class='icon' src='assets/images/video.png'>
+             <div class='votes'>
+                <span class='votes-left'><img src="assets/images/face.png">3k</span>
+                <span><img src="assets/images/twit.png">250</span>
+                <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6,997</span>votes</span>
               </div>
             </div>
-          <div id='entries-footer'>
-            <h6> SEE ALL ENTRIES HERE</h6>
-          </div>
 
-      <!-- </div> -->
+            <div class='box video' style='background-image: url(assets/images/footer.jpg);'>
+              <div class='greenoverlay dotoverlay'></div>
+              <h1>Nullam libero tellus</h1>
+              <div class="btn-box btn" href="video-entry.html">VIEW ENTRY</div>
+              <img class='icon' src='assets/images/video.png'>
+             <div class='votes'>
+                <span class='votes-left'><img src="assets/images/face.png">3k</span>
+                <span><img src="assets/images/twit.png">250</span>
+                <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6,997</span>votes</span>
+              </div>
+            </div>
+            <div class='box text' style='background-image: url(assets/images/footer.jpg);'>
+              <div class='greenoverlay dotoverlay'></div>
+              <h1>Nullam libero tellus</h1>
+              <div class="btn-box btn" href="text-entry.html">VIEW ENTRY</div>
+              <img class='icon' src='assets/images/text.png'>
+             <div class='votes'>
+                <span class='votes-left'><img src="assets/images/face.png">3k</span>
+                <span><img src="assets/images/twit.png">250</span>
+                <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6,997</span>votes</span>
+              </div>
+            </div>
+            <div class='box audio' style='background-image: url(assets/images/footer.jpg);'>
+              <div class='greenoverlay dotoverlay'></div>
+              <h1>Nullam libero tellus</h1>
+              <div class="btn-box btn" href="audio-entry.html">VIEW ENTRY</div>
+              <img class='icon' src='assets/images/audio.png'>
+             <div class='votes'>
+                <span class='votes-left'><img src="assets/images/face.png">3k</span>
+                <span><img src="assets/images/twit.png">250</span>
+                <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6,997</span>votes</span>
+              </div>
+            </div>
+            <div class='box image' style='background-image: url(assets/images/footer.jpg);'>
+              <div class='greenoverlay dotoverlay'></div>
+              <h1>Nullam libero tellus</h1>
+              <div class="btn-box btn" href="image-entry.html">VIEW ENTRY</div>
+              <img class='icon' src='assets/images/image.png'>
+             <div class='votes'>
+                <span class='votes-left'><img src="assets/images/face.png">3k</span>
+                <span><img src="assets/images/twit.png">250</span>
+                <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6,997</span>votes</span>
+              </div>
+            </div>
+            <div class='box image' style='background-image: url(assets/images/footer.jpg);'>
+              <div class='greenoverlay dotoverlay'></div>
+              <h1>Nullam libero tellus</h1>
+              <div class="btn-box btn" href="image-entry.html">VIEW ENTRY</div>
+              <img class='icon' src='assets/images/image.png'>
+             <div class='votes'>
+                <span class='votes-left'><img src="assets/images/face.png">3k</span>
+                <span><img src="assets/images/twit.png">250</span>
+                <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6,997</span>votes</span>
+              </div>
+            </div>
+            <div class='box text' style='background-image: url(assets/images/footer.jpg);'>
+              <div class='greenoverlay dotoverlay'></div>
+              <h1>Nullam libero tellus</h1>
+              <div class="btn-box btn" href="text-entry.html">VIEW ENTRY</div>
+              <img class='icon' src='assets/images/text.png'>
+              <div class='votes'>
+                <span class='votes-left'><img src="assets/images/face.png">3k</span>
+                <span class='votes-center'><img src="assets/images/twit.png">250</span>
+                <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6,997</span>votes</span>
+              </div>
+            </div>
+            <div class='box'>
+              <a href="entries.html" style='display:block height:100%;'>
+                <span style='left:0; right:0; color:#35e1a2; position: absolute; bottom: 13vh; font-size: 3vh;'><b>SEE MORE...</b></span>
+              </a>
+            </div>
+          </div>
+          <div class='arrow'>
+              <a href='#contact'>
+                <img src="assets/images/arrow.png">
+              </a>
+            </div>
+          </div>
+        </div>
     </div>
+
+
+
 
 
 
@@ -268,33 +425,35 @@
           <h1>CONTACT US</h1>
           <p>If you require more information about Green Man Grants please submit your details here.</p>
           <form>
-            <div class='row'>
-              <div class='large-4 columns'>
+            <div class='row' style='height:46vh'>
+              <div class='large-12 columns'>
                 <input type='text' placeholder='NAME'>
               </div>
-            </div>
-            <div class='row'>
-              <div class='large-4 columns'>
+              <div class='large-12 columns'>
                 <input type='text' placeholder='EMAIL'>
               </div>
-              <div class='large-6 columns' style='height:10vh;'>
+              <div class='large-12 columns' style='height:10vh;'>
                 <textarea placeholder='MESSAGE' name='message' id='message'></textarea>
               </div>
-                <input class='large-2 columns btn-contact' type='submit' value='SEND'>
             </div>
-
-            <!-- <div>
-              <input placeholder='Name' name='name'>
-              <input placeholder='Email' name='email'>
-            </div>
-            <div>
-              <textarea placeholder='Message' name='message'></textarea>
-            </div>
-            <input class='btn' type='submit' value='Send'> -->
+              <div class='row'>
+                <input class='large-2 columns btn-white btn-try btn-contact' type='submit' value='SEND'>
+              </div>
           </form>
+          <div class='arrow'>
+            <a href='#enter'>
+              <img src="assets/images/arrow.png">
+            </a>
+          </div>
         </div>
       </div>
     </div>
+
+
+
+
+
+
 
     <div class='container test' id='signoff'>
       <div class='wrapper dotoverlay'>
@@ -307,10 +466,17 @@
       </div>
     </div>
 
+
+
+
+
+
     <footer>
-      <p>TAC / VANESSA / HOW SAFE IS YOUR FIRST CAR?  / TOWARDS ZERO / TERMS AND CONDITIONS</p>
+      <p><a href="https://www.tac.vic.gov.au/">TAC</a> / <a href="">VANESSA</a> / <a href="http://www.howsafeisyourcar.com.au/">HOW SAFE IS YOUR FIRST CAR?</a>  / <a href="https://www.towardszero.vic.gov.au/">TOWARDS ZERO</a> / <a href="termsandconditions.html">TERMS AND CONDITIONS</a></p>
     </footer>
 
-  </body>
 
+
+
+  </body>
 </html>
