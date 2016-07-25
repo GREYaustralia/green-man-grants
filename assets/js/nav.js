@@ -22,6 +22,19 @@ $(document).ready(function(){
     }
     $('.nav').fadeToggle('display')
   })
+
+  console.log('THING')
+  if ($(window).width()< 800){
+    console.log('activated')
+    $('.single-item').slick({
+      dots: true,
+      infinite: true,
+      draggable: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    });
+  }
 });
 
 

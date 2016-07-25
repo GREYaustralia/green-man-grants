@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Carousel</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"/>
+<!--   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"/> -->
+  <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+  <style type="text/css">
+
+   .btn-try{
+    height: 8vh;
+    width: 15vw;
+    font-family: Nanami-Bold;
+    font-size: 18px;
+    line-height:8vh;
+    bottom: 15vh;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center
+
+    }
+    .btn-green{
+      color: #35e1a2;
+      border:2px solid #35e1a2;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    .slider {
+        /*width: 50%;*/
+        /*margin: 100px auto;*/
+    }
+    .slick-slide {
+      /*margin: 0px 20px;*/
+    }
+    .slick-slide img {
+      width: 100%;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+        color: black;
+    }
+
+    .mobile-box{
+      height:100vh;
+      width: 100vw;
+      padding-top: 40vh;
+
+
+    }
+    .brief-header{
+      position:absolute;
+      z-index: 1;
+
+    }
+    .slider{
+      width: 100vw;
+      margin-top: -12vh;
+      margin-bottom: 0;
+    }
+    .slick-prev {
+      left:0 !important;
+      z-index: 1;
+      background-image:url(assets/images/arrow-right.png) !important;
+    }
+    .slick-next{
+      right:0 !important;
+      z-index: 1;
+      background-image:url(assets/images/arrow-right.png) !important;
+    }
+    .slick-dots{
+      display:none !important;
+    }
+    /* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 33px;
+    height: 62px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+    left: -25px;
+}
+/*[dir='rtl'] .slick-prev
+{
+    right: -25px;
+    left: auto;
+}
+.slick-prev:before
+{
+    background-image:url(assets/images/arrow-right.png);
+}
+[dir='rtl'] .slick-prev:before
+{
+    background-image:url(assets/images/arrow-right.png);
+}*/
+
+.slick-next
+{
+    right: -25px;
+}
+/*[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
+}*/
+/*.slick-next:before
+{
+    background-image:url(assets/images/arrow-right.png);
+}
+[dir='rtl'] .slick-next:before
+{
+    background-image:url(assets/images/arrow-right.png);
+}*/
+
+.btn-briefs{
+position: relative;
+}
+.btn-briefs{
+    position: absolute;
+    margin-left: 10vw;
+    width: 80vw !important;
+    bottom: 5vh;
+    left: inherit;
+    right: inherit;
+}
+
+
+  </style>
+</head>
+<body>
+      <section class='wrapper' id='brief'>
+      <div  class='dotoverlay'>
+        <a href="#" name='brief'></a>
+        <div class=' test content' id='something' >
+<!--           <div class='arrow-right'>
+              <img src="assets/images/arrow-right.png">
+          </div> -->
+          <div class='brief-header'>
+            <h1>BRIEFS</h1>
+            <p class='brief-text'>Do you have an idea that could make the roads safer? Something outside the box, that'll make you and your mates look out for each other?</p>
+            <p class='brief-text'>If you're 18-25, just answer one of the briefs in a creative way - it could be a film, a sculpture, an app, whatever you can dream up - and you could win up to $50,000 to make your idea a reality.</p>
+            </div>
+          </div>
+        <div class='mobile-brief slider single-item'>
+          <div class='mobile-box' style='background-image: url(assets/images/vehicle_safety2.png); background-size:cover;'>
+            <h1>Vehicle Safety</h1>
+            <p>How would you get your peers to understand the importance of buying a safe car?</p>
+            <div style=' margin:0 auto'>
+              <a class='btn-green btn-try btn-briefs' href='vehiclesafety.html'>BRIEF IN FULL</a>
+            </div>
+          </div>
+          <div class='mobile-box' style='background-image: url(assets/images/mistakes_vulnerability.png); background-size:cover;'>
+            <h1>Vulnerability</h1>
+            <p>How would you get your peers to understand the importance of buying a safe car?</p>
+            <div style='margin:0 auto'>
+              <a class='btn-green btn-try btn-briefs' href='vulnerability.html'>BRIEF IN FULL</a>
+            </div>
+          </div>
+          <div class='mobile-box' style='background-image: url(assets/images/shared_responsibilty.png); background-size:cover;'>
+            <h1>Shared Responsibilty</h1>
+            <p>How would you inspire your generation to unite in a belief that zero deaths and serious injuries on our roads could become a reality?</p>
+            <div style='margin:0 auto'>
+              <a class='btn-green btn-try btn-briefs' href='vulnerability.html'>BRIEF IN FULL</a>
+            </div>
+          </div>
+        </div>
+        <div class='arrow'>
+          <a href='#enter'>
+            <img src="assets/images/arrow.png">
+          </a>
+        </div>
+      </div>
+    </section>
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+      $('.single-item').slick({
+        dots: true,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    });
+  </script>
+</body>
+</html>
