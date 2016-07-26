@@ -41,6 +41,7 @@ input{
 
 
 /*BUTTONS*/
+
 .btn{
   border: 2px solid #35e1a2;
 
@@ -208,7 +209,13 @@ footer text -Roboto Thin - 22.6 - green
 
 */
 
+    font-size: 2vh;
 
+video{
+  /*width:100%;*/
+  height:100%;
+  object-fit: cover;
+}
 
 
 
@@ -280,21 +287,21 @@ footer text -Roboto Thin - 22.6 - green
 
 .dotoverlay{
   background-image: url(../images/dots2.png);
-  height:100vh;
+  height:100%;
   margin-bottom: -100vh;
-  width: 100vw;
+  width: 100%;
   padding-left: 0;
   padding-right: 0;
-  z-index: 1;
+  /*z-index: 1;*/
   position: absolute;
 
 }
 .black-back{
   background-color: #000;
   opacity: 0.7;
-  height:100vh;
+  height:100%;
   margin-bottom: -100vh;
-  width: 100vw;
+  width: 100%;
   padding-left: 0;
   padding-right: 0;
   z-index: 1;
@@ -398,17 +405,15 @@ padding-top:12vh;
 
 #top-bar{
   width:100%;
-  /*background-color: black;*/
   position:fixed;
   overflow:visible;
   top:0;
-  z-index: 2 !important;
+  z-index: 99 !important;
   height:10vh;
 }
 
   #logo img{
     display:block;
-    /*max-height:80px;*/
     float:left;
     position:absolute;
     padding-left:1vw;
@@ -434,7 +439,6 @@ padding-top:12vh;
   .nav a{
     display:block;
     color:#000;
-    /*width:100%;*/
   }
 
   .nav ul{
@@ -442,7 +446,6 @@ padding-top:12vh;
     float:right;
     background-color: #2fc78f;
     width: 35vw;
-    /*text-align: center;*/
     padding-top: 1vh;
     height:100vh  ;
   }
@@ -450,9 +453,7 @@ padding-top:12vh;
   .nav li{
     list-style: none;
     padding-left: 2vw;
-    /*height: 5vh ;*/
     line-height: 2;
-    /*border-top: 2px solid #3cfdb6;*/
     border-bottom: 2px solid black;
     color:black;
   }
@@ -472,9 +473,10 @@ padding-top:12vh;
 #header{
   width:100vw;
   height:100vh;
-  background-image: url(../images/background.png);
+  background-image: url(../images/background_hires.jpg);
   background-size: cover;
   position: relative;
+  background-position: center;
 
 }
   #header-content{
@@ -483,7 +485,7 @@ padding-top:12vh;
     z-index: 1;
     left: 0;
     right: 0;
-    height:100vh;
+    height:100%;
   }
 
   #header-logo{
@@ -513,7 +515,6 @@ padding-top:12vh;
     margin:0 auto;
     color:#35e1a2;
     padding-bottom: 2vh;
-    /*font-weight: lighter;*/
   }
 
 .arrow{
@@ -531,7 +532,7 @@ padding-top:12vh;
   background-size: cover;
 }
   #intro p{
-  font-size:2.5vh;
+  font-size:2vh;
 
   margin:0 auto;
 
@@ -773,7 +774,7 @@ figure {
 
 
 #entries-header{
-  height: 20vw;
+  height: 100vh;
   background-image: url(../images/entries_header.png);
   background-size: cover;
   top:0;
@@ -917,6 +918,20 @@ footer p{
 }
 @media only screen and (max-width : 684px) {
 /* Smartphones (portrait) ----------- */
+
+    video{
+      display:none;
+    }
+    #intro p{
+    font-size:2.5vh;
+
+    margin:0 auto;
+
+    }
+    #enter{
+      height:120vh;
+    }
+
     #header{
     height:135vh;
   }
@@ -927,7 +942,7 @@ footer p{
     font-family: Nanami-Bold;
     font-size: 18px;
     line-height:8vh;
-    bottom: 15vh;
+    bottom: 10vh;
     display: table-cell;
     vertical-align: middle;
     text-align: center
@@ -951,6 +966,7 @@ footer p{
       position:absolute;
       z-index: 1;
       width: 100vw;
+      height:100%;
 
     }
     .slider{
@@ -1000,15 +1016,16 @@ footer p{
 
 
 .btn-briefs{
-position: relative;
+  position: relative;
+  position: absolute;
+  margin-left: 25vw;
+  width: 50vw !important;
+  bottom: 8vh;
+  left: inherit;
+  right: inherit;
 }
 .btn-briefs{
-    position: absolute;
-    margin-left: 10vw;
-    width: 80vw !important;
-    bottom: 8vh;
-    left: inherit;
-    right: inherit;
+
 }
 
 /* Styles */
@@ -1169,6 +1186,9 @@ font-size: 6px;
 .mobile-brief{
     display:block;
   }
+  #contact{
+    height:120vh;
+  }
 
 
 
@@ -1184,6 +1204,9 @@ font-size: 6px;
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 /* Styles */
 
+  video{
+    display:none;
+  }
   .shorter{
   width:70vw;
   }
@@ -1242,6 +1265,9 @@ font-size: 6px;
   background-image: url(../images/vehicle_safety2.png) !important ;
   background-size: cover;
   background-position:center;
+  }
+  video{
+    display:none;
   }
 
 
@@ -1456,11 +1482,6 @@ font-size: 6px;
   #contact form {
     width:80vw;
   }
-/*  #contact .btn-contact{
-  margin-top:0vh;
-  width: 74vw;
-  margin-right: 3vw;
-  }*/
   #guidelines-page article {
   margin-left: 0
   }

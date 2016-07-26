@@ -23,7 +23,7 @@ $(document).ready(function(){
     $('.nav').fadeToggle('display')
   })
 
-  console.log('THING')
+  // console.log('THING')
   if ($(window).width()< 800){
     console.log('activated')
     $('.single-item').slick({
@@ -37,5 +37,18 @@ $(document).ready(function(){
   }
 });
 
-
+ // $(window).resize(function () {
+ //            var height = $(window).height();
+ //            var width = $(window).width();
+ //            if (height > width || $(window).width() < 800) {
+ //                $('.single-item').slick({
+ //                  dots: true,
+ //                  infinite: true,
+ //                  draggable: true,
+ //                  speed: 500,
+ //                  slidesToShow: 1,
+ //                  slidesToScroll: 1
+ //                });
+ //            }
+ //        });
 
