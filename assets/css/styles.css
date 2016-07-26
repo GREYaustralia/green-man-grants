@@ -209,7 +209,6 @@ footer text -Roboto Thin - 22.6 - green
 
 */
 
-    font-size: 2vh;
 
 video{
   /*width:100%;*/
@@ -409,7 +408,7 @@ padding-top:12vh;
   overflow:visible;
   top:0;
   z-index: 99 !important;
-  height:10vh;
+  height:3em;
 }
 
   #logo img{
@@ -417,7 +416,7 @@ padding-top:12vh;
     float:left;
     position:absolute;
     padding-left:1vw;
-    height: 10vh;
+    height: 3em;
   }
 
 
@@ -426,8 +425,8 @@ padding-top:12vh;
     position:absolute;
     right:0;
     padding-right:1vw;
-    height:8vh;
-    margin-top: 1vh;
+    height:3em;
+    /*margin-top: 1vh;*/
   }
 
 
@@ -528,7 +527,7 @@ padding-top:12vh;
 #intro{
   width:100vw;
   height:100vh;
-  background-image: url(../images/contact-background.png);
+  background-image: url(../images/green_background_new.png);
   background-size: cover;
 }
   #intro p{
@@ -683,7 +682,7 @@ width: 60vw;
 #enter{
   width:100vw;
   height:100vh;
-  background-image: url(../images/contact-background.png);
+  background-image: url(../images/green_background_new.png);
   background-size: cover;
 }
 
@@ -844,7 +843,7 @@ figure {
 #contact{
   width:100vw;
   height:100vh;
-  background-image: url(../images/contact-background.png);
+  background-image: url(../images/green_background_new.png);
   background-size: cover;
 }
 

@@ -6,8 +6,10 @@ $(document).ready(function(){
   $(document).scroll(function(){
     start = $(this).scrollTop();
     if(start > offset.top){
+      $('#logo').show();
       $('#top-bar').css('background-color', 'black');
     } else {
+      $('#logo').hide();
       $('#top-bar').css('background-color', 'transparent');
     }
     // animation to add!
