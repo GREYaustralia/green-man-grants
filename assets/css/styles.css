@@ -354,7 +354,7 @@ h6 {
 
 p {
   color:black;
-  font-size:2vh;
+  font-size:1em;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   text-align: center;
@@ -514,7 +514,7 @@ padding-top:12vh;
 
   #header p{
     text-align: center;
-    width:60vw  ;
+    width:70vw  ;
     margin:0 auto;
     color:#35e1a2;
     padding-bottom: 2vh;
@@ -1426,9 +1426,9 @@ font-size: 6px;
     width:100vw;
   }
 }
-#signoff{
+/*#signoff{
 background-size:inherit;
-}
+}*/
 
 
 
