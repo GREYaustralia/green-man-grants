@@ -975,7 +975,7 @@ footer text -Roboto Thin - 22.6 - green
 }
 
 #entries-header{
-  height: 100vh;
+  height: 25vh;
   background-image: url(../images/entries_header.png);
   background-size: cover;
   top:0;
