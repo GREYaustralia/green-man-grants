@@ -3,9 +3,9 @@ $(document).ready(function(){
     if ($(this).find(':selected').val() === 'text'){
       $('#entry-form').css('height', '155vh');
       $('.dotoverlay').css('height', '155vh');
-      $(function() {
-        $(document).scrollTop( $("#form-upload").offset().top + (-75) );
-      });
+      // $(function() {
+      //   $(document).scrollTop( $("#form-upload").offset().top + (-75) );
+      // });
       $('#upload-field').empty();
       $('#upload-field').append('<textarea class="large-12 columns" id="text-submission" name="text-submission" placeholder="IDEA DESCRIPTION (MAX 1000 CHARACTERS LINKS OK)"></textarea>')
     } else if($(this).find(':selected').val() === 'video'){

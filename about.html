@@ -19,6 +19,8 @@
       #about p{
         text-align: left;
         color:white;
+        margin: 0 auto;
+        padding-bottom: 2vh;
       }
       #about b{
         color:#2ec88f;
@@ -26,17 +28,20 @@
       }
       #about a{
         color:#2ec88f;
-        font-size: 2vh;
+        font-size: 1em;
         text-decoration: underline;
       }
+      #about a:hover{
+        color:#FFF;
+      }
+
       #about #info{
         margin-bottom: 0px;
       }
 
       #main-content{
         margin-top: 10vh;
-        padding-left:30vw;
-        width:70vw;
+
       }
 
 
@@ -63,8 +68,16 @@
       .med-input{
         width:50%;
       }
+      @media only screen and (max-device-width: 1024px) and (min-device-width: 768px) and (orientation: landscape){
+   /*     #main-content{
+          margin-top: 10vh;
+          margin:0 auto;
+          width:90vw;
 
-      @media only screen and (max-width : 684px) {
+        }*/
+}
+
+/*      @media only screen and (max-width : 684px) {
         #main-content{
           margin-top: 3vh;
           padding-left:10vw;
@@ -79,7 +92,7 @@
         }
 
 
-      }
+      }*/
 
 
 
@@ -103,17 +116,26 @@
     <nav id='top-bar'>
       <div class=''id='logo'>
         <a href='index.html'>
-          <img src='assets/images/gmg_header_logo.png'></img>
+          <img src='assets/images/gmg_header_logo.png' draggable="false">
         </a>
       </div>
       <div class='' id='menu'>
-        <a href='#menu'>
+        <a href='#'>
           <img src='assets/images/menu.png'></img>
         </a>
         <div class="nav" style="display:none;">
           <ul>
             <li>
               <a href="about.html">WHAT ARE GREEN MAN GRANTS?</a>
+            </li>
+            <li>
+              <a href="vehiclesafety.html">BRIEF: VEHICLE SAFETY</a>
+            </li>
+            <li>
+              <a href="vulnerability.html">BRIEF: VULNERABILITY</a>
+            </li>
+            <li>
+              <a href="sharedresponsibility.html">BRIEF: SHARED RESPONSIBILITY</a>
             </li>
             <li>
               <a href="guidelines.html">ENTRY GUIDELINES</a>
@@ -141,14 +163,14 @@
       <h1>WHAT ARE THE GREEN MAN GRANTS?</h1>
       <div id="main-content">
 
-        <p>The Green Man Grants are designed to get young drivers to lead the way in road safety. They have the potential to see zero deaths and serious injuries on our roads in their lifetime and we want to give them the tools to make it happen.</p>
+        <p class='longer'>The Green Man Grants are designed to get young drivers to lead the way in road safety. They have the potential to see zero deaths and serious injuries on our roads in their lifetime and we want to give them the tools to make it happen.</p>
 
-        <p>The Grants range up to $50,000 and are open to Victorians aged between 18 and 25. To enter, answer one of the three briefs with a unique idea that encourages your peers to work towards zero deaths and serious injuries on the roads.</p>
+        <p class='longer'>The Grants range up to $50,000 and are open to Victorians aged between 18 and 25. To enter, answer one of the three briefs with a unique idea that encourages your peers to work towards zero deaths and serious injuries on the roads.</p>
 
-        <p>The Green Man Grants are part of the Young Drivers Safety Package, the Victorian Government's commitment to lowering young driver crash rates and maintaining Victoria's leadership in youth road safety through the development and delivery of a suite of education and training initiatives.</p>
+        <p class='longer'>The Green Man Grants are part of the Young Drivers Safety Package, the Victorian Government's commitment to lowering young driver crash rates and maintaining Victoria's leadership in youth road safety through the development and delivery of a suite of education and training initiatives.</p>
 
-        <p id='info'><b>For more information visit</b></p>
-        <a href="http://www.towardszero.vic.gov.au/safe-people/road-users/young-drivers">towardszero.vic.gov.au/safe-people/road-users/young-drivers</a>
+        <p class='longer' id='info'><b>For more information visit: </b><a href="http://www.towardszero.vic.gov.au/safe-people/road-users/young-drivers">towardszero.vic.gov.au/safe-people/road-users/young-drivers</a></p>
+
       </div>
     </div>
     </div>

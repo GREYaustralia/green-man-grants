@@ -25,8 +25,12 @@
         text-align: left;
         color:white;
       }
+      #guidelines-page p:nth-child(4){
+        font-size: 2.5vh;
+        margin-left:14vw;
+      }
       #guidelines-page ul{
-        margin-left: 2vw;
+        /*margin-left: 2vw;*/
       }
       #guidelines-page li{
         text-align: left;
@@ -36,8 +40,27 @@
         padding-top: .5vh;
       }
       #guidelines-page article{
-        margin-left: 30vw;
+        margin-left: 40vw;
 
+      }
+      @media only screen and (max-width : 1023px) {
+      #guidelines-page h2{
+        font-size: 4vh;
+        width:80vw;
+        margin: 0 auto;
+        /*margin-bottom: 10vh;*/
+        text-align: left;
+        font-weight: 100;
+        margin-left: 14vw;
+      }
+      #guidelines-page p{
+        text-align: left;
+        color:white;
+      }
+        #guidelines-page ul {
+          margin-left: 16vw;
+          margin-right: 10vw;
+        }
       }
     </style>
     <title>The Green Man's Grants | Young Driver Safety Package</title>
@@ -58,20 +81,29 @@
     <!-- <script type="text/javascript" src="assets/js/mouse-scroll.js"></script> -->
   </head>
   <body>
-    <nav id='top-bar'>
+  <nav id='top-bar'>
       <div class=''id='logo'>
         <a href='index.html'>
-          <img src='assets/images/gmg_header_logo.png'></img>
+          <img src='assets/images/gmg_header_logo.png' draggable="false">
         </a>
       </div>
       <div class='' id='menu'>
-        <a href='#menu'>
+        <a href='#'>
           <img src='assets/images/menu.png'></img>
         </a>
         <div class="nav" style="display:none;">
           <ul>
             <li>
               <a href="about.html">WHAT ARE GREEN MAN GRANTS?</a>
+            </li>
+            <li>
+              <a href="vehiclesafety.html">BRIEF: VEHICLE SAFETY</a>
+            </li>
+            <li>
+              <a href="vulnerability.html">BRIEF: VULNERABILITY</a>
+            </li>
+            <li>
+              <a href="sharedresponsibility.html">BRIEF: SHARED RESPONSIBILITY</a>
             </li>
             <li>
               <a href="guidelines.html">ENTRY GUIDELINES</a>
@@ -99,7 +131,7 @@
         <h1>ENTRY GUIDELINES</h1>
         <p style='text-align:center;'>Each entry must meet the following criteria.</p>
         <article>
-          <h2>SUBMISSION CRITERIA</h2>
+          <h2 class='center'>SUBMISSION CRITERIA</h2>
           <ul>
             <li>Entries to be received by 14th September 2016</li>
             <li>Entry must be submitted via online form with all sections fully completed</li>
@@ -110,8 +142,8 @@
             <li>Entrant must not have had their driver's licence cancelled</li>
           </ul>
 
-          <h2>IDEA CRITERIA</h2>
-          <p> Your idea must:</p>
+          <h2 class='center'>IDEA CRITERIA</h2>
+          <p class='center'> Your idea must:</p>
           <ul>
             <li>relate to the brief</li>
             <li>be relevant to under 25s</li>

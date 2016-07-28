@@ -10,17 +10,22 @@
       }
       #video-entry-page{
         height:100vh;
-        background-color: #3cfdb6;
+        background-image: url(assets/images/green_background_new.png);
+        background-size: cover;
+        background-color: green;
+      }
+      #name{
+        padding-top: 9vh;
       }
       #video-entry-page h1{
-        padding-top: 12vh;
+        padding-top: 1vh;
         color:black;
       }
       #video-entry-page h2{
         font-size: 3vh;
         width:80vw;
         margin: 0 auto;
-        /*margin-bottom: 10vh;*/
+        margin-bottom: 2vh;
         text-align: left;
         /*font-weight: 100;*/
         color:black;
@@ -97,24 +102,93 @@
         color:black;
         font-size: 3vh;
       }
+
+/*      .desc{
+        text-align:
+      }*/
+      #description{
+        width: 90%;
+        margin:0 auto;
+        margin-top:2vh;
+        margin-bottom: 2vh;
+      }
+
       b{
         color: black;
       }
-      #videoplayer{
+/*      #videoplayer{
         width:60vw;
         margin: 0 auto;
-      }
-      #videoplayer img{
+      }*/
+/*      #videoplayer img{
         height:50vh;
         width:60vw;
-        margin:0 auto;}
+        margin:0 auto;}*/
+        #video-entry-box{
+          width:45vw;
+          margin:0 auto;
+        }
 
       video{
         background-color:black;
         /*margin-left: 20vw;*/
         margin-top:2vh;
         margin: 0 auto;
+        height:auto;
+        width: auto;
+        min-width: none !important;
+        min-height: none !important;
       }
+      .btn-try{
+        position: absolute;
+        left:0;
+        right:0;
+        bottom:2vh !important;
+        margin:auto;
+      }
+
+
+      @media only screen and (max-width : 320px) {
+        .dotoverlay{
+          position: relative !important;
+          height:110vh;
+        }
+        #video-entry-page{
+          height:110vh;
+        }
+        #video-entry-box{
+          width:90vw;
+          margin:0 auto;
+        }
+        .btn-try{
+          /*bottom:-5vh !important;*/
+        }
+      }
+      @media only screen and (max-width : 684px) {
+        #video-entry-page{
+        }
+        .dotoverlay{
+          position: relative !important;
+          height:110vh;
+        }
+        #video-entry-box{
+          width:90vw;
+          margin:0 auto;
+        }
+        #side{
+          display:none;
+        }
+        .btn-try{
+          /*bottom:-5vh !important;*/
+        }
+               #video-entry-page{
+          height:110vh;
+        }
+
+      }
+
+
+
     </style>
     <title>The Green Man's Grants | Young Driver Safety Package</title>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
@@ -132,20 +206,29 @@
     <!-- <script type="text/javascript" src="assets/js/mouse-scroll.js"></script> -->
   </head>
   <body>
-        <nav id='top-bar'>
+    <nav id='top-bar'>
       <div class=''id='logo'>
         <a href='index.html'>
-          <img src='assets/images/gmg_header_logo.png'></img>
+          <img src='assets/images/gmg_header_logo.png' draggable="false">
         </a>
       </div>
       <div class='' id='menu'>
-        <a href='#menu'>
+        <a href='#'>
           <img src='assets/images/menu.png'></img>
         </a>
         <div class="nav" style="display:none;">
           <ul>
             <li>
               <a href="about.html">WHAT ARE GREEN MAN GRANTS?</a>
+            </li>
+            <li>
+              <a href="vehiclesafety.html">BRIEF: VEHICLE SAFETY</a>
+            </li>
+            <li>
+              <a href="vulnerability.html">BRIEF: VULNERABILITY</a>
+            </li>
+            <li>
+              <a href="sharedresponsibility.html">BRIEF: SHARED RESPONSIBILITY</a>
             </li>
             <li>
               <a href="guidelines.html">ENTRY GUIDELINES</a>
@@ -170,26 +253,39 @@
     </nav>
     <div id='video-entry-page'>
       <div id='side'>
-        <img src='assets/images/facebook.png'>
-        <span>6K</span>
-        <p>SHARES</p>
-        <img src='assets/images/twitter.png'>
-        <span>250</span>
-        <p>SHARES</p>
-        <img src='assets/images/vote.png'>
-        <span>600</span>
-        <p>VOTES</p>
+        <div style='margin:0 auto'>
+          <img src='assets/images/facebook.png'>
+          <span>6K</span>
+          <p>SHARES</p>
+          <img src='assets/images/twitter.png'>
+          <span>250</span>
+          <p>SHARES</p>
+          <img src='assets/images/vote.png'>
+          <span>600</span>
+          <p>VOTES</p>
+        </div>
       </div>
       <div class='dotoverlay'>
         <article>
-          <h1>Nullam libero tellus</h1>
-          <h2>How would you stop people from texting while driving?</h2>
-          <div id='videoplayer'>
-            <img src='assets/images/videoplayer.png'>
+          <div>
+           <p id='name'><span id='name_id'>Jane's</span> Story</p>
           </div>
-          <p><b class='ped'>PEDESTRIANS CHOICE - VOTE FOR THIS ENTRY</b></p>
-          <p>You could win $1000 just for voting. <a href="voting.html"><b>How?</b></a></p>
-          <a class='btn' href="">VOTE NOW</a>
+          <h1 id='title_id'>Nullam libero tellus</h1>
+          <h2 id='question_id'>How would you stop people from texting while driving?</h2>
+            <div id='video-entry-box'>
+              <video id='video_id' style='width:100%; max-height: 40vh;'>
+                 <source src="assets/video/greenmangrants_webwicdeo_720p_low.webm" type="video/webm">
+              </video>
+            </div>
+            <div id='description' class='center'>
+              <b>Description: </b>
+              <p id='desc_id'><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae risus dictum, accumsan sapien eget, tempus dolor. Aenean quam diam amet.</span></p>
+            </div>
+          <div style='width:100%;'>
+            <p><b class='ped'>PEDESTRIANS CHOICE - VOTE FOR THIS ENTRY</b></p>
+            <p>You could win $1000 just for voting. <a href="voting.html"><b>How?</b></a></p>
+            <a id='vote_id'class='btn-try btn-white' href="">VOTE NOW</a>
+          </div>
         </article>
       </div>
     </div>

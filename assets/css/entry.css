@@ -1,3 +1,10 @@
+a{
+  color:#000;
+  font-weight: bold;
+}
+a:hover{
+  color:#FFF;
+}
 .borders{
   margin-left: 1vw !important;
   margin-right: 1vw !important;
@@ -105,6 +112,24 @@
 input{
   border-radius:0px !important;
 }
+
+#tandc{
+  border: 2px solid white;
+}
+#tandc input{
+  /*display:inline-block;*/
+  position: absolute;
+}
+#tandc{
+  margin-top: 1vh;
+}
+#tandc p{
+  padding-left: 5vw;
+  text-align:  left;
+
+}
+
+
 @media only screen and (max-width : 684px) {
 
 
