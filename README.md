@@ -1,9 +1,4 @@
 # green-man-grants
-Contract work for Gray Australia
+Contract work for Grey Australia
 
-Stretch For Monday 25th
-  - Responsive
-  - Clean up code!!!!!
-#Stretch
-  - Responsive briefs and entries
-  - Video
+THINGS
