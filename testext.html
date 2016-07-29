@@ -4,11 +4,16 @@
     <META NAME="viewport" CONTENT="width=device-width, height=device-height, initial-scale=1, user-scalable=no"/>
     <style>
 
+    #text-entry{
+      width:70vw;
+      margin:0 auto;
+    }
+
     /*NEED MEDIA FOR THIS PAGE*/
       #top-bar{
         background-color: black;
       }
-      #video-entry-page{
+      #image-entry-page{
         height:100vh;
         background-image: url(assets/images/green_background_new.png);
         background-size: cover;
@@ -17,11 +22,11 @@
       #name{
         padding-top: 9vh;
       }
-      #video-entry-page h1{
+      #image-entry-page h1{
         padding-top: 1vh;
         color:black;
       }
-      #video-entry-page h2{
+      #image-entry-page h2{
         font-size: 3vh;
         width:80vw;
         margin: 0 auto;
@@ -31,21 +36,21 @@
         color:black;
         text-align: center;
       }
-      #video-entry-page p{
+      #image-entry-page p{
         text-align: center;
         margin-bottom: 0;
       }
-      #video-entry-page ul{
+      #image-entry-page ul{
         margin-left: 4vw;
       }
-      #video-entry-page li{
+      #image-entry-page li{
         text-align: left;
         color:white;
         list-style: none;
         padding-bottom: .5vh;
         padding-top: .5vh;
       }
-      #video-entry-page article{
+      #image-entry-page article{
         /*margin-left: 30vw;*/
 
       }
@@ -73,7 +78,7 @@
          border: 2px solid #FFF !important ;
       }
 
-       #side{
+      #side{
         padding-top: 1vh;
         height:18rem;
         width: 4.5em;
@@ -128,7 +133,7 @@
         height:50vh;
         width:60vw;
         margin:0 auto;}*/
-        #video-entry-box{
+        #image-entry-box{
           width:45vw;
           margin:0 auto;
         }
@@ -159,10 +164,10 @@
           position: relative !important;
           height:110vh;
         }
-        #video-entry-page{
+        #image-entry-page{
           height:110vh;
         }
-        #video-entry-box{
+        #image-entry-box{
           width:90vw;
           margin:0 auto;
         }
@@ -171,13 +176,13 @@
         }
       }
       @media only screen and (max-width : 684px) {
-        #video-entry-page{
+        #image-entry-page{
         }
         .dotoverlay{
           position: relative !important;
           height:110vh;
         }
-        #video-entry-box{
+        #image-entry-box{
           width:90vw;
           margin:0 auto;
         }
@@ -187,7 +192,7 @@
         .btn-try{
           /*bottom:-5vh !important;*/
         }
-               #video-entry-page{
+               #image-entry-page{
           height:110vh;
         }
 
@@ -257,40 +262,37 @@
         </div>
       </div>
     </nav>
-    <div id='video-entry-page'>
+    <div id='image-entry-page'>
       <div class='dotoverlay'>
-        <div id='side'>
-          <div style='margin:0 auto'>
-            <img src='assets/images/facebook.png'>
-            <span>6K</span>
-            <p>SHARES</p>
-            <img src='assets/images/twitter.png'>
-            <span>250</span>
-            <p>SHARES</p>
-            <img src='assets/images/vote.png'>
-            <span>600</span>
-            <p>VOTES</p>
-          </div>
+      <div id='side'>
+        <div style='margin:0 auto'>
+          <img src='assets/images/facebook.png'>
+          <span>6K</span>
+          <p>SHARES</p>
+          <img src='assets/images/twitter.png'>
+          <span>250</span>
+          <p>SHARES</p>
+          <img src='assets/images/vote.png'>
+          <span>600</span>
+          <p>VOTES</p>
         </div>
+      </div>
         <article>
           <div>
            <p id='name'><span id='name_id'>Jane's</span> Story</p>
           </div>
           <h1 id='title_id'>Nullam libero tellus</h1>
           <h2 id='question_id'>How would you stop people from texting while driving?</h2>
-            <div id='video-entry-box'>
-              <video id='video_id' style='width:100%; max-height: 40vh;'>
-                 <source src="assets/video/greenmangrants_webwicdeo_720p_low.webm" type="video/webm">
-              </video>
-            </div>
-            <div id='description' class='center'>
-              <b>Description: </b>
-              <p id='desc_id'><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae risus dictum, accumsan sapien eget, tempus dolor. Aenean quam diam amet.</span></p>
-            </div>
-          <div style='width:100%;'>
+          <div id='text-entry'>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat egestas tristique. Quisque sed felis auctor, sodales velit eget, consequat tellus. Nullam aliquet purus a egestas rutrum. Aenean bibendum, ligula sed rutrum tristique, justo nibh vestibulum augue, in tempus eros urna sed ipsum. Mauris pharetra lorem eu aliquet commodo. Aliquam ornare, dolor id commodo viverra, nisl odio bibendum libero, vel consequat nibh nibh vitae dui. Morbi vitae nibh lectus. Donec non sem a elit ultricies convallis. Aliquam pretium, tellus facilisis tincidunt maximus, mi sem commodo tortor, eu rhoncus turpis metus ut lectus. Sed tincidunt tellus nec nisl pharetra lobortis. Sed sed sem aliquet, faucibus diam non, viverra massa. Vivamus gravida, nisi quis vehicula tincidunt, urna velit tempor ligula, non eleifend augue lacus non nulla.</p>
+            <p>Maecenas vitae leo odio. Nullam sodales facilisis leo, sed rutrum felis mollis non. Maecenas hendrerit tortor erat, vel auctor nunc lobortis a. Morbi massa nunc.</p>
+          </div>
+          <div style='width:100%; margin-top:6vh;'>
             <p><b class='ped'>PEDESTRIANS CHOICE - VOTE FOR THIS ENTRY</b></p>
             <p>You could win $1000 just for voting. <a href="voting.html"><b>How?</b></a></p>
-            <a id='vote_id'class='btn-try btn-white' href="">VOTE NOW</a>
+            <div style='margin-top:2vh;'>
+              <a id='vote_id'class='btn-try btn-white' href="">VOTE NOW</a>
+            </div>
           </div>
         </article>
       </div>

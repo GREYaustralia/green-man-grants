@@ -1,356 +1,307 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Carousel</title>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"/>
-<!--   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"/> -->
-  <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-
-  <style type="text/css">
-
-   .btn-try{
-    height: 8vh;
-    width: 15vw;
-    font-family: Nanami-Bold;
-    font-size: 18px;
-    line-height:8vh;
-    bottom: 15vh;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center
-
+  <head>
+    <META NAME="viewport" CONTENT="width=device-width, height=device-height, initial-scale=1, user-scalable=no"/>
+    <style>
+    article{
+      /*min-height: 100%;*/
     }
-    .btn-green{
-      color: #35e1a2;
-      border:2px solid #35e1a2;
+    .dotoverlay{
+/*      height: auto;
+      min-height: 100vh;*/
     }
 
-    html, body {
-      margin: 0;
-      padding: 0;
-    }
-    * {
-      box-sizing: border-box;
-    }
-    .slider {
-        /*width: 50%;*/
-        /*margin: 100px auto;*/
-    }
-    .slick-slide {
-      /*margin: 0px 20px;*/
-    }
-    .slick-slide img {
-      width: 100%;
-    }
-    .slick-prev:before,
-    .slick-next:before {
+
+    /*NEED MEDIA FOR THIS PAGE*/
+      #top-bar{
+        background-color: black;
+      }
+      #video-entry-page{
+        background-image: url(assets/images/green_background_new.png);
+        background-size: cover;
+        background-color: green;
+            min-height: 100vh;
+            height: auto;
+      }
+      #name{
+        padding-top: 9vh;
+      }
+      #video-entry-page h1{
+        padding-top: 1vh;
+        color:black;
+      }
+      #video-entry-page h2{
+        font-size: 3vh;
+        width:80vw;
+        margin: 0 auto;
+        margin-bottom: 2vh;
+        text-align: left;
+        /*font-weight: 100;*/
+        color:black;
+        text-align: center;
+      }
+      #video-entry-page p{
+        text-align: center;
+        margin-bottom: 0;
+      }
+      #video-entry-page ul{
+        margin-left: 4vw;
+      }
+      #video-entry-page li{
+        text-align: left;
+        color:white;
+        list-style: none;
+        padding-bottom: .5vh;
+        padding-top: .5vh;
+      }
+      #video-entry-page article{
+        /*margin-left: 30vw;*/
+
+      }
+      .btn{
+        height:6vh;
+        width:15vw;
+        border: 2px solid #000 !important ;
+        position: absolute;
+        bottom: 4vh;
+        left:0;
+        right:0;
+        color:#000;
+        margin: auto;
+        padding-top:1.5vh;
+        /*display:table-cell;*/
+        vertical-align:middle;
+        font-family: Nanami-Bold;
+        text-align: center;
+        text-decoration: none;
+        /*margin: 1vw;*/
+      }
+
+      .btn:hover{
+        color:white;
+         border: 2px solid #FFF !important ;
+      }
+
+      #side{
+        padding-top: 1vh;
+        height:39vh;
+        width: 5vw;
+        background-color: black;
+        position: fixed;
+        right:0;
+        top:20vh;
+      }
+
+      #side img{
+        margin-left:1vw;
+        max-width: 6vw;
+        max-height: 6vh;
+      }
+      #side span{
+        color:white;
+        font-size: 1.5vh;
+        margin-left:2vw;
+      }
+      #side p{
+        font-size: 1.5vh;
+        margin-left: 0.5vw;
+      }
+
+      .ped{
+        color:black;
+        font-size: 3vh;
+      }
+
+/*      .desc{
+        text-align:
+      }*/
+      #description{
+        width: 90%;
+        margin:0 auto;
+        margin-top:2vh;
+        margin-bottom: 2vh;
+      }
+
+      b{
         color: black;
-    }
+      }
+/*      #videoplayer{
+        width:60vw;
+        margin: 0 auto;
+      }*/
+/*      #videoplayer img{
+        height:50vh;
+        width:60vw;
+        margin:0 auto;}*/
+        #video-entry-box{
+          width:45vw;
+          margin:0 auto;
+        }
 
-    .mobile-box{
-      height:100vh;
-      width: 100vw;
-      padding-top: 40vh;
-
-
-    }
-    .brief-header{
-      position:absolute;
-      z-index: 1;
-
-    }
-    .slider{
-      width: 100vw;
-      margin-top: -12vh;
-      margin-bottom: 0;
-    }
-    .slick-prev {
-      left:0 !important;
-      z-index: 1;
-      background-image:url(assets/images/arrow-right.png) !important;
-    }
-    .slick-next{
-      right:0 !important;
-      z-index: 1;
-      background-image:url(assets/images/arrow-right.png) !important;
-    }
-    .slick-dots{
-      display:none !important;
-    }
-    /* Arrows */
-.slick-prev,
-.slick-next
-{
-    font-size: 0;
-    line-height: 0;
-
-    position: absolute;
-    top: 50%;
-
-    display: block;
-
-    width: 33px;
-    height: 62px;
-    padding: 0;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-
-    cursor: pointer;
-
-    color: transparent;
-    border: none;
-    outline: none;
-    background: transparent;
-}
-.slick-prev:hover,
-.slick-prev:focus,
-.slick-next:hover,
-.slick-next:focus
-{
-    color: transparent;
-    outline: none;
-    background: transparent;
-}
-.slick-prev:hover:before,
-.slick-prev:focus:before,
-.slick-next:hover:before,
-.slick-next:focus:before
-{
-    opacity: 1;
-}
-.slick-prev.slick-disabled:before,
-.slick-next.slick-disabled:before
-{
-    opacity: .25;
-}
-
-.slick-prev:before,
-.slick-next:before
-{
-    font-family: 'slick';
-    font-size: 20px;
-    line-height: 1;
-
-    opacity: .75;
-    color: white;
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.slick-prev
-{
-    left: -25px;
-}
-/*[dir='rtl'] .slick-prev
-{
-    right: -25px;
-    left: auto;
-}
-.slick-prev:before
-{
-    background-image:url(assets/images/arrow-right.png);
-}
-[dir='rtl'] .slick-prev:before
-{
-    background-image:url(assets/images/arrow-right.png);
-}*/
-
-.slick-next
-{
-    right: -25px;
-}
-/*[dir='rtl'] .slick-next
-{
-    right: auto;
-    left: -25px;
-}*/
-/*.slick-next:before
-{
-    background-image:url(assets/images/arrow-right.png);
-}
-[dir='rtl'] .slick-next:before
-{
-    background-image:url(assets/images/arrow-right.png);
-}*/
-
-.btn-briefs{
-position: relative;
-}
-.btn-briefs{
-    position: absolute;
-    margin-left: 10vw;
-    width: 80vw !important;
-    bottom: 5vh;
-    left: inherit;
-    right: inherit;
-}
+      video{
+        background-color:black;
+        /*margin-left: 20vw;*/
+        margin-top:2vh;
+        margin: 0 auto;
+        height:auto;
+        width: auto;
+        min-width: none !important;
+        min-height: none !important;
+      }
+      .btn-try{
+        position: absolute;
+        left:0;
+        right:0;
+        bottom:2vh !important;
+        margin:auto;
+      }
 
 
-  </style>
-</head>
-<body>
-       <section class='wrapper' id='entries'>
-    <div class='dotoverlay'>
-    <a href="#" name='entries'></a>
-    <div class=''id='entries-header'>
-        <h1>ENTRIES</h1>
-        <p>Check out the Competition</p>
-     <div class='test box-container entries-box entries-mobile'>
-        <div class='box video'style='background-image: url(assets/images/footer.jpg);'>
-          <div class='greenoverlay dotoverlay'></div>
-          <h1>Nullam libero tellus</h1>
-          <div class="btn-box btn" href="video-entry.html">VIEW ENTRY</div>
-          <img class='icon' src='assets/images/video-green.png'>
-         <div class='votes'>
-            <span class='votes-left'><img src="assets/images/face.png">3k</span>
-            <span><img src="assets/images/twit.png">250</span>
-            <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6.9K</span>
-          </div>
-        </div>
+      @media only screen and (max-width : 320px) {
+/*        .dotoverlay{
+          position: relative !important;
+          height:110vh;
+        }
+        #video-entry-page{
+          height:110vh;
+        }*/
+        #video-entry-box{
+          width:90vw;
+          margin:0 auto;
+        }
+        .btn-try{
+          /*bottom:-5vh !important;*/
+        }
+      }
+      @media only screen and (max-width : 684px) {
+        #video-entry-page{
+        }
+/*        .dotoverlay{
+          position: relative !important;
+          height:110vh;
+        }
+        #video-entry-box{
+          width:90vw;
+          margin:0 auto;
+        }*/
+        #side{
+          display:none;
+        }
+        .btn-try{
+          /*bottom:-5vh !important;*/
+        }
+               #video-entry-page{
+          height:110vh;
+        }
 
-        <div class='box video' style='background-image: url(assets/images/footer.jpg);'>
-          <div class='greenoverlay dotoverlay'></div>
-          <h1>Nullam libero tellus</h1>
-          <div class="btn-box btn" href="video-entry.html">VIEW ENTRY</div>
-          <img class='icon' src='assets/images/video-green.png'>
-         <div class='votes'>
-            <span class='votes-left'><img src="assets/images/face.png">3k</span>
-            <span><img src="assets/images/twit.png">250</span>
-            <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6.9K</span>
-          </div>
-        </div>
-        <div class='box text' style='background-image: url(assets/images/footer.jpg);'>
-          <div class='greenoverlay dotoverlay'></div>
-          <h1>Nullam libero tellus</h1>
-          <div class="btn-box btn" href="text-entry.html">VIEW ENTRY</div>
-          <img class='icon' src='assets/images/text-green.png'>
-         <div class='votes'>
-            <span class='votes-left'><img src="assets/images/face.png">3k</span>
-            <span><img src="assets/images/twit.png">250</span>
-            <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6.9K</span>
-          </div>
-        </div>
-        <div class='box audio' style='background-image: url(assets/images/footer.jpg);'>
-          <div class='greenoverlay dotoverlay'></div>
-          <h1>Nullam libero tellus</h1>
-          <div class="btn-box btn" href="audio-entry.html">VIEW ENTRY</div>
-          <img class='icon' src='assets/images/audio-green.png'>
-         <div class='votes'>
-            <span class='votes-left'><img src="assets/images/face.png">3k</span>
-            <span><img src="assets/images/twit.png">250</span>
-            <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6.9K</span>
-          </div>
+      }
+
+
+
+    </style>
+    <title>The Green Man's Grants | Young Driver Safety Package</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="assets/js/vendor/foundation.js"></script>
+    <script type="text/javascript" src="assets/js/vendor/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/nav.js"></script>
+    <script type="text/javascript" src="assets/js/mobile-home.js"></script>
+    <link rel="stylesheet" type="text/css" media="all" href="assets/css/app.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <!--***** Fonts ***** -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,700,100' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="assets/fonts/MyFontsWebfontsKit.css">
+    <!-- <script type="text/javascript" src="assets/js/mouse-scroll.js"></script> -->
+  </head>
+  <body>
+    <nav id='top-bar'>
+      <div class=''id='logo'>
+        <a href='index.html'>
+          <img src='assets/images/gmg_header_logo.png' draggable="false">
+        </a>
+      </div>
+      <div class='' id='menu'>
+        <a href='#'>
+          <img src='assets/images/menu.png'></img>
+        </a>
+        <div class="nav" style="display:none;">
+          <ul>
+            <li>
+              <a href="about.html">WHAT ARE GREEN MAN GRANTS?</a>
+            </li>
+            <li>
+              <a href="vehiclesafety.html">BRIEF: VEHICLE SAFETY</a>
+            </li>
+            <li>
+              <a href="vulnerability.html">BRIEF: VULNERABILITY</a>
+            </li>
+            <li>
+              <a href="sharedresponsibility.html">BRIEF: SHARED RESPONSIBILITY</a>
+            </li>
+            <li>
+              <a href="guidelines.html">ENTRY GUIDELINES</a>
+            </li>
+
+            <li>
+              <a href="judging.html">JUDGING</a>
+            </li>
+            <li>
+              <a href="voting.html">THE PEDESTRIAN'S CHOICE</a>
+            </li>
+            <li>
+              <a href="entry.html">ENTRY FORM</a>
+            </li>
+            <li>
+              <a href="index.html#contact">CONTACT US</a>
+            </li>
+          </ul>
+          <p></p>
         </div>
       </div>
-
-      <div class='box-container entries-box entries-home'>
-        <div class='box video'style='background-image: url(assets/images/footer.jpg);'>
-          <div class='greenoverlay dotoverlay'></div>
-          <h1>Nullam libero tellus</h1>
-          <div class="btn-box btn" href="video-entry.html">VIEW ENTRY</div>
-          <img class='icon' src='assets/images/video-green.png'>
-         <div class='votes'>
-            <span class='votes-left'><img src="assets/images/face.png">3k</span>
-            <span><img src="assets/images/twit.png">250</span>
-            <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6,997</span></span>
-          </div>
-        </div>
-
-        <div class='box video' style='background-image: url(assets/images/footer.jpg);'>
-          <div class='greenoverlay dotoverlay'></div>
-          <h1>Nullam libero tellus</h1>
-          <div class="btn-box btn" href="video-entry.html">VIEW ENTRY</div>
-          <img class='icon' src='assets/images/video-green.png'>
-         <div class='votes'>
-            <span class='votes-left'><img src="assets/images/face.png">3k</span>
-            <span><img src="assets/images/twit.png">250</span>
-            <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6,997</span></span>
-          </div>
-        </div>
-        <div class='box text' style='background-image: url(assets/images/footer.jpg);'>
-          <div class='greenoverlay dotoverlay'></div>
-          <h1>Nullam libero tellus</h1>
-          <div class="btn-box btn" href="text-entry.html">VIEW ENTRY</div>
-          <img class='icon' src='assets/images/text-green.png'>
-         <div class='votes'>
-            <span class='votes-left'><img src="assets/images/face.png">3k</span>
-            <span><img src="assets/images/twit.png">250</span>
-            <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6,997</span></span>
-          </div>
-        </div>
-        <div class='box audio' style='background-image: url(assets/images/footer.jpg);'>
-          <div class='greenoverlay dotoverlay'></div>
-          <h1>Nullam libero tellus</h1>
-          <div class="btn-box btn" href="audio-entry.html">VIEW ENTRY</div>
-          <img class='icon' src='assets/images/audio-green.png'>
-         <div class='votes'>
-            <span class='votes-left'><img src="assets/images/face.png">3k</span>
-            <span><img src="assets/images/twit.png">250</span>
-            <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6,997</span></span>
-          </div>
-        </div>
-        <div class='box image' style='background-image: url(assets/images/footer.jpg);'>
-          <div class='greenoverlay dotoverlay'></div>
-          <h1>Nullam libero tellus</h1>
-          <div class="btn-box btn" href="image-entry.html">VIEW ENTRY</div>
-          <img class='icon' src='assets/images/image-green.png'>
-         <div class='votes'>
-            <span class='votes-left'><img src="assets/images/face.png">3k</span>
-            <span><img src="assets/images/twit.png">250</span>
-            <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6,997</span></span>
-          </div>
-        </div>
-        <div class='box image' style='background-image: url(assets/images/footer.jpg);'>
-          <div class='greenoverlay dotoverlay'></div>
-          <h1>Nullam libero tellus</h1>
-          <div class="btn-box btn" href="image-entry.html">VIEW ENTRY</div>
-          <img class='icon' src='assets/images/image-green.png'>
-         <div class='votes'>
-            <span class='votes-left'><img src="assets/images/face.png">3k</span>
-            <span><img src="assets/images/twit.png">250</span>
-            <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6,997</span></span>
-          </div>
-        </div>
-        <div class='box text' style='background-image: url(assets/images/footer.jpg);'>
-          <div class='greenoverlay dotoverlay'></div>
-          <h1>Nullam libero tellus</h1>
-          <div class="btn-box btn" href="text-entry.html">VIEW ENTRY</div>
-          <img class='icon' src='assets/images/text-green.png'>
-          <div class='votes'>
-            <span class='votes-left'><img src="assets/images/face.png">3k</span>
-            <span class='votes-center'><img src="assets/images/twit.png">250</span>
-            <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6,997</span></span>
-          </div>
-        </div>
-        <div class='box'>
-          <a href="entries.html" style='display:block height:100%;'>
-            <span style='left:0; right:0; color:#35e1a2; position: absolute; bottom: 13vh; font-size: 3vh;'><b>SEE MORE...</b></span>
-          </a>
+    </nav>
+    <div id='video-entry-page'>
+      <div id='side'>
+        <div style='margin:0 auto'>
+          <img src='assets/images/facebook.png'>
+          <span>6K</span>
+          <p>SHARES</p>
+          <img src='assets/images/twitter.png'>
+          <span>250</span>
+          <p>SHARES</p>
+          <img src='assets/images/vote.png'>
+          <span>600</span>
+          <p>VOTES</p>
         </div>
       </div>
-      <div class='arrow'>
-          <a href='#contact'>
-            <img src="assets/images/arrow.png">
-          </a>
-        </div>
+      <div class='dotoverlay'>
+        <article>
+          <div>
+           <p id='name'><span id='name_id'>Jane's</span> Story</p>
+          </div>
+          <h1 id='title_id'>Nullam libero tellus</h1>
+          <h2 id='question_id'>How would you stop people from texting while driving?</h2>
+          <div class='row'>
+            <div class='large-6 medium-6 columns'>
+              <img src="assets/images/footer.jpg">
+            </div>
+            <div class='large-6 medium-6 columns'>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat sed nibh sed finibus. Nam id nulla vel ex vulputate maximus. In convallis libero vitae tincidunt venenatis. In hac habitasse platea dictumst. Ut ac consectetur quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec id magna justo.</p>
+
+              <p>Pellentesque vitae placerat odio. Ut ac augue et tellus facilisis imperdiet. Aliquam vel luctus massa, eu bibendum arcu. Morbi sit amet purus accumsan mauris maximus volutpat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc eget commodo quam. Duis eget nunc vestibulum, accumsan neque non, laoreet diam. Suspendisse convallis justo quis magna dapibus, a varius massa auctor. Aliquam cursus dolor non auctor convallis. Donec porttitor pellentesque metus sed sollicitudin.</p>
+
+              <p>Vivamus ex urna, eleifend sit amet nisi eu, eleifend scelerisque magna. Aliquam viverra feugiat suscipit. Sed nunc lacus, aliquet id.</p>
+            </div>
+          </div>
+          <div style='width:100%;'>
+            <p><b class='ped'>PEDESTRIANS CHOICE - VOTE FOR THIS ENTRY</b></p>
+            <p>You could win $1000 just for voting. <a href="voting.html"><b>How?</b></a></p>
+            <div>
+              <a id='vote_id'class='btn-try btn-white' href="">VOTE NOW</a>
+            </div>
+          </div>
+        </article>
       </div>
     </div>
-    </section>
-
-  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
-  <script type="text/javascript">
-    $(document).on('ready', function() {
-      $('.single-item').slick({
-        dots: true,
-        infinite: false,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1
-      });
-    });
-  </script>
-</body>
+  </body>
 </html>

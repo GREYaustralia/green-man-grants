@@ -8,7 +8,7 @@
       #top-bar{
         background-color: black;
       }
-      #video-entry-page{
+      #audio-entry-page{
         height:100vh;
         background-image: url(assets/images/green_background_new.png);
         background-size: cover;
@@ -17,11 +17,11 @@
       #name{
         padding-top: 9vh;
       }
-      #video-entry-page h1{
+      #audio-entry-page h1{
         padding-top: 1vh;
         color:black;
       }
-      #video-entry-page h2{
+      #audio-entry-page h2{
         font-size: 3vh;
         width:80vw;
         margin: 0 auto;
@@ -31,21 +31,21 @@
         color:black;
         text-align: center;
       }
-      #video-entry-page p{
+      #audio-entry-page p{
         text-align: center;
         margin-bottom: 0;
       }
-      #video-entry-page ul{
+      #audio-entry-page ul{
         margin-left: 4vw;
       }
-      #video-entry-page li{
+      #audio-entry-page li{
         text-align: left;
         color:white;
         list-style: none;
         padding-bottom: .5vh;
         padding-top: .5vh;
       }
-      #video-entry-page article{
+      #audio-entry-page article{
         /*margin-left: 30vw;*/
 
       }
@@ -106,6 +106,15 @@
         color:black;
         font-size: 3vh;
       }
+      #audio-play-box{
+        background-image:url(assets/images/audio-play.png);
+        background-size:cover;
+        padding-left:9vh;
+        height: 100%;
+      }
+      #audio-play-box img{
+        height: 100%;
+      }
 
 /*      .desc{
         text-align:
@@ -128,12 +137,13 @@
         height:50vh;
         width:60vw;
         margin:0 auto;}*/
-        #video-entry-box{
-          width:45vw;
-          margin:0 auto;
+        #audio-entry-box{
+          width: 19vw;
+          margin: 0 auto;
+          height: 30vh;
         }
 
-      video{
+      audio{
         background-color:black;
         /*margin-left: 20vw;*/
         margin-top:2vh;
@@ -159,10 +169,10 @@
           position: relative !important;
           height:110vh;
         }
-        #video-entry-page{
+        #audio-entry-page{
           height:110vh;
         }
-        #video-entry-box{
+        #audio-entry-box{
           width:90vw;
           margin:0 auto;
         }
@@ -171,13 +181,13 @@
         }
       }
       @media only screen and (max-width : 684px) {
-        #video-entry-page{
+        #audio-entry-page{
         }
         .dotoverlay{
           position: relative !important;
           height:110vh;
         }
-        #video-entry-box{
+        #audio-entry-box{
           width:90vw;
           margin:0 auto;
         }
@@ -187,7 +197,7 @@
         .btn-try{
           /*bottom:-5vh !important;*/
         }
-               #video-entry-page{
+               #audio-entry-page{
           height:110vh;
         }
 
@@ -257,7 +267,7 @@
         </div>
       </div>
     </nav>
-    <div id='video-entry-page'>
+    <div id='audio-entry-page'>
       <div class='dotoverlay'>
         <div id='side'>
           <div style='margin:0 auto'>
@@ -278,10 +288,13 @@
           </div>
           <h1 id='title_id'>Nullam libero tellus</h1>
           <h2 id='question_id'>How would you stop people from texting while driving?</h2>
-            <div id='video-entry-box'>
-              <video id='video_id' style='width:100%; max-height: 40vh;'>
-                 <source src="assets/video/greenmangrants_webwicdeo_720p_low.webm" type="video/webm">
-              </video>
+            <div id='audio-entry-box'>
+              <div id='audio-play-box'style=''>
+                <img src='assets/images/audio-black.png'>
+              </div>
+              <audio id='audio_id' style='width:100%; max-height: 40vh;'>
+                 <source src="assets/audio/" type="audio/mpeg">
+              </audio>
             </div>
             <div id='description' class='center'>
               <b>Description: </b>
