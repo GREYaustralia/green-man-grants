@@ -1234,6 +1234,10 @@ padding-top: 7vh;
     #header video{
       display:none;
     }
+    .videooverlay{
+      top:0;
+      position: relative;
+    }
     #intro p{
     font-size:1em;
 
@@ -1480,6 +1484,10 @@ footer p{
   #header video{
     display:none;
   }
+  .videooverlay{
+    top:0;
+    position: relative;
+  }
   .shorter{
   width:70vw;
   }
@@ -1537,6 +1545,10 @@ footer p{
   }
   video{
     display:none;
+  }
+  .videooverlay{
+    top:0;
+    position: relative;
   }
 
 
