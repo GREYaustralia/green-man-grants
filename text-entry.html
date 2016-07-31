@@ -3,6 +3,19 @@
   <head>
     <META NAME="viewport" CONTENT="width=device-width, height=device-height, initial-scale=1, user-scalable=no"/>
     <style>
+    body{
+      background-image: url(../images/green_background_new.png);
+      background-size: cover;
+    }
+    .dotoverlay{
+      position: relative !important;
+      background-size: cover;
+      height: 100%;
+      min-height: 100vh;
+    }
+ /*   #photo_desc{
+      padding-right: 4em;
+    }*/
 
     #text-entry{
       width:70vw;
@@ -14,10 +27,12 @@
         background-color: black;
       }
       #image-entry-page{
-        height:100vh;
+        /*height:100vh;*/
         background-image: url(assets/images/green_background_new.png);
         background-size: cover;
-        background-color: green;
+        background-color: #35e1a2;
+        min-height: 100vh;
+        height: auto;
       }
       #name{
         padding-top: 9vh;
@@ -54,24 +69,6 @@
         /*margin-left: 30vw;*/
 
       }
-      .btn{
-        height:6vh;
-        width:15vw;
-        border: 2px solid #000 !important ;
-        position: absolute;
-        bottom: 4vh;
-        left:0;
-        right:0;
-        color:#000;
-        margin: auto;
-        padding-top:1.5vh;
-        /*display:table-cell;*/
-        vertical-align:middle;
-        font-family: Nanami-Bold;
-        text-align: center;
-        text-decoration: none;
-        /*margin: 1vw;*/
-      }
 
       .btn:hover{
         color:white;
@@ -79,9 +76,9 @@
       }
 
       #side{
-        padding-top: 1vh;
-        height:18rem;
-        width: 4.5em;
+        padding-top: 1em;
+        height: 18em;
+        width: 4em;
         background-color: black;
         position: fixed;
         right:0;
@@ -157,10 +154,45 @@
         display: block !important;
         margin-top: 2vh;
       }
+      .checkbox-text{
+        font-size: 0.6em;
+        text-align: left;
+        padding-left: 0;
+      }
+
+      #votePopup{
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+        background-color: #3cfdb6;
+      }
+      #votePopup input{
+        border:2px solid #000;
+        height:3em;
+
+      }
+      #votePopup h1{
+        color: #000;
+      }
+      #votePopup .row{
+        margin-bottom: 5%;
+      }
+      #votePopup .btn{
+        border: 2px solid #000 !important ;
+        color: #000;
+        /*display:table-cell;*/
+        font-family: Nanami-Bold;
+        text-align: center;
+        text-decoration: none;
+        /*margin: 1vw;*/
+        background-color: transparent;
+        width:100%;
+        height:3em;
+      }
 
 
       @media only screen and (max-width : 320px) {
-        .dotoverlay{
+  /*      .dotoverlay{
           position: relative !important;
           height:110vh;
         }
@@ -170,13 +202,13 @@
         #image-entry-box{
           width:90vw;
           margin:0 auto;
-        }
+        }*/
         .btn-try{
           /*bottom:-5vh !important;*/
         }
       }
       @media only screen and (max-width : 684px) {
-        #image-entry-page{
+/*        #image-entry-page{
         }
         .dotoverlay{
           position: relative !important;
@@ -185,16 +217,14 @@
         #image-entry-box{
           width:90vw;
           margin:0 auto;
-        }
+        }*/
         #side{
           display:none;
         }
         .btn-try{
           /*bottom:-5vh !important;*/
         }
-               #image-entry-page{
-          height:110vh;
-        }
+  /*x*/
 
       }
 
@@ -290,12 +320,50 @@
           <div style='width:100%; margin-top:6vh;'>
             <p><b class='ped'>PEDESTRIANS CHOICE - VOTE FOR THIS ENTRY</b></p>
             <p>You could win $1000 just for voting. <a href="voting.html"><b>How?</b></a></p>
-            <div style='margin-top:2vh;'>
-              <a id='vote_id'class='btn-try btn-white' href="">VOTE NOW</a>
+            <div class="reveal" id="votePopup" data-reveal>
+              <p>YOU'RE VOTING FOR</p>
+              <h1 id='title_id'>Nullam libero tellus</h1>
+              <p>BY <span>JANE</span> <span>SAMPLE</span></p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat sed nibh sed finibus. Nam id nulla vel ex vulputate maximus. In convallis libero vitae tincidunt venenatis. In hac habitasse platea dictumst. Ut ac consectetur quam.</p>
+              <div class='row'>
+                <div class="medium-6 columns">
+                  <input type="text" placeholder="FULL NAME">
+                </div>
+                <div class="medium-6 columns">
+                  <input type="text" placeholder="DATE OF BIRTH">
+                </div>
+                <div class="medium-6 columns">
+                  <input type="text" placeholder="EMAIL ADDRESS">
+                </div>
+                <div class="medium-6 columns">
+                  <input type="text" placeholder="POSTCODE">
+                </div>
+                <div class="medium-6 columns">
+                  <input class='small-2 medium-2 columns' type='checkbox'>
+                  <p class='small-10 medium-10 columns checkbox-text'>Check this box if you would like to receive further information about road safety</p>
+                </div>
+                <div class="medium-6 columns">
+                  <input class='btn' type='submit' value='VOTE NOW'>
+                </div>
+              </div>
+                <button class="close-button" data-close aria-label="Close modal" type="button">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+            <div>
+              <a id='vote_id'class='btn-try btn-white' data-open="votePopup">VOTE NOW</a>
             </div>
           </div>
         </article>
       </div>
     </div>
+    <footer>
+      <p><a href="https://www.tac.vic.gov.au/">TAC</a> / <a href="">VANESSA</a> / <a href="http://www.howsafeisyourcar.com.au/">HOW SAFE IS YOUR FIRST CAR?</a>  / <a href="https://www.towardszero.vic.gov.au/">TOWARDS ZERO</a> / <a href="termsandconditions.html">TERMS AND CONDITIONS</a></p>
+    </footer>
+    <script type="text/javascript" src="assets/js/vendor/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/vendor/foundation.js"></script>
+    <script type="text/javascript">
+    $(document).foundation();
+    </script>
   </body>
 </html>

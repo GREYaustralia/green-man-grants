@@ -57,6 +57,11 @@
       width:100%;
       display:block;
     }
+
+    .videooverlay{
+      top:0;
+      position: absolute;
+    }
     </style>
     <title>The Green Man's Grants | Young Driver Safety Package</title>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
@@ -70,12 +75,14 @@
 
     <!--****** Carousel ***********-->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.css"> -->
 
 
 
     <!--***** Fonts ***** -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,700,100' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="assets/fonts/MyFontsWebfontsKit.css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
 
     <!--******* Foundation **********-->
     <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.css" />
@@ -133,7 +140,10 @@
 
 
     <header class='wrapper' id ='header'>
-      <div class='dotoverlay black-back'></div>
+          <video autoplay loop style='width:100%; ' >
+             <source src="assets/video/greenmangrants_webwicdeo_720p_low.webm" type="video/webm">
+          </video>
+      <div class='videooverlay dotoverlay black-back'>
         <div class='' id='header-content' >
           <a href="#" name='header'></a>
           <div id='header-logo'>
@@ -152,11 +162,12 @@
           </div>
 
         </div>
-        <div style='width:100vw;'>
+        </div>
+<!--         <div style='width:100vw;'>
           <video autoplay loop style='width:100%; ' >
              <source src="assets/video/greenmangrants_webwicdeo_720p_low.webm" type="video/webm">
           </video>
-        </div>
+        </div> -->
 
     </header>
 
@@ -204,21 +215,21 @@
         <div class='mobile-brief slider single-item'>
           <div class='mobile-box' style='background-image: url(assets/images/vehicle_safety2.png); background-size:cover;'>
             <h1>Vehicle Safety</h1>
-            <p>How would you get your peers to understand the importance of buying a safe affordable car?</p>
+            <p><b>How would you get your peers to understand the importance of buying a safe affordable car?</b></p>
             <div style=' margin:0 auto'>
               <a class='btn-green btn-try btn-briefs' href='vehiclesafety.html'>BRIEF IN FULL</a>
             </div>
           </div>
           <div class='mobile-box' style='background-image: url(assets/images/mistakes_vulnerability.png); background-size:cover;'>
             <h1>Vulnerability</h1>
-            <p>The human body has not evolved as fast as cars have, therefore we are very vulnerable when on the roads. How would you highlight this to your peers to help reduce risk taking behaviour?</p>
+            <p><b>The human body has not evolved as fast as cars have, therefore we are very vulnerable when on the roads. How would you highlight this to your peers to help reduce risk taking behaviour?</b></p>
             <div style='margin:0 auto'>
               <a class='btn-green btn-try btn-briefs' href='vulnerability.html'>BRIEF IN FULL</a>
             </div>
           </div>
           <div class='mobile-box' style='background-image: url(assets/images/shared_responsibilty.png); background-size:cover;'>
             <h1>Shared Responsibilty</h1>
-            <p>How would you inspire your generation to unite in a belief that zero deaths and serious injuries on our roads could become a reality?</p>
+            <p><b>How would you inspire your generation to unite in a belief that zero deaths and serious injuries on our roads could become a reality?</b></p>
             <div style='margin:0 auto'>
               <a class='btn-green btn-try btn-briefs' href='vulnerability.html'>BRIEF IN FULL</a>
             </div>
@@ -328,11 +339,12 @@
 
 
   <section class='wrapper' id='entries'>
-    <div class='dotoverlay'>
+    <div class=''>
     <a href="#" name='entries'></a>
     <div class=''id='entries-header'>
         <h1>ENTRIES</h1>
         <p>Check out the Competition</p>
+    </div>
      <div class='test box-container entries-box entries-mobile'>
         <div class='box video'style='background-image: url(assets/images/footer.jpg);'>
           <div class='greenoverlay dotoverlay'></div>
@@ -465,8 +477,8 @@
             <img src="assets/images/arrow.png">
           </a>
         </div>
-      </div>
-    </div>
+
+
     </section>
 
 
@@ -487,12 +499,16 @@
           <div class='large-12 columns'>
             <input type='text' placeholder='EMAIL'>
           </div>
-          <div class='large-12 columns' style='height:10vh;'>
+          <div class='large-12 columns'>
             <textarea placeholder='MESSAGE' name='message' id='message'></textarea>
           </div>
+
         </div>
           <div class='row'>
-            <input class='large-12 columns btn-white btn-try btn-contact' type='submit' value='SEND'>
+            <div class='large-12 columns'>
+              <input class='large-12 columns btn' type='submit' value='SEND'>
+            </div>
+
           </div>
       </form>
       <div class='arrow'>

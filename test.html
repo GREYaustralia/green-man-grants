@@ -3,207 +3,15 @@
   <head>
     <META NAME="viewport" CONTENT="width=device-width, height=device-height, initial-scale=1, user-scalable=no"/>
     <style>
-    article{
-      /*min-height: 100%;*/
-    }
-    .dotoverlay{
-/*      height: auto;
-      min-height: 100vh;*/
-    }
 
-
-    /*NEED MEDIA FOR THIS PAGE*/
-      #top-bar{
-        background-color: black;
-      }
-      #video-entry-page{
-        background-image: url(assets/images/green_background_new.png);
-        background-size: cover;
-        background-color: green;
-            min-height: 100vh;
-            height: auto;
-      }
-      #name{
-        padding-top: 9vh;
-      }
-      #video-entry-page h1{
-        padding-top: 1vh;
-        color:black;
-      }
-      #video-entry-page h2{
-        font-size: 3vh;
-        width:80vw;
-        margin: 0 auto;
-        margin-bottom: 2vh;
-        text-align: left;
-        /*font-weight: 100;*/
-        color:black;
-        text-align: center;
-      }
-      #video-entry-page p{
-        text-align: center;
-        margin-bottom: 0;
-      }
-      #video-entry-page ul{
-        margin-left: 4vw;
-      }
-      #video-entry-page li{
-        text-align: left;
-        color:white;
-        list-style: none;
-        padding-bottom: .5vh;
-        padding-top: .5vh;
-      }
-      #video-entry-page article{
-        /*margin-left: 30vw;*/
-
-      }
-      .btn{
-        height:6vh;
-        width:15vw;
-        border: 2px solid #000 !important ;
-        position: absolute;
-        bottom: 4vh;
-        left:0;
-        right:0;
-        color:#000;
-        margin: auto;
-        padding-top:1.5vh;
-        /*display:table-cell;*/
-        vertical-align:middle;
-        font-family: Nanami-Bold;
-        text-align: center;
-        text-decoration: none;
-        /*margin: 1vw;*/
-      }
-
-      .btn:hover{
-        color:white;
-         border: 2px solid #FFF !important ;
-      }
-
-      #side{
-        padding-top: 1vh;
-        height:39vh;
-        width: 5vw;
-        background-color: black;
-        position: fixed;
-        right:0;
-        top:20vh;
-      }
-
-      #side img{
-        margin-left:1vw;
-        max-width: 6vw;
-        max-height: 6vh;
-      }
-      #side span{
-        color:white;
-        font-size: 1.5vh;
-        margin-left:2vw;
-      }
-      #side p{
-        font-size: 1.5vh;
-        margin-left: 0.5vw;
-      }
-
-      .ped{
-        color:black;
-        font-size: 3vh;
-      }
-
-/*      .desc{
-        text-align:
-      }*/
-      #description{
-        width: 90%;
-        margin:0 auto;
-        margin-top:2vh;
-        margin-bottom: 2vh;
-      }
-
-      b{
-        color: black;
-      }
-/*      #videoplayer{
-        width:60vw;
-        margin: 0 auto;
-      }*/
-/*      #videoplayer img{
-        height:50vh;
-        width:60vw;
-        margin:0 auto;}*/
-        #video-entry-box{
-          width:45vw;
-          margin:0 auto;
-        }
-
-      video{
-        background-color:black;
-        /*margin-left: 20vw;*/
-        margin-top:2vh;
-        margin: 0 auto;
-        height:auto;
-        width: auto;
-        min-width: none !important;
-        min-height: none !important;
-      }
-      .btn-try{
-        position: absolute;
-        left:0;
-        right:0;
-        bottom:2vh !important;
-        margin:auto;
-      }
-
-
-      @media only screen and (max-width : 320px) {
-/*        .dotoverlay{
-          position: relative !important;
-          height:110vh;
-        }
-        #video-entry-page{
-          height:110vh;
-        }*/
-        #video-entry-box{
-          width:90vw;
-          margin:0 auto;
-        }
-        .btn-try{
-          /*bottom:-5vh !important;*/
-        }
-      }
-      @media only screen and (max-width : 684px) {
-        #video-entry-page{
-        }
-/*        .dotoverlay{
-          position: relative !important;
-          height:110vh;
-        }
-        #video-entry-box{
-          width:90vw;
-          margin:0 auto;
-        }*/
-        #side{
-          display:none;
-        }
-        .btn-try{
-          /*bottom:-5vh !important;*/
-        }
-               #video-entry-page{
-          height:110vh;
-        }
-
-      }
 
 
 
     </style>
     <title>The Green Man's Grants | Young Driver Safety Package</title>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-    <script type="text/javascript" src="assets/js/vendor/foundation.js"></script>
-    <script type="text/javascript" src="assets/js/vendor/jquery.js"></script>
     <script type="text/javascript" src="assets/js/nav.js"></script>
+
     <script type="text/javascript" src="assets/js/mobile-home.js"></script>
     <link rel="stylesheet" type="text/css" media="all" href="assets/css/app.css" />
     <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.css" />
@@ -260,48 +68,42 @@
         </div>
       </div>
     </nav>
-    <div id='video-entry-page'>
-      <div id='side'>
-        <div style='margin:0 auto'>
-          <img src='assets/images/facebook.png'>
-          <span>6K</span>
-          <p>SHARES</p>
-          <img src='assets/images/twitter.png'>
-          <span>250</span>
-          <p>SHARES</p>
-          <img src='assets/images/vote.png'>
-          <span>600</span>
-          <p>VOTES</p>
+    <header class='wrapper' id ='header'>
+      <div class='dotoverlay black-back'>
+        <div class='' id='header-content' >
+          <a href="#" name='header'></a>
+          <div id='header-logo'>
+           <img src="assets/images/gmg_header_logo.png" draggable="false">
+          </div>
+          <h1 class='longer'>MAKE THE ROADS SAFER AND YOU COULD GET THE GREEN LIGHT FOR YOUR PROJECT PLUS $5,000 CASH PRIZE AND UP TO $50,000 FUNDING</h1>
+          <p class='longer'>Do you have an idea that could make the roads safer? Something outside the box, that'll make you and your mates look out for each other? If you're 18-25, simply answer one of the briefs in a creative way - it could be a film, a sculpture, an app, whatever you can dream up - and you could receive up to $50,000 funding.</p>
+          <p class='longer'>If you're successful, you'll be partnered with an industry expert to guide and mentor you through the process of bringing your idea to life.</p>
+          <p class='longer'>And to top it off, you'll receive a $5,000 cash prize for this major achievement.</p>
+          <p class='longer'>It would pretty awesome if you could make a positive difference to something as important as road safety.</p>
+          <a class='btn-try btn-btm btn-green' href='#brief'>SEE THE BRIEFS</a>
+          <div class='arrow'>
+            <a href='#intro'>
+              <img src="assets/images/arrow.png">
+            </a>
+          </div>
         </div>
       </div>
-      <div class='dotoverlay'>
-        <article>
-          <div>
-           <p id='name'><span id='name_id'>Jane's</span> Story</p>
-          </div>
-          <h1 id='title_id'>Nullam libero tellus</h1>
-          <h2 id='question_id'>How would you stop people from texting while driving?</h2>
-          <div class='row'>
-            <div class='large-6 medium-6 columns'>
-              <img src="assets/images/footer.jpg">
-            </div>
-            <div class='large-6 medium-6 columns'>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat sed nibh sed finibus. Nam id nulla vel ex vulputate maximus. In convallis libero vitae tincidunt venenatis. In hac habitasse platea dictumst. Ut ac consectetur quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec id magna justo.</p>
 
-              <p>Pellentesque vitae placerat odio. Ut ac augue et tellus facilisis imperdiet. Aliquam vel luctus massa, eu bibendum arcu. Morbi sit amet purus accumsan mauris maximus volutpat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc eget commodo quam. Duis eget nunc vestibulum, accumsan neque non, laoreet diam. Suspendisse convallis justo quis magna dapibus, a varius massa auctor. Aliquam cursus dolor non auctor convallis. Donec porttitor pellentesque metus sed sollicitudin.</p>
-
-              <p>Vivamus ex urna, eleifend sit amet nisi eu, eleifend scelerisque magna. Aliquam viverra feugiat suscipit. Sed nunc lacus, aliquet id.</p>
-            </div>
-          </div>
-          <div style='width:100%;'>
-            <p><b class='ped'>PEDESTRIANS CHOICE - VOTE FOR THIS ENTRY</b></p>
-            <p>You could win $1000 just for voting. <a href="voting.html"><b>How?</b></a></p>
-            <div>
-              <a id='vote_id'class='btn-try btn-white' href="">VOTE NOW</a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
+        <div style='width:100vw;'>
+          <video autoplay loop style='width:100%; ' >
+             <source src="assets/video/greenmangrants_webwicdeo_720p_low.webm" type="video/webm">
+          </video>
+        </div>
+    </header>
+    <footer>
+      <p><a href="https://www.tac.vic.gov.au/">TAC</a> / <a href="">VANESSA</a> / <a href="http://www.howsafeisyourcar.com.au/">HOW SAFE IS YOUR FIRST CAR?</a>  / <a href="https://www.towardszero.vic.gov.au/">TOWARDS ZERO</a> / <a href="termsandconditions.html">TERMS AND CONDITIONS</a></p>
+    </footer>
+    <script type="text/javascript" src="assets/js/vendor/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/vendor/foundation.js"></script>
+    <script type="text/javascript">
+    $(document).foundation();
+    </script>
   </body>
 </html>
+
+3cfdb6
