@@ -99,7 +99,50 @@
       bottom:0;
 
       }
+      #filter{
+        background-color:#35e1a2;
+        width:100vw;
 
+      }
+      #filter .btn-try{
+        background-color: transparent;
+        border:2px solid black;
+        float:right;
+      }
+      #filter select{
+        background-color: black;
+        color: #35e1a2;
+        font-size: 18px;
+        font-family: Nanami-Bold;
+        text-align: center;
+        height: 3em;
+        /*padding-left: 11vw;*/
+        padding-right: 3em;
+        /*height:5vh;*/
+      }
+      #filter h1{
+        color: #000;
+      }
+      .filter-btn{
+        /*height:3em;*/
+        /*width:3em;*/
+        top:15vh;
+        right:5px;
+        color: #35e1a2;
+        /*border: 2px solid #35e1a2;*/
+        position: absolute;
+/*        font-size: 1em;*/
+        display: block;
+        vertical-align: middle;
+        text-align: center;
+        padding: 2px;
+        font-size: 2em;
+      }
+
+      .filter-btn:hover{
+        /*background-color: #35e1a2;*/
+        color:#000;
+      }
 
 /**/
 /*      #entries-page .btn:hover{
@@ -114,8 +157,7 @@
     <script type="text/javascript" src="assets/js/nav.js"></script>
     <script type="text/javascript" src="assets/js/mobile-home.js"></script>
     <script type="text/javascript" src="assets/js/entries.js"></script>
-
-
+    <script src="https://use.fontawesome.com/c71948c364.js"></script>
 
     <link rel="stylesheet" type="text/css" media="all" href="assets/css/app.css" />
     <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.css" />
@@ -184,8 +226,12 @@
     <div class='container test' id='entries'>
       <a href="#" name='entries'></a>
       <div class=''id='entries-header'>
+
           <h1>ENTRIES</h1>
           <p>Check out the Competition</p>
+          <a class="filter-btn" aria-label="Filter" data-toggle="filter">
+            <i class="fa fa-sliders fa-2x"  assetsria-hidden="true"></i>
+          </a>
       </div>
       <div class='test box-container entries-box'>
         <div class=' box video'style='background-image: url(assets/images/footer.jpg);'>
@@ -366,8 +412,47 @@
         </div>
       </div>
     </div>
+  <div class="reveal" id="filter" data-reveal>
+    <div class='row'>
+      <div class="medium-6 columns">
+        <h1>BRIEF</h1>
+        <div id='form-select'>
+          <select id='upload'>
+            <option value="disabled selected"> CHOOSE A BRIEF</option>
+            <option name='text' value="text">TEXT</option>
+            <option name='audio'value="audio">AUDIO</option>
+            <option name='video' value="video">VIDEO</option>
+            <option name='photo' value="photo">PHOTO</option>
+          </select>
+        </div>
+      </div>
+      <div class="medium-6 columns">
+        <h1>TYPE</h1>
+        <div id='form-select'>
+          <select id='upload'>
+            <option value="disabled selected"> CHOOSE ENTRY TYPE</option>
+            <option name='text' value="text">TEXT</option>
+            <option name='audio'value="audio">AUDIO</option>
+            <option name='video' value="video">VIDEO</option>
+            <option name='photo' value="photo">PHOTO</option>
+          </select>
+        </div>
+      </div>
+      <div class="medium-6 columns">
+        <input class='btn-try' type='submit' value='FILTER'>
+      </div>
+    </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
     <footer>
       <p><a href="https://www.tac.vic.gov.au/">TAC</a> / <a href="">VANESSA</a> / <a href="http://www.howsafeisyourcar.com.au/">HOW SAFE IS YOUR FIRST CAR?</a>  / <a href="https://www.towardszero.vic.gov.au/">TOWARDS ZERO</a> / <a href="termsandconditions.html">TERMS AND CONDITIONS</a></p>
     </footer>
+    <script type="text/javascript" src="assets/js/vendor/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/vendor/foundation.js"></script>
+    <script type="text/javascript">
+    $(document).foundation();
+    </script>
   </body>
 </html>

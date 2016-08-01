@@ -55,7 +55,7 @@
 .slick-dots
 {
     position: absolute;
-    bottom: 10vh;
+    bottom: 3em;
 
     display: block;
 
@@ -670,7 +670,7 @@ padding-top:12vh;
 
 #brief{
   width:100vw;
-  height:100vh;
+  min-height:100vh;
   background-image: url(../images/brief-background.png);
   background-size: cover;
 }
@@ -741,7 +741,7 @@ color:#35e1a2;
 }
 
 #brief .box{
-  height: 65vh;
+  height: 32em;
   position:relative;
 }
 @media screen and (min-width: 50em){
@@ -1252,6 +1252,9 @@ padding-top: 7vh;
     /*height:135vh;*/
   }
 
+    .reveal-overlay{
+      margin-top: 7vh;
+    }
 
     .btn-green{
       color: #35e1a2;
@@ -1495,7 +1498,7 @@ footer p{
     width:90vw;
   }
   #brief .box {
-    height: 66vh;
+    /*height: 66vh;*/
   }
   #guidelines-page article {
     margin-left: 20vw;
@@ -1934,5 +1937,7 @@ background-size:inherit;
     margin-right: 10vw;
   }
 }
+
+
 
 

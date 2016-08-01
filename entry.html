@@ -19,6 +19,25 @@
         padding-right: 7vw !important;
       }
     }
+          #submitPopup{
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+        background-color: #3cfdb6;
+      }
+      #submitPopup input{
+        border:2px solid #000;
+
+      }
+      #submitPopup h1{
+        color: #000;
+      }
+      #submitPopup .row{
+        margin-bottom: 5%;
+      }
+      #submitPopup .btn-try{
+        margin: 0 auto;
+      }
 
 
     </style>
@@ -86,6 +105,16 @@
       </div>
     </nav>
     <div id='entry-form'>
+        <div class="reveal" id="submitPopup" data-reveal>
+      <h1 id=''>Congratulations on entering the Green Man Grants!</h1>
+      <p>Your submission is now with the team for moderation. You will receive an email to confirm when your entry is live in the online gallery.</p>
+
+      <p>Make sure you use the links provided to share your idea on social media and encourage your friends and family to vote for your idea in the gallery. The entry with the most votes will receive a $1,000 cash prize as the Pedestrians Choice.</p>
+      <a href='voting.html' id='vote_id'class='btn-try btn-white'>FIND OUT MORE</a>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
       <div class='dotoverlay'>
         <h1>READY?</h1>
         <p>Tell us your idea here.</p>
@@ -161,17 +190,16 @@
             <input type='dropdown'>
           </div> -->
         </form>
+        <a data-open="submitPopup"> SAMPLE</a>
       </div>
     </div>
-        <div class="reveal" id="submitPopup" data-reveal>
-              <h1 id=''>Thanks For Submitting</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat sed nibh sed finibus. Nam id nulla vel ex vulputate maximus. In convallis libero vitae tincidunt venenatis. In hac habitasse platea dictumst. Ut ac consectetur quam.</p>
-                <button class="close-button" data-close aria-label="Close modal" type="button">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
     <footer>
       <p><a href="https://www.tac.vic.gov.au/" target="_blank">TAC</a> / <a href="" target="_blank">VANESSA</a> / <a href="http://www.howsafeisyourcar.com.au/" target="_blank">HOW SAFE IS YOUR FIRST CAR?</a>  / <a href="https://www.towardszero.vic.gov.au/" target="_blank">TOWARDS ZERO</a> / <a href="termsandconditions.html" target="_blank">TERMS AND CONDITIONS</a></p>
     </footer>
+    <script type="text/javascript" src="assets/js/vendor/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/vendor/foundation.js"></script>
+    <script type="text/javascript">
+    $(document).foundation();
+    </script>
   </body>
 </html>
