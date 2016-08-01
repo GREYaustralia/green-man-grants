@@ -746,7 +746,7 @@ color:#35e1a2;
 }
 @media screen and (min-width: 50em){
   #brief .box {
-    width: calc(33% - 10px);
+    width: calc(27% - 10px);
   }
 }
 
@@ -798,8 +798,7 @@ color:#35e1a2;
 
 
 #shared-responsibilty h1{
-  padding-left: 4vw;
-  padding-right: 4vw;
+  line-height: 13vh;
 }
 
 #shared-responsibilty p{
@@ -1211,9 +1210,26 @@ padding-top: 7vh;
 }
 
 
+/***********BRIEF PAGES*****************/
+.left-arrow{
+  position: absolute;
+  left: 15vw;
+}
+.right-arrow{
+  position: absolute;
+  right:15vw;
+}
+
+.brief-title{
+
+}
 
 
 
+.entry-page a{
+  color:#000;
+  font-weight: bold;
+}
 
 
 
@@ -1728,6 +1744,7 @@ footer p{
   .mobile-brief .btn-briefs{
     bottom: 20vh;
   }
+
 }
 
 @media only screen and (max-width : 810px ){
@@ -1751,6 +1768,14 @@ footer p{
       font-size: 1em;
       /*text-align: center;*/
   }
+    .left-arrow{
+  position: absolute;
+  left: 0;
+}
+.right-arrow{
+  position: absolute;
+  right:0;
+}
 
 }
 

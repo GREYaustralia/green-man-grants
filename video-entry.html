@@ -180,6 +180,17 @@
         width:100%;
         height:3em;
       }
+      .left-arrow-entry{
+            position: absolute;
+            left: 15vw;
+      }
+      .right-arrow-entry{
+            position: absolute;
+            right: 15vw;
+      }
+      #title_id{
+        line-height: 2em;
+      }
 
 
       @media only screen and (max-width : 320px) {
@@ -212,15 +223,30 @@
         #side{
           display:none;
         }
+      .left-arrow-entry{
+            position: absolute;
+            left: 0;
+      }
+      .right-arrow-entry{
+            position: absolute;
+            right: 0;
+      }
+      #video-entry-box{
+          width:90vw;
+        }
         .btn-try{
           /*bottom:-5vh !important;*/
         }
+
  /*              #video-entry-page{
           height:110vh;
         }*/
 
       }
-
+      a{
+        color:#000 !important;
+        font-weight: bold;
+      }
 
 
     </style>
@@ -285,7 +311,7 @@
         </div>
       </div>
     </nav>
-    <div id='video-entry-page'>
+    <div class='entry-page' id='video-entry-page'>
       <div class='dotoverlay'>
         <div id='side'>
           <div style='margin:0 auto'>
@@ -302,12 +328,12 @@
         </div>
         <article>
           <div>
-           <p id='name'><span id='name_id'>Jane's</span> Story</p>
+           <p id='name'><span id='name_id'>Jane's</span> Idea</p>
           </div>
           <div>
-            <a class='left-arrow-entry'href='text-entry.html'><img src='assets/images/arrow-black-left.png'></a>
-            <h1 id='title_id'>Nullam libero tellus</h1>
-            <a class='right-arrow-entry' href='audio-entry.html'><img src='assets/images/arrow-black-right.png'></a></div>
+
+            <h1 id='title_id'> <a class='left-arrow-entry'href='text-entry.html'><img src='assets/images/arrow-black-left.png'></a>Nullam libero tellus <a class='right-arrow-entry' href='audio-entry.html'><img src='assets/images/arrow-black-right.png'></a></h1>
+           </div>
           <h2 id='question_id'>How would you stop people from texting while driving?</h2>
             <div id='video-entry-box'>
               <video controls id='video_id' style='width:100%; max-height: 40vh;'>
@@ -347,10 +373,12 @@
                   <input class='btn' type='submit' value='VOTE NOW'>
                 </div>
               </div>
+              <p>We are committed to protecting your privacy. Your e-mail address will not be disclosed, added to a mailing list, or used for any other purpose without your consent.</br> View our <a href="privacypolicy.html">Privacy Policy</a>.</p>
                 <button class="close-button" data-close aria-label="Close modal" type="button">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
+
             <div>
               <a id='vote_id'class='btn-try btn-white' data-open="votePopup">VOTE NOW</a>
             </div>

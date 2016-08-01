@@ -67,25 +67,7 @@
       #audio-entry-page article{
         /*margin-left: 30vw;*/
 
-      }
-      .btn{
-        height:6vh;
-        width:15vw;
-        border: 2px solid #000 !important ;
-        position: absolute;
-        bottom: 4vh;
-        left:0;
-        right:0;
-        color:#000;
-        margin: auto;
-        padding-top:1.5vh;
-        /*display:table-cell;*/
-        vertical-align:middle;
-        font-family: Nanami-Bold;
-        text-align: center;
-        text-decoration: none;
-        /*margin: 1vw;*/
-      }
+        }
 
       .btn:hover{
         color:white;
@@ -215,6 +197,17 @@
         width:100%;
         height:3em;
       }
+      .left-arrow-entry{
+      position: absolute;
+      left: 15vw;
+      }
+      .right-arrow-entry{
+            position: absolute;
+            right: 15vw;
+      }
+      #title_id{
+        line-height: 2em;
+      }
 
 
       @media only screen and (max-width : 320px) {
@@ -247,6 +240,18 @@
         #side{
           display:none;
         }
+
+      .left-arrow-entry{
+        position: absolute;
+        left: 0;
+      }
+      .right-arrow-entry{
+          position: absolute;
+          right: 0;
+      }
+      #video-entry-box{
+          width:90vw;
+        }
         .btn-try{
           /*bottom:-5vh !important;*/
         }
@@ -254,6 +259,10 @@
           height:110vh;
         }*/
 
+      }
+            a{
+        color:#000 !important;
+        font-weight: bold;
       }
 
 
@@ -320,7 +329,7 @@
         </div>
       </div>
     </nav>
-    <div id='audio-entry-page'>
+    <div class='entry-page' id='audio-entry-page'>
       <div class='dotoverlay'>
         <div id='side'>
           <div style='margin:0 auto'>
@@ -337,9 +346,9 @@
         </div>
         <article>
           <div>
-           <p id='name'><span id='name_id'>Jane's</span> Story</p>
+           <p id='name'><span id='name_id'>Jane's</span> Idea</p>
           </div>
-          <div><a href='video-entry.html'><img src=''></a><h1 id='title_id'>Nullam libero tellus</h1><a href='image-entry.html'><img src=''></a></div>
+          <h1 id='title_id'> <a class='left-arrow-entry'href='video-entry.html'><img src='assets/images/arrow-black-left.png'></a>Nullam libero tellus <a class='right-arrow-entry' href='image-entry.html'><img src='assets/images/arrow-black-right.png'></a></h1>
           <h2 id='question_id'>How would you stop people from texting while driving?</h2>
             <div id='audio-entry-box'>
               <div id='audio-play-box'style=''>
@@ -382,6 +391,7 @@
                   <input class='btn' type='submit' value='VOTE NOW'>
                 </div>
               </div>
+              <p>We are committed to protecting your privacy. Your e-mail address will not be disclosed, added to a mailing list, or used for any other purpose without your consent.</br> View our <a href="privacypolicy.html">Privacy Policy</a>.</p>
                 <button class="close-button" data-close aria-label="Close modal" type="button">
                   <span aria-hidden="true">&times;</span>
                 </button>
