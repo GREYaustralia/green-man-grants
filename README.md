@@ -1,5 +1,5 @@
-# green-man-grants
-Contract work for Grey Australia
+# Green Man Grants
+Frontend Development work for TAC
 
 ##THINGS TO DO
   - Clean Up CSS Code
