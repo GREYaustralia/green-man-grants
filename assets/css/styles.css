@@ -623,7 +623,7 @@ padding-top:12vh;
     text-align: center;
     margin:0 auto;
     padding-bottom: 20px;
-    font-size: 4vh;
+    font-size: 2em;
   }
 
   #header p{
@@ -1417,7 +1417,7 @@ left:0;
 
 #header h1{
   width:80vw;
-  font-size: 3vh;
+  font-size: 1.5em;
 }
 #header p{
 width:90vw;
