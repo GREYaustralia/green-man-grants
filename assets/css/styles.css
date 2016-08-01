@@ -144,7 +144,7 @@ html, body {
 
 
 
-#header video{
+#header                                                                                  {
   min-height: 100vh;
   min-width: 100%;
   object-fit: cover;
@@ -1280,7 +1280,7 @@ padding-top: 7vh;
 }
 
 #enter .box img{
-  height: 15vh;
+  height: 11vh;
 }
 
 
