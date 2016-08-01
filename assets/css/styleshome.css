@@ -144,11 +144,11 @@ html, body {
 
 
 
-#header                                                                                  {
+/*#header                                                                                  {
   min-height: 100vh;
   min-width: 100%;
   object-fit: cover;
-}
+}*/
 
 h1{
   color:#35e1a2;
@@ -598,8 +598,6 @@ padding-top:12vh;
 
 }
   #header-content{
-    /*padding-top:7vh;*/
-    /*position: absolute;*/
     z-index: 1;
     left: 0;
     right: 0;

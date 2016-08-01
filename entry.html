@@ -143,16 +143,21 @@
                 <input class="small-1 medium-1 columns" type='checkbox'>
                 <p class="small-11 medium-11 columns checkbox-text">Check this box if you would like to receive further information about road safety</p>
               </div>
-
               <div class='large-12 columns' id='tandc'>
                 <input class="small-1 medium-1 columns" type='checkbox'>
-                <p class="small-11 medium-11 columns checkbox-text">Check this box if you agree to the <a href='termsandconditions.html'>Terms and Conditions</a></p>
+                <p class="small-11 medium-11 columns checkbox-text">Check this box if you agree to the <a href='termsandconditions.html' target='_blank'>Terms and Conditions</a></p>
               </div>
 
 
               <div id='form-upload' class='large-12 columns '>
                 <h1>UPLOAD YOUR ENTRY</h1>
                 <div id='form-select' class='large-12 columns'>
+                <select class='large-12 columns' id='brief-question'>
+                    <option value="disabled selected"> CHOOSE BRIEF</option>
+                    <option name='text' value="vehiclesafety">VEHICLE SAFETY</option>
+                    <option name='audio'value="vulnerability">VULNERABLILITY</option>
+                    <option name='video' value="sharedresponsibility">SHARED RESPONSIBILITY</option>
+                  </select>
                   <select class='large-12 columns' id='upload'>
                     <option value="disabled selected"> CHOOSE ENTRY TYPE</option>
                     <option name='text' value="text">TEXT</option>
@@ -161,6 +166,7 @@
                     <option name='photo' value="photo">PHOTO</option>
                   </select>
                 </div>
+                <p><b id='question'></b></p>
                 <div id='upload-field'></div>
                 <input class=' large-12 columns btn' type='submit' value='SUBMIT' data-open="submitPopup">
               </div>

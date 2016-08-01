@@ -100,8 +100,8 @@
   font-family: Nanami-Bold;
   text-align: center;
   /*padding-left: 11vw;*/
-  padding-right: 2vw;
-  height:5vh;
+  padding-right: 2em;
+  height:3em;
     }
 #text-submission{
   height:50vh;
@@ -168,8 +168,8 @@ input{
   #form-select select{
     border:none;
     border-radius:0px;
-    background-color: #0a362f;
-    /*height:5vh;*/
+    background-color: #000;
+    height:3em;
   }
   #upload{
 
