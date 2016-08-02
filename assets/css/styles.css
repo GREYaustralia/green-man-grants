@@ -435,6 +435,7 @@ padding-top:12vh;
   .btn:hover{
     border: 2px solid #35e1a2;
     background-color: #35e1a2;
+    color:#000;
   }
   .btn-box{
   height:8vh;
