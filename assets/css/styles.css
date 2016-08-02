@@ -343,6 +343,13 @@ padding-top:12vh;
   max-height:10vh;
 }
 
+.policy{
+  font-size: 0.9em !important;
+}
+.policy a{
+  font-weight: bold;
+  color:black;
+}
 
 /*MOBILE BRIEF*/
 
@@ -1187,8 +1194,8 @@ footer text -Roboto Thin - 22.6 - green
 #contact p{
   margin:0 auto;
   text-align: center;
-  width: 70vw;
-  font-size: 1em;
+  /*width: 70vw;*/
+  /*font-size: 1em;*/
 }
 #contact form{
 width: 40vw;
