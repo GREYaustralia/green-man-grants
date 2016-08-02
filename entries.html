@@ -124,23 +124,25 @@
         color: #000;
       }
       .filter-btn{
-        /*height:3em;*/
-        /*width:3em;*/
-        top:15vh;
-        right:5px;
+        height: 3em;
+        width: 11em;
+        top: 17vh;
+        right: 5px;
         color: #35e1a2;
-        /*border: 2px solid #35e1a2;*/
+        border: 2px solid #35e1a2;
         position: absolute;
-/*        font-size: 1em;*/
         display: block;
         vertical-align: middle;
         text-align: center;
         padding: 2px;
         font-size: 2em;
+        font-family: Nanami-Bold;
+        font-size: 18px;
+        line-height: 3em;
       }
 
       .filter-btn:hover{
-        /*background-color: #35e1a2;*/
+        background-color: #35e1a2;
         color:#000;
       }
 
@@ -229,9 +231,7 @@
 
           <h1>ENTRIES</h1>
           <p>Check out the Competition</p>
-          <a class="filter-btn" aria-label="Filter" data-toggle="filter">
-            <i class="fa fa-sliders fa-2x"  assetsria-hidden="true"></i>
-          </a>
+          <a class="filter-btn" aria-label="Filter" data-toggle="filter">FILTER</a>
       </div>
       <div class='test box-container entries-box'>
         <div class=' box video'style='background-image: url(assets/images/footer.jpg);'>
@@ -417,19 +417,18 @@
       <div class="medium-6 columns">
         <h1>BRIEF</h1>
         <div id='form-select'>
-          <select id='upload'>
+          <select id='brief-filter'>
             <option value="disabled selected"> CHOOSE A BRIEF</option>
-            <option name='text' value="text">TEXT</option>
-            <option name='audio'value="audio">AUDIO</option>
-            <option name='video' value="video">VIDEO</option>
-            <option name='photo' value="photo">PHOTO</option>
+            <option name='vehiclesafety' value="vehiclesafety">VEHICLE SAFETY</option>
+            <option name='vulnerability'value="vulnerability">VULNERABILITY</option>
+            <option name='sharedresponsibility' value="sharedresponsibility">SHARED RESPONSIBILITY</option>
           </select>
         </div>
       </div>
       <div class="medium-6 columns">
         <h1>TYPE</h1>
         <div id='form-select'>
-          <select id='upload'>
+          <select id='type-filter'>
             <option value="disabled selected"> CHOOSE ENTRY TYPE</option>
             <option name='text' value="text">TEXT</option>
             <option name='audio'value="audio">AUDIO</option>
@@ -447,7 +446,7 @@
       </button>
     </div>
     <footer>
-      <p><a href="https://www.tac.vic.gov.au/">TAC</a> / <a href="">VANESSA</a> / <a href="http://www.howsafeisyourcar.com.au/">HOW SAFE IS YOUR FIRST CAR?</a>  / <a href="https://www.towardszero.vic.gov.au/">TOWARDS ZERO</a> / <a href="termsandconditions.html">TERMS AND CONDITIONS</a></p>
+      <p><a href="https://www.tac.vic.gov.au/">TAC</a> / <a href="">VANESSA</a> / <a href="http://www.howsafeisyourcar.com.au/">HOW SAFE IS YOUR FIRST CAR?</a>  / <a href="https://www.towardszero.vic.gov.au/">TOWARDS ZERO</a> / <a href="termsandconditions.html">TERMS AND CONDITIONS</a> / <a href="privacypolicy.html" target="_blank">PRIVACY POLICY</a>  </p>
     </footer>
     <script type="text/javascript" src="assets/js/vendor/jquery.js"></script>
     <script type="text/javascript" src="assets/js/vendor/foundation.js"></script>

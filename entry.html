@@ -43,6 +43,7 @@
     </style>
     <title>The Green Man's Grants | Young Driver Safety Package</title>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="assets/js/foundation-datepicker.js"></script>
     <script type="text/javascript" src="assets/js/nav.js"></script>
     <script type="text/javascript" src="assets/js/entryform.js"></script>
 
@@ -51,6 +52,7 @@
     <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
     <link rel="stylesheet" type="text/css" href="assets/css/entry.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/datepicker.css">
 
     <!--***** Fonts *****-->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,700,100' rel='stylesheet' type='text/css'>
@@ -118,22 +120,22 @@
       <div class='dotoverlay'>
         <h1>READY?</h1>
         <p>Tell us your idea here.</p>
-        <form>
+        <form data-abide>
           <div class='row'>
             <div class='large-12 columns'>
               <input type='text' placeholder='YOUR NAME'>
             </div>
             <div class='large-12 columns'>
-              <input type='text' placeholder='CONTACT PHONE NUMBER'>
+              <input type='text' placeholder='CONTACT PHONE NUMBER' required>
             </div>
             <div class='large-12 columns'>
-              <input type='text' placeholder='EMAIL ADDRESS'>
+              <input type='email' placeholder='EMAIL ADDRESS' required>
             </div>
             <div class='large-12 columns'>
               <input type='text' placeholder='IDEA NAME (MAX 30 CHARACTERS)' maxlength='30'>
             </div>
             <div class='large-6 columns'>
-              <input type='text' placeholder='DOB'>
+              <input id="dp1" type='text' placeholder='DOB'>
             </div>
             <div class='large-6 columns'>
               <input type='text' placeholder='POSTCODE'>
@@ -201,12 +203,20 @@
       </div>
     </div>
     <footer>
-      <p><a href="https://www.tac.vic.gov.au/" target="_blank">TAC</a> / <a href="" target="_blank">VANESSA</a> / <a href="http://www.howsafeisyourcar.com.au/" target="_blank">HOW SAFE IS YOUR FIRST CAR?</a>  / <a href="https://www.towardszero.vic.gov.au/" target="_blank">TOWARDS ZERO</a> / <a href="termsandconditions.html" target="_blank">TERMS AND CONDITIONS</a></p>
+      <p><a href="https://www.tac.vic.gov.au/" target="_blank">TAC</a> / <a href="" target="_blank">VANESSA</a> / <a href="http://www.howsafeisyourcar.com.au/" target="_blank">HOW SAFE IS YOUR FIRST CAR?</a>  / <a href="https://www.towardszero.vic.gov.au/" target="_blank">TOWARDS ZERO</a> / <a href="termsandconditions.html" target="_blank">TERMS AND CONDITIONS</a> / <a href="privacypolicy.html" target="_blank">PRIVACY POLICY</a></p>
     </footer>
     <script type="text/javascript" src="assets/js/vendor/jquery.js"></script>
     <script type="text/javascript" src="assets/js/vendor/foundation.js"></script>
     <script type="text/javascript">
     $(document).foundation();
+    $(function(){
+      $('#dp1').fdatepicker({
+        initialDate: '02-12-1989',
+        format: 'mm-dd-yyyy',
+        disableDblClickSelection: true
+      });
+    });
     </script>
+
   </body>
 </html>
