@@ -284,8 +284,21 @@ footer{
 #entries .box .dotoverlay{
   min-height:auto;
 }
-
-
+  .contact-nav-btn{
+    /* padding-top: 100vh; */
+    position: absolute;
+    bottom: -90vh;
+    /* z-index: 120; */
+    right: 12vw;
+    border: 2px solid #000;
+        vertical-align: middle;
+    text-align: center;
+        height: 3em;
+    width: 10em;
+    font-family: Nanami-Bold;
+    font-size: 18px;
+    line-height: 3em;
+  }
 
 
 
