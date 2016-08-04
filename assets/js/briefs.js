@@ -8,5 +8,4 @@ $(document).ready(function(){
     $(this).find('.overlay').addClass('dotoverlay')
     $(this).css('border','0px solid #35e1a2')
   })
-
 })

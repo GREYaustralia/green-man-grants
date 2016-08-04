@@ -2,88 +2,16 @@
 <html>
   <head>
     <META NAME="viewport" CONTENT="width=device-width, height=device-height, initial-scale=1, user-scalable=no"/>
-    <style>
-      #main-content{
-        padding-left:29vw;
-        width:70vw;
-
-      }
-    /*NEED MEDIA FOR THIS PAGE*/
-      #guidelines-page{
-        min-height:100vh;
-        background-image:url(assets/images/guidelines.png);
-        background-size: cover;
-      }
-      #guidelines-page h1{
-        padding-top: 12vh;
-      }
-      #guidelines-page h2{
-        font-size: 4vh;
-        width:80vw;
-        margin: 0 auto;
-        /*margin-bottom: 10vh;*/
-        text-align: left;
-        font-weight: 100;
-      }
-      #guidelines-page p{
-        text-align: left;
-        color:white;
-        margin-bottom: 0;
-      }
-      #guidelines-page p:nth-child(4){
-        /*font-size: 2.5vh;*/
-        /*margin-left:14vw;*/
-      }
-      #guidelines-page ul{
-        /*margin-left: 2vw;*/
-      }
-      #guidelines-page li{
-        text-align: left;
-        color:white;
-        /*list-style: none;*/
-        padding-bottom: .5vh;
-        /*padding-top: .5vh;*/
-      }
-      #guidelines-page article{
-        /*margin-left: 40vw;*/
-
-      }
-      @media only screen and (max-width : 1023px) {
-      #guidelines-page h2{
-        font-size: 4vh;
-        width:80vw;
-        margin: 0 auto;
-        /*margin-bottom: 10vh;*/
-        text-align: left;
-        font-weight: 100;
-        margin-left: 14vw;
-      }
-      #guidelines-page p{
-        text-align: left;
-        color:white;
-      }
-        #guidelines-page ul {
-          margin-left: 16vw;
-          margin-right: 10vw;
-        }
-      }
-    </style>
     <title>The Green Man's Grants | Young Driver Safety Package</title>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-    <script type="text/javascript" src="assets/js/nav.js"></script>
-    <script type="text/javascript" src="assets/js/mobile-home.js"></script>
-
-
-
     <link rel="stylesheet" type="text/css" media="all" href="assets/css/app.css" />
     <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.css" />
     <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/guidelines.css">
     <!--***** Fonts ***** -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,700,100' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="assets/fonts/MyFontsWebfontsKit.css">
-
-    <!-- <script type="text/javascript" src="assets/js/mouse-scroll.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
   </head>
   <body>
   <nav id='top-bar'>
@@ -97,6 +25,7 @@
           <img src='assets/images/menu.png'></img>
         </a>
         <div class="nav" style="display:none;">
+          <a href='#' name='main-nav'><a>
           <ul>
             <li>
               <a href="about.html">WHAT ARE GREEN MAN GRANTS?</a>
@@ -131,12 +60,19 @@
         </div>
       </div>
     </nav>
-    <div id='guidelines-page'>
+      <ol class='sr-hidden'>
+        <li><a href='#main-nav'>Skip to Navigation</a></li>
+        <li><a href='#content'>Skip to Content</a></li>
+        <li><a href='#main-nav'>Skip to Footer</a></li>
+      </ol>
+    <section id='guidelines-page'>
       <div class='dotoverlay'>
+        <header>
         <h1>ENTRY GUIDELINES</h1>
         <p style='text-align:center;'>Each entry must meet the following criteria.</p>
-        <article>
-          <div id='main-content'>
+      </header>
+          <article id='main-content'>
+          <a href='#' name='content'><a>
           <h2 class='center'>SUBMISSION CRITERIA</h2>
             <ul>
               <li>Entries to be received by 14th September 2016</li>
@@ -157,12 +93,18 @@
               <li>be innovative and should aim to change the way young people think about road safety</li>
               <li>be able to be produced within your proposed budget (up to $50,000)</li>
             </ul>
-          </div>
         </article>
       </div>
-    </div>
-    <footer>
+    </section>
+  <footer class='footer'>
+    <a href='#' name='footer'><a>
       <p><a href="https://www.tac.vic.gov.au/" target="_blank">TAC</a> / <a href="" target="_blank">VANESSA</a> / <a href="http://www.howsafeisyourcar.com.au/" target="_blank">HOW SAFE IS YOUR FIRST CAR?</a>  / <a href="https://www.towardszero.vic.gov.au/" target="_blank">TOWARDS ZERO</a> / <a href="termsandconditions.html" target="_blank">TERMS AND CONDITIONS</a> / <a href="privacypolicy.html" target="_blank">PRIVACY POLICY</a></p>
-    </footer>
+  </footer>
+    <script type="text/javascript" src="assets/js/vendor/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/vendor/foundation.js"></script>
+    <script type="text/javascript" src="assets/js/foundation-datepicker.js"></script>
+    <script type="text/javascript" src="assets/js/entry.js"></script>
+    <script type="text/javascript" src="assets/js/nav.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
   </body>
 </html>

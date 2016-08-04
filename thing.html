@@ -2,16 +2,180 @@
 <html>
   <head>
     <META NAME="viewport" CONTENT="width=device-width, height=device-height, initial-scale=1, user-scalable=no"/>
+    <style>
+
+    /*NEED MEDIA FOR THIS PAGE*/
+      #entries-page{
+        /*height:100vh;*/
+        background-image:url(assets/images/entries.png);
+        background-size: cover;
+      }
+      #entries-page h1{
+        padding-top: 12vh;
+      }
+      #entries-page h2{
+        font-size: 4vh;
+        width:80vw;
+        margin: 0 auto;
+        /*margin-bottom: 10vh;*/
+        text-align: left;
+        font-weight: 100;
+      }
+      #entries-page p{
+        text-align: left;
+      }
+      #entries-page b{
+        color:#35e1a2;
+        font-family: Nanami-Bold;
+      }
+      #entries-page ul{
+        margin-left: 4vw;
+      }
+      #entries-page li{
+        text-align: left;
+        color:white;
+        list-style: none;
+        padding-bottom: .5vh;
+        padding-top: .5vh;
+      }
+      #entries-page li span{
+        color:#35e1a2;
+      }
+
+      #entries-page article{
+        margin-top: 5vh;
+        margin-left: 20vw;
+        margin-right: 20vw;
+
+      }
+      #button-section{
+        position: absolute;
+        top: 58vh;
+        left:60vw;
+      }
+
+      #entries-page .box{
+        background-color:red;
+        margin-right:0px;
+        margin-bottom:0px;
+        height:34vh;
+        position: relative;
+        background-size: cover;
+        margin:0 auto;
+        width:25%;
+      }
+
+      #entries-page .box h1{
+        padding-top:2vh;
+        text-align: center;
+        font-size: 4vh;
+        position:absolute;
+        left:0;
+        right:0;
+        margin:0 auto;
+      }
+
+      #entries-page .box img{
+        /*width:25%;*/
+        max-height: 12vh;
+        position:absolute;
+        margin-top:10vh;
+        left:0;
+        right:0;
+        top:0;
+        bottom: 0;
+
+        /*margin-left: 7vw;*/
+
+
+      }
+      #entries-page .box p{
+      position: absolute;
+      margin-top:30vh;
+      /*margin-left:5vw;*/
+      margin:0 auto;
+      left:0;
+      right:0;
+      bottom:0;
+
+      }
+      #filter{
+        background-color:#35e1a2;
+        width:100vw;
+
+      }
+      #filter .btn-try{
+        background-color: transparent;
+        border:2px solid black;
+        float:right;
+      }
+      #filter select{
+        background-color: black;
+        color: #35e1a2;
+        font-size: 18px;
+        font-family: Nanami-Bold;
+        text-align: center;
+        height: 3em;
+        /*padding-left: 11vw;*/
+        padding-right: 3em;
+        /*height:5vh;*/
+      }
+      #filter h1{
+        color: #000;
+      }
+      .filter-btn{
+        height: 3em;
+        width: 11em;
+        top: 17vh;
+        right: 5px;
+        color: #35e1a2;
+        border: 2px solid #35e1a2;
+        position: absolute;
+        display: block;
+        vertical-align: middle;
+        text-align: center;
+        padding: 2px;
+        font-size: 2em;
+        font-family: Nanami-Bold;
+        font-size: 18px;
+        line-height: 3em;
+      }
+
+      .filter-btn:hover{
+        background-color: #35e1a2;
+        color:#000;
+      }
+      .entryoverlay{
+      background-image: url(../images/dots2.png);
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+      position: absolute;
+  }
+/**/
+/*      #entries-page .btn:hover{
+        background-color: #35e1a2;
+        margin:0 auto;
+        text-align: center;
+        color:black;
+      }*/
+    </style>
     <title>The Green Man's Grants | Young Driver Safety Package</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="assets/js/nav.js"></script>
+    <script type="text/javascript" src="assets/js/mobile-home.js"></script>
+    <script type="text/javascript" src="assets/js/entries.js"></script>
+    <script src="https://use.fontawesome.com/c71948c364.js"></script>
+
     <link rel="stylesheet" type="text/css" media="all" href="assets/css/app.css" />
     <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.css" />
     <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/entries.css">
     <!--***** Fonts ***** -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,700,100' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="assets/fonts/MyFontsWebfontsKit.css">
-    <link rel="stylesheet" type="text/css" href="href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+    <!-- <script type="text/javascript" src="assets/js/mouse-scroll.js"></script> -->
   </head>
   <body>
     <nav id='top-bar'>
@@ -25,7 +189,6 @@
           <img src='assets/images/menu.png'></img>
         </a>
         <div class="nav" style="display:none;">
-          <a href='#' name='main-nav'><a>
           <ul>
             <li>
               <a href="about.html">WHAT ARE GREEN MAN GRANTS?</a>
@@ -60,35 +223,49 @@
         </div>
       </div>
     </nav>
-      <ol class='sr-hidden'>
-        <li><a href='#main-nav'>Skip to Navigation</a></li>
-        <li><a href='#content'>Skip to Content</a></li>
-        <li><a href='#main-nav'>Skip to Footer</a></li>
-      </ol>
-    <section class='container test' id='entries'>
+    <div class='container test' id='entries'>
       <a href="#" name='entries'></a>
-      <div class='dotoverlay'>
-      <header class=''id='entries-header'>
+      <div class=''id='entries-header'>
+
           <h1>ENTRIES</h1>
           <p>Check out the Competition</p>
           <a class="filter-btn" aria-label="Filter" data-toggle="filter">FILTER</a>
-      </header>
-      <article>
-        <a href='#' name='content'><a>
-      <div class='test box-container entries-box'>
-        <div class=' box video'style='background-image: url(assets/images/footer.jpg);'>
-          <div class='greenoverlay entries-dotoverlay'></div>
-          <h1>Nullam libero tellus</h1>
-          <a class="btn-box btn" href="video-entry.html">VIEW ENTRY</a>
-          <img class='icon' src='assets/images/video-green.png'>
-          <div class='votes'>
-            <span class='votes-left'><img src="assets/images/face.png">3k</span>
-            <span class='votes-center'><img src="assets/images/twit.png">250</span>
-            <span class='votes-right'><img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6,997</span></span>
-          </div>
-        </div>
+      </div>
+
+
+
+
+      <div class='box-container entries-box'>
+        <a href='video-entries.html'>
         <div class='box video' style='background-image: url(assets/images/footer.jpg);'>
-          <div class='greenoverlay entries-dotoverlay'></div>
+
+          <div class='greenoverlay dotoverlay'>
+            <h1>Nullam libero tellus</h1>
+            <a class="btn-box btn" href="video-entry.html">VIEW ENTRY</a>
+            <img class='icon' src='assets/images/video-green.png'>
+            <div class='votes'>
+              <div class='votes-left'>
+                <img src="assets/images/face.png"><span>3k</span>
+              </div>
+              <div class='votes-center'>
+                <img src="assets/images/twit.png"><span>250</span>
+              </div>
+              <div class='votes-right'>
+               <img src="assets/images/vote_icon.png"><span id='entrie_id_votes'>6,997</span>
+              </div>
+            </div>
+          </div>
+
+      </div>
+      </a>
+
+
+
+
+
+
+
+        <div class='box video' style='background-image: url(assets/images/footer.jpg);'>
           <h1>Nullam libero tellus</h1>
           <a class="btn-box btn" href="video-entry.html">VIEW ENTRY</a>
           <img class='icon' src='assets/images/video-green.png'>
@@ -99,7 +276,7 @@
           </div>
         </div>
         <div class='box text' style='background-image: url(assets/images/footer.jpg);'>
-          <div class='greenoverlay entries-dotoverlay'></div>
+
           <h1>Nullam libero tellus</h1>
           <a class="btn-box btn" href="text-entry.html">VIEW ENTRY</a>
           <img class='icon' src='assets/images/text-green.png'>
@@ -110,7 +287,7 @@
           </div>
         </div>
         <div class='box audio' style='background-image: url(assets/images/footer.jpg);'>
-          <div class='greenoverlay entries-dotoverlay'></div>
+          <div class='greenoverlay dotoverlay'></div>
           <h1>Nullam libero tellus</h1>
           <a class="btn-box btn" href="audio-entry.html">VIEW ENTRY</a>
           <img class='icon' src='assets/images/audio-green.png'>
@@ -121,7 +298,7 @@
           </div>
         </div>
         <div class='box image' style='background-image: url(assets/images/footer.jpg);'>
-          <div class='greenoverlay entries-dotoverlay'></div>
+          <div class='greenoverlay dotoverlay'></div>
           <h1>Nullam libero tellus</h1>
           <a class="btn-box btn" href="image-entry.html">VIEW ENTRY</a>
           <img class='icon' src='assets/images/image-green.png'>
@@ -132,7 +309,7 @@
           </div>
         </div>
         <div class='box image' style='background-image: url(assets/images/footer.jpg);'>
-          <div class='greenoverlay entries-dotoverlay'></div>
+          <div class='greenoverlay dotoverlay'></div>
           <h1>Nullam libero tellus</h1>
           <a class="btn-box btn" href="image-entry.html">VIEW ENTRY</a>
           <img class='icon' src='assets/images/image-green.png'>
@@ -143,7 +320,7 @@
           </div>
         </div>
         <div class='box text' style='background-image: url(assets/images/footer.jpg);'>
-          <div class='greenoverlay entries-dotoverlay'></div>
+          <div class='greenoverlay dotoverlay'></div>
           <h1>Nullam libero tellus</h1>
           <a class="btn-box btn" href="text-entry.html">VIEW ENTRY</a>
           <img class='icon' src='assets/images/text-green.png'>
@@ -154,7 +331,7 @@
           </div>
         </div>
         <div class='box video' style='background-image: url(assets/images/footer.jpg);'>
-          <div class='greenoverlay entries-dotoverlay'></div>
+          <div class='greenoverlay dotoverlay'></div>
           <h1>Nullam libero tellus</h1>
           <a class="btn-box btn" href="video-entry.html">VIEW ENTRY</a>
           <img class='icon' src='assets/images/video-green.png'>
@@ -165,7 +342,7 @@
           </div>
         </div>
         <div class='box text' style='background-image: url(assets/images/footer.jpg);'>
-          <div class='greenoverlay entries-dotoverlay'></div>
+          <div class='greenoverlay dotoverlay'></div>
           <h1>Nullam libero tellus</h1>
           <a class="btn-box btn" href="text-entry.html">VIEW ENTRY</a>
           <img class='icon' src='assets/images/text-green.png'>
@@ -176,7 +353,7 @@
           </div>
         </div>
         <div class='box video' style='background-image: url(assets/images/footer.jpg);'>
-          <div class='greenoverlay entries-dotoverlay'></div>
+          <div class='greenoverlay dotoverlay'></div>
           <h1>Nullam libero tellus</h1>
           <a class="btn-box btn" href="video-entry.html">VIEW ENTRY</a>
           <img class='icon' src='assets/images/video-green.png'>
@@ -187,7 +364,7 @@
           </div>
         </div>
         <div class='box audio' style='background-image: url(assets/images/footer.jpg);'>
-          <div class='greenoverlay entries-dotoverlay'></div>
+          <div class='greenoverlay dotoverlay'></div>
           <h1>Nullam libero tellus</h1>
           <a class="btn-box btn" href="audio-entry.html">VIEW ENTRY</a>
           <img class='icon' src='assets/images/audio-green.png'>
@@ -198,7 +375,7 @@
           </div>
         </div>
         <div class='box video' style='background-image: url(assets/images/footer.jpg);'>
-          <div class='greenoverlay entries-dotoverlay'></div>
+          <div class='greenoverlay dotoverlay'></div>
           <h1>Nullam libero tellus</h1>
           <a class="btn-box btn" href="video-entry.html">VIEW ENTRY</a>
           <img class='icon' src='assets/images/video-green.png'>
@@ -209,7 +386,7 @@
           </div>
         </div>
         <div class='box image' style='background-image: url(assets/images/footer.jpg);'>
-          <div class='greenoverlay entries-dotoverlay'></div>
+          <div class='greenoverlay dotoverlay'></div>
           <h1>Nullam libero tellus</h1>
           <a class="btn-box btn" href="image-entry.html">VIEW ENTRY</a>
           <img class='icon' src='assets/images/image-green.png'>
@@ -220,7 +397,7 @@
           </div>
         </div>
         <div class='box text' style='background-image: url(assets/images/footer.jpg);'>
-          <div class='greenoverlay entries-dotoverlay'></div>
+          <div class='greenoverlay dotoverlay'></div>
           <h1>Nullam libero tellus</h1>
           <a class="btn-box btn" href="text-entry.html">VIEW ENTRY</a>
           <img class='icon' src='assets/images/text-green.png'>
@@ -231,7 +408,7 @@
           </div>
         </div>
         <div class='box text' style='background-image: url(assets/images/footer.jpg);'>
-          <div class='greenoverlay entries-dotoverlay'></div>
+          <div class='greenoverlay dotoverlay'></div>
           <h1>Nullam libero tellus</h1>
           <a class="btn-box btn" href="text-entry.html">VIEW ENTRY</a>
           <img class='icon' src='assets/images/text-green.png'>
@@ -242,7 +419,7 @@
           </div>
         </div>
         <div class='box text' style='background-image: url(assets/images/footer.jpg);'>
-          <div class='greenoverlay entries-dotoverlay'></div>
+          <div class='greenoverlay dotoverlay'></div>
           <h1>Nullam libero tellus</h1>
           <a class="btn-box btn" href="text-entry.html">VIEW ENTRY</a>
           <img class='icon' src='assets/images/text-green.png'>
@@ -253,12 +430,8 @@
           </div>
         </div>
       </div>
-    </article>
-    <footer class='footer'>
-      <a href='#' name='footer'><a>
-      <p><a href="https://www.tac.vic.gov.au/">TAC</a> / <a href="">VANESSA</a> / <a href="http://www.howsafeisyourcar.com.au/">HOW SAFE IS YOUR FIRST CAR?</a>  / <a href="https://www.towardszero.vic.gov.au/">TOWARDS ZERO</a> / <a href="termsandconditions.html">TERMS AND CONDITIONS</a> / <a href="privacypolicy.html" target="_blank">PRIVACY POLICY</a>  </p>
-    </footer>
-    <div class="reveal" id="filter" data-reveal>
+    </div>
+  <div class="reveal" id="filter" data-reveal>
     <div class='row'>
       <div class="medium-6 columns">
         <h1>BRIEF</h1>
@@ -291,11 +464,13 @@
         <span aria-hidden="true">&times;</span>
       </button>
     </div>
+    <footer>
+      <p><a href="https://www.tac.vic.gov.au/">TAC</a> / <a href="">VANESSA</a> / <a href="http://www.howsafeisyourcar.com.au/">HOW SAFE IS YOUR FIRST CAR?</a>  / <a href="https://www.towardszero.vic.gov.au/">TOWARDS ZERO</a> / <a href="termsandconditions.html">TERMS AND CONDITIONS</a> / <a href="privacypolicy.html" target="_blank">PRIVACY POLICY</a>  </p>
+    </footer>
     <script type="text/javascript" src="assets/js/vendor/jquery.js"></script>
     <script type="text/javascript" src="assets/js/vendor/foundation.js"></script>
-    <script type="text/javascript" src="assets/js/foundation-datepicker.js"></script>
-    <script type="text/javascript" src="assets/js/entries.js"></script>
-    <script type="text/javascript" src="assets/js/nav.js"></script>
-    <script type="text/javascript" src="assets/js/app.js"></script>
+    <script type="text/javascript">
+    $(document).foundation();
+    </script>
   </body>
 </html>

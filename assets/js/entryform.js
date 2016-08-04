@@ -19,28 +19,28 @@ $(document).ready(function(){
   $('#upload').change(function(){
     if ($(this).find(':selected').val() === 'text'){
       $('#upload-field').empty();
-      $('#upload-field').append('<textarea class="large-12 columns" id="text-submission" name="text-submission" placeholder="IDEA DESCRIPTION (MAX 140 CHARACTERS LINKS OK)"></textarea>')
+      $('#upload-field').append('<textarea class="large-12 columns" id="text-submission" name="text-submission" placeholder="IDEA DESCRIPTION (MAX 140 CHARACTERS LINKS OK)" required></textarea>')
     } else if($(this).find(':selected').val() === 'video'){
       $(function() {
         $(document).scrollTop( $("#form-upload").offset().top + (-75) );
       });
       $('#upload-field').empty();
-      $('#upload-field').append('<input name="file" type="file"/>');
-      $('#upload-field').append('<textarea class="large-12 columns" id="description" name="description" placeholder="VIDEO DESCRIPTION (MAX 1000 CHARACTERS LINKS OK)"></textarea>')
+      $('#upload-field').append('<input name="file" type="file" required/>');
+      $('#upload-field').append('<textarea class="large-12 columns" id="description" name="description" placeholder="VIDEO DESCRIPTION (MAX 1000 CHARACTERS LINKS OK)" required></textarea>')
     }else if($(this).find(':selected').val() === 'audio'){
       $(function() {
         $(document).scrollTop( $("#form-upload").offset().top + (-75) );
       });
       $('#upload-field').empty();
-      $('#upload-field').append('<input name="file" type="file"/>');
-      $('#upload-field').append('<textarea class="large-12 columns" id="description" name="description" placeholder="AUDIO DESCRIPTION (MAX 140 CHARACTERS LINKS OK)"></textarea>')
+      $('#upload-field').append('<input name="file" type="file" required/>');
+      $('#upload-field').append('<textarea class="large-12 columns" id="description" name="description" placeholder="AUDIO DESCRIPTION (MAX 140 CHARACTERS LINKS OK)" required></textarea>')
     }else if($(this).find(':selected').val() === 'photo'){
       $(function() {
         $(document).scrollTop( $("#form-upload").offset().top + (-75) );
       });
       $('#upload-field').empty();
-      $('#upload-field').append('<input name="file" type="file"/>');
-      $('#upload-field').append('<textarea class="large-12 columns" id="description" name="description" placeholder="PHOTO DESCRIPTION (MAX 1000 CHARACTERS LINKS OK)"></textarea>')
+      $('#upload-field').append('<input name="file" type="file" required/>');
+      $('#upload-field').append('<textarea class="large-12 columns" id="description" name="description" placeholder="PHOTO DESCRIPTION (MAX 1000 CHARACTERS LINKS OK)" required></textarea>')
     }else{
       $('#upload-field').empty();
       $(document).scrollTop();

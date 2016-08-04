@@ -2,285 +2,16 @@
 <html>
   <head>
     <META NAME="viewport" CONTENT="width=device-width, height=device-height, initial-scale=1, user-scalable=no"/>
-    <style>
-      body{
-        background-image: url(../images/green_background_new.png);
-        background-size: cover;
-      }
-      .dotoverlay{
-        position: relative !important;
-        background-size: cover;
-        height: 100%;
-        min-height: 100vh;
-      }
-
-    /*NEED MEDIA FOR THIS PAGE*/
-      #top-bar{
-        background-color: black;
-      }
-      #video-entry-page{
-        height:100vh;
-        background-image: url(assets/images/green_background_new.png);
-        background-size: cover;
-        background-color: #35e1a2;
-        min-height: 100vh;
-        height: auto;
-      }
-      #name{
-        padding-top: 9vh;
-      }
-      #video-entry-page h1{
-        padding-top: 1vh;
-        color:black;
-      }
-      #video-entry-page h2{
-        font-size: 3vh;
-        width:80vw;
-        margin: 0 auto;
-        margin-bottom: 2vh;
-        text-align: left;
-        /*font-weight: 100;*/
-        color:black;
-        text-align: center;
-      }
-      #video-entry-page p{
-        text-align: center;
-        margin-bottom: 0;
-      }
-      #video-entry-page ul{
-        margin-left: 4vw;
-      }
-      #video-entry-page li{
-        text-align: left;
-        color:white;
-        list-style: none;
-        padding-bottom: .5vh;
-        padding-top: .5vh;
-      }
-      #video-entry-page article{
-        /*margin-left: 30vw;*/
-
-      }
-
-      .btn:hover{
-        color:white;
-         border: 2px solid #FFF !important ;
-      }
-
-      #side{
-        padding-top: 1em;
-        height: 18em;
-        width: 4em;
-        background-color: black;
-        position: fixed;
-        right:0;
-        top:20vh;
-      }
-
-      #side img{
-        margin-left:1vw;
-        max-width: 6vw;
-        max-height: 6vh;
-      }
-      #side span{
-        color:white !important;
-        font-size: 1.5vh;
-        margin-left:2vw;
-        /*margin:0 auto;*/
-        /*width: 4.5em*/
-      }
-      #side p{
-        font-size: 1.5vh;
-        /*margin-left: 0.5vw;*/
-        margin:0 auto;
-        color:white;
-      }
-
-      .ped{
-        color:black;
-        font-size: 3vh;
-      }
-
-/*      .desc{
-        text-align:
-      }*/
-      #description{
-        width: 90%;
-        margin:0 auto;
-        margin-top:2vh;
-        margin-bottom: 2vh;
-      }
-
-      b{
-        color: black;
-      }
-/*      #videoplayer{
-        width:60vw;
-        margin: 0 auto;
-      }*/
-/*      #videoplayer img{
-        height:50vh;
-        width:60vw;
-        margin:0 auto;}*/
-        #video-entry-box{
-          width:45vw;
-          margin:0 auto;
-        }
-
-      video{
-        background-color:black;
-        /*margin-left: 20vw;*/
-        margin-top:2vh;
-        margin: 0 auto;
-        height:auto;
-        width: auto;
-        min-width: none !important;
-        min-height: none !important;
-      }
-      .btn-try{
-        /*position: absolute;*/
-        left:0;
-        right:0;
-        bottom:2vh !important;
-        margin:auto;
-        display: block !important;
-        margin-top: 2vh;
-      }
-      .checkbox-text{
-        font-size: 0.6em;
-        text-align: left;
-        padding-left: 0;
-      }
-
-      #votePopup{
-        width: 80%;
-        padding-left: 10%;
-        padding-right: 10%;
-        background-color: #3cfdb6;
-      }
-      #votePopup input{
-        border:2px solid #000;
-
-      }
-      #votePopup h1{
-        color: #000;
-      }
-      #votePopup .row{
-        margin-bottom: 5%;
-      }
-      #votePopup .btn{
-        border: 2px solid #000 !important ;
-        color: #000;
-        /*display:table-cell;*/
-        font-family: Nanami-Bold;
-        text-align: center;
-        text-decoration: none;
-        /*margin: 1vw;*/
-        background-color: transparent;
-        width:100%;
-        height:3em;
-      }
-      .left-arrow-entry{
-            position: absolute;
-            left: 15vw;
-      }
-      .right-arrow-entry{
-            position: absolute;
-            right: 15vw;
-      }
-      #title_id{
-        line-height: 2em;
-      }
-
-
-      @media only screen and (max-width : 320px) {
-        .dotoverlay{
-          position: relative !important;
-          height:110vh;
-        }
-        #video-entry-page{
-          height:110vh;
-        }
-        #video-entry-box{
-          width:90vw;
-          margin:0 auto;
-        }
-        .btn-try{
-          /*bottom:-5vh !important;*/
-        }
-      }
-      @media only screen and (max-width : 684px) {
-/*        #video-entry-page{
-        }
-        .dotoverlay{
-          position: relative !important;
-          height:110vh;
-        }
-        #video-entry-box{
-          width:90vw;
-          margin:0 auto;
-        }*/
-        #side{
-          display:none;
-        }
-      .left-arrow-entry{
-            position: absolute;
-            left: 0;
-      }
-      .right-arrow-entry{
-            position: absolute;
-            right: 0;
-      }
-      #video-entry-box{
-          width:90vw;
-        }
-        .btn-try{
-          /*bottom:-5vh !important;*/
-        }
-
- /*              #video-entry-page{
-          height:110vh;
-        }*/
-
-      }
-      a{
-        color:#000 !important;
-        font-weight: bold;
-      }
-      .entries-btn{
-        border: 2px solid #000;
-        height:3em;
-        width:11em;
-        display: block;
-        margin:0 auto;
-        line-height: 3em;
-        text-align: center;
-        /*margin: 1em;*/
-        margin-top: .5em;
-        margin-bottom: .5em;
-
-      }
-      .entry-btn-section{
-        width:50vw;
-        margin:0 auto;
-
-      }
-
-    </style>
     <title>The Green Man's Grants | Young Driver Safety Package</title>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-    <script type="text/javascript" src="assets/js/vendor/foundation.js"></script>
-    <script type="text/javascript" src="assets/js/vendor/jquery.js"></script>
-    <script type="text/javascript" src="assets/js/nav.js"></script>
-    <script type="text/javascript" src="assets/js/mobile-home.js"></script>
     <link rel="stylesheet" type="text/css" media="all" href="assets/css/app.css" />
     <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.css" />
     <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/entry.css">
     <!--***** Fonts ***** -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,700,100' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="assets/fonts/MyFontsWebfontsKit.css">
-    <!-- <script type="text/javascript" src="assets/js/mouse-scroll.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
   </head>
   <body>
     <nav id='top-bar'>
@@ -294,6 +25,7 @@
           <img src='assets/images/menu.png'></img>
         </a>
         <div class="nav" style="display:none;">
+          <a href='#' name='main-nav'><a>
           <ul>
             <li>
               <a href="about.html">WHAT ARE GREEN MAN GRANTS?</a>
@@ -328,9 +60,14 @@
         </div>
       </div>
     </nav>
-    <div class='entry-page' id='video-entry-page'>
+      <ol class='sr-hidden'>
+        <li><a href='#main-nav'>Skip to Navigation</a></li>
+        <li><a href='#content'>Skip to Content</a></li>
+        <li><a href='#main-nav'>Skip to Footer</a></li>
+      </ol>
+    <section class='entry-page' id='video-entry-page'>
       <div class='dotoverlay'>
-        <div id='side'>
+        <aside id='side'>
           <div style='margin:0 auto'>
             <img src='assets/images/facebook.png'>
             <span>6K</span>
@@ -342,60 +79,29 @@
             <span>600</span>
             <p>VOTES</p>
           </div>
-        </div>
-        <article>
-          <div>
-           <p id='name'><span id='name_id'>Jane's</span> Idea</p>
-          </div>
-          <div>
-
-            <h1 id='title_id'> <a class='left-arrow-entry'href='text-entry.html'><img src='assets/images/arrow-black-left.png'></a>Nullam libero tellus <a class='right-arrow-entry' href='audio-entry.html'><img src='assets/images/arrow-black-right.png'></a></h1>
-           </div>
-          <h2 id='question_id'>How would you stop people from texting while driving?</h2>
-            <div id='video-entry-box'>
+        </aside>
+            <header>
+              <div>
+                <p id='name'><span id='name_id'>Jane's</span> Idea</p>
+              </div>
+              <div>
+                <h1 id='title_id'> <a class='left-arrow-entry'href='text-entry.html'><img src='assets/images/arrow-black-left.png' alt='Previous Entry'></a>Nullam libero tellus <a class='right-arrow-entry' href='audio-entry.html'><img src='assets/images/arrow-black-right.png' alt='Next Entry'></a></h1>
+              </div>
+              <h2 id='question_id'>How would you stop people from texting while driving?</h2>
+            </header>
+            <article class='entry-box'>
+              <a href='#' name='content'><a>
               <video controls id='video_id' style='width:100%; max-height: 40vh;'>
                  <source src="assets/video/greenmangrants_webwicdeo_720p_low.webm" type="video/webm">
               </video>
-            </div>
-            <div id='description' class='center'>
-              <b>Description: </b>
-              <p id='desc_id'><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae risus dictum, accumsan sapien eget, tempus dolor. Aenean quam diam amet.</span></p>
-            </div>
-          <div style='width:100%;'>
+              <div id='description' class='center'>
+                <b>Description: </b>
+                <p id='desc_id'><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae risus dictum, accumsan sapien eget, tempus dolor. Aenean quam diam amet.</span></p>
+              </div>
+            </article>
+          <footer>
             <p><b class='ped'>PEDESTRIANS CHOICE - VOTE FOR THIS ENTRY</b></p>
             <p>You could win $1000 just for voting. <a href="voting.html"><b>How?</b></a></p>
-            <div class="reveal" id="votePopup" data-reveal>
-              <p>YOU'RE VOTING FOR</p>
-              <h1 id='title_id'>Nullam libero tellus</h1>
-              <p>BY <span>JANE</span> <span>SAMPLE</span></p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat sed nibh sed finibus. Nam id nulla vel ex vulputate maximus. In convallis libero vitae tincidunt venenatis. In hac habitasse platea dictumst. Ut ac consectetur quam.</p>
-              <div class='row'>
-                <div class="medium-6 columns">
-                  <input type="text" placeholder="FULL NAME">
-                </div>
-                <div class="medium-6 columns">
-                  <input type="text" placeholder="DATE OF BIRTH">
-                </div>
-                <div class="medium-6 columns">
-                  <input type="text" placeholder="EMAIL ADDRESS">
-                </div>
-                <div class="medium-6 columns">
-                  <input type="text" placeholder="POSTCODE">
-                </div>
-                <div class="medium-6 columns">
-                  <input class='small-2 medium-2 columns' type='checkbox'>
-                  <p class='small-10 medium-10 columns checkbox-text'>Check this box if you would like to receive further information about road safety</p>
-                </div>
-                <div class="medium-6 columns">
-                  <input class='btn' type='submit' value='VOTE NOW'>
-                </div>
-              </div>
-              <p>We are committed to protecting your privacy. Your e-mail address will not be disclosed, added to a mailing list, or used for any other purpose without your consent.</br> View our <a href="privacypolicy.html">Privacy Policy</a>.</p>
-                <button class="close-button" data-close aria-label="Close modal" type="button">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-
             <div class='row entry-btn-section'>
               <div class='large-4 columns'>
                 <a id='share_id' class='entries-btn' data-open="sharePopup">SHARE</a>
@@ -407,17 +113,58 @@
                 <a class='entries-btn' href='entries.html'>ALL ENTRIES</a>
               </div>
             </div>
-          </div>
+          </footer>
         </article>
       </div>
-    </div>
-    <footer>
+    </section>
+  <footer class='footer'>
+    <a href='#' name='footer'><a>
       <p><a href="https://www.tac.vic.gov.au/" target="_blank">TAC</a> / <a href="" target="_blank">VANESSA</a> / <a href="http://www.howsafeisyourcar.com.au/" target="_blank">HOW SAFE IS YOUR FIRST CAR?</a>  / <a href="https://www.towardszero.vic.gov.au/" target="_blank">TOWARDS ZERO</a> / <a href="termsandconditions.html" target="_blank">TERMS AND CONDITIONS</a> / <a href="privacypolicy.html" target="_blank">PRIVACY POLICY</a></p>
-    </footer>
-    <script type="text/javascript" src="assets/js/vendor/jquery.js"></script>
+  </footer>
+
+
+
+<div class="reveal" id="votePopup" data-reveal>
+  <p>YOU'RE VOTING FOR</p>
+  <h1 id='title_id'>Nullam libero tellus</h1>
+  <p>BY <span>JANE</span> <span>SAMPLE</span></p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat sed nibh sed finibus. Nam id nulla vel ex vulputate maximus. In convallis libero vitae tincidunt venenatis. In hac habitasse platea dictumst. Ut ac consectetur quam.</p>
+  <form data-abide>
+  <div class='row'>
+    <div class="medium-6 columns">
+      <input type="text" placeholder="FULL NAME" required>
+      <small class='form-error'>Full Name is required.</small>
+    </div>
+    <div class="medium-6 columns">
+      <input id='DOB' type="text" placeholder="DATE OF BIRTH" required>
+    </div>
+    <div class="medium-6 columns">
+      <input type='email' placeholder='EMAIL ADDRESS' required>
+      <small class='form-error'>Must be a valid email.</small>
+    </div>
+    <div class="medium-6 columns">
+      <input type='text' placeholder='POSTCODE' required pattern="[0-9]{4}">
+      <small class='form-error'>Must be a valid Postcode</small>
+    </div>
+    <div class="medium-6 columns">
+      <input class='small-2 medium-2 columns' type='checkbox'>
+      <p class='small-10 medium-10 columns checkbox-text'>Check this box if you would like to receive further information about road safety</p>
+    </div>
+    <div class="medium-6 columns">
+      <input class='btn' type='submit' value='VOTE NOW'>
+    </div>
+  </div>
+</form>
+<p class='policy'>We are committed to protecting your privacy. Your e-mail address will not be disclosed, added to a mailing list, or used for any other purpose without your consent.</br> View our <a href="privacypolicy.html">Privacy Policy</a>.</p>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+     <script type="text/javascript" src="assets/js/vendor/jquery.js"></script>
     <script type="text/javascript" src="assets/js/vendor/foundation.js"></script>
-    <script type="text/javascript">
-    $(document).foundation();
-    </script>
+    <script type="text/javascript" src="assets/js/foundation-datepicker.js"></script>
+    <script type="text/javascript" src="assets/js/entry.js"></script>
+    <script type="text/javascript" src="assets/js/nav.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
   </body>
 </html>

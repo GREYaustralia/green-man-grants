@@ -1,3 +1,8 @@
+.st0{
+  fill:#FFFFFF;
+}
+
+
     .slider{
       width: 100vw;
       /*margin-top: -12vh;*/
@@ -244,21 +249,22 @@ input{
      color:    #555555;
   }
 
-footer{
+.footer{
   width:100vw;
   height:10vh;
   background-color: black;
 }
-  footer p{
+  .footer p{
     color:#35e1a2;
     line-height:5em;
     margin-bottom: 0;
   }
-  footer a{
+  .footer a{
     color:#35e1a2;
   }
-  footer a:hover{
+  .footer a:hover{
     color:#FFF;
+    text-decoration: underline;
   }
 
 
@@ -281,9 +287,6 @@ footer{
 
 
 
-#entries .box .dotoverlay{
-  min-height:auto;
-}
   .contact-nav-btn{
     /* padding-top: 100vh; */
     position: absolute;
@@ -336,6 +339,15 @@ padding-top:12vh;
   height:auto;
   /*position: absolute;*/
 }
+.entries-dotoverlay{
+  background-image: url(../images/dots2.png);
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+
+  position: absolute;
+}
+
 .black-back{
   background-color: #000;
   opacity: 0.7;
@@ -362,6 +374,10 @@ padding-top:12vh;
 .policy a{
   font-weight: bold;
   color:black;
+}
+.policy a:hover{
+  color:black;
+  text-decoration: underline;
 }
 
 /*MOBILE BRIEF*/
@@ -880,114 +896,6 @@ background-size: cover;
 
 
 
-/*
-************* FONT
-
-Main Heading - nanami extra light - 53 px - green
-
-text - roboto light - 25px - green
-
-button - Nanami bold - 24px - green
-
-*****************
-
-headings Nanami extra light - 40px - green
-
-brief text - roboto light - 22.6px - white
-
-Brief box headings -Nanami extra light - 53px - white
-
-bref box text - Roboto Regular - 32px - green
-
-brief box button - Nanami bold - 24px - green
-
-***********************
-
-Enter Heading -Nanami extra light - 40 px - white
-
-enter text - roboto medium - 22.6px - white
-
-enter icon headings -  roboto regular - 28 px - white
-
-enter box - Nanami bold - 24px - white
-
-**********************
-
-Entries heading - nanami extra light - 40 px -  green
-
-entries text -roboto light -22.6 px - green
-
-entries thing headings - Roboto Regular -32px -  green
-
-entries follow -
-
-entries see more - Nanami Bold - 32px - green
-
-********************
-
-contact us heading - Nanami extra light  40px - white
-
-text - Roboto medium - 22.6px - white
-
-label -Nanami Light -22.6px - gray
-
-*********************
-
-footer thing - nanami Extra light - 53.3px - green
-
-footer text -Roboto Thin - 22.6 - green
-
-
-**************BREAKPOINTS****************
-
-1030 width (1024 to be exact)
-  Noticed:
-    - Buttons text miss align
-      Solution:
-        remove the previous media queries
-    - Fix Briefs Section containers miss aligned
-
-800 width(799)
-  Noticed:
-    -Brief box goes to two columns
-      Solution:
-        -Display None
-        - start working on JS for the scroll next functionallity
-    -Entries goes to pairs of 2
-      Solution:
-        - Display None
-        - Start working on JS Scroll for next funtionallity
-    -Entries padding right
-      Solution:
-        -remove padding right
-    - fix spacing for How to enter icons
-
-414 width ()
-  Noticed:
-    padding onFirst page
-      - change padding - vh???
-    more height on footer
-    smaller text on signoff
-
-
-540 height
-  Noticed:
-    Mistakes Vanrability height alignment is off
-*********************************************
-
-
-
-
-
-
-
-
-*/
-
-
-
-
-
 /*ENTRIES*/
 .votes{
   bottom:1vh;
@@ -1021,32 +929,9 @@ footer text -Roboto Thin - 22.6 - green
   margin-top: 50%;
 }
 
-
-
-
-
-
-
-
 .active{
   background-color: black !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .arrow{
   width: 66px;
@@ -1056,9 +941,6 @@ footer text -Roboto Thin - 22.6 - green
   margin: auto;
   /*position: absolute;*/
 }
-
-
-
 
 .box-container {
   display: flex;
@@ -1078,10 +960,6 @@ footer text -Roboto Thin - 22.6 - green
 .box:nth-of-type(2n) {
   margin-right: 0;
 }
-
-
-
-
 
 @media screen and (min-width: 50em) {
   .box {
@@ -1326,6 +1204,7 @@ padding-top: 7vh;
 
 
 
+
 .btn-briefs{
 
 }
@@ -1508,7 +1387,15 @@ footer p{
   #button-section{
     width:auto;
   }
-
+  #entries .box {
+      width: 50% !important;
+  }
+.btn-box{
+  width: 23vw;
+}
+.filter-btn{
+  width:4em;
+}
 
 }
 
@@ -1778,7 +1665,7 @@ footer p{
   .mobile-brief{
     display:block;
   }
-  #something{
+  #brief-header{
     display:none;
   }
 
@@ -1984,6 +1871,123 @@ background-size:inherit;
   }
 }
 
+/* #######INDEX######*/
+
+ .white-text{
+      color:  black;
+    }
+
+    #intro h1{
+     color:  black;
+    }
+
+    #intro h2{
+      color: black;
+      font-size: 1.3em;
+      margin:0 auto;
+      padding-top:1em;
+    }
+
+
+    .votes{
+      bottom:1vh;
+      position: absolute;
+      width:100%;
+    }
+    .brief-text{
+      font-size: 1em  ;
+      width:80vw;
+      margin-bottom: 0;
+      margin:0 auto;
+    }
+    .brief-text:nth-child(3){
+      margin-bottom: 2vh;
+    }
+    .box span{
+      color:#35e1a2;
+    }
+    .votes-right{
+      position: absolute;
+      right:1vw;
+      bottom:0;
+    }
+    .votes-left{
+      left:1vw;
+      bottom:0;
+      position: absolute;
+    }
+    .votes-center{
+      left:1vw;
+      right:0;
+      bottom:0;
+      position: absolute;
+    }
+
+    .nav li a{
+      width:100%;
+      display:block;
+    }
+
+    .videooverlay{
+      top:0;
+      position: absolute;
+    }
+
+
+/*#####GUIDELINES######*/
 
 
 
+/*VALIDATIONS*/
+
+
+      .form-error {
+        display: none;
+        margin-bottom: 0 !important;
+        font-size: .75rem;
+        font-weight: 700;
+        background-color: black;
+        padding: .5rem;
+        margin-top: -1px !important;
+        margin-left: 1px;
+      }
+      .is-invalid-input:not(:focus) {
+        background-color: rgb(255, 255, 255) !important;
+        border: 2px solid #ec5840;
+     }
+       #form-select .is-invalid-input:not(:focus) {
+        background-color: rgb(0, 0, 0) !important;
+        border: 2px solid #ec5840;
+     }
+
+
+      #votePopup .form-error {
+        display: none;
+        margin-bottom: 1em !important;
+        font-size: .75rem;
+        font-weight: 700;
+        background-color: black;
+        padding: .5rem;
+        margin-top: -1rem !important;
+        margin-left: 1px;
+      }
+     #votePopup .is-invalid-input:not(:focus) {
+        background-color: rgb(255, 255, 255) !important;
+        border: 2px solid #ec5840;
+     }
+     #votePopup .is-invalid-input:not(:focus) {
+        /*background-color: rgb(0, 0, 0) !important;*/
+        border: 2px solid #ec5840;
+     }
+
+
+.sr-hidden{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}

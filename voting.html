@@ -4,119 +4,18 @@
     <META NAME="viewport" CONTENT="width=device-width, height=device-height, initial-scale=1, user-scalable=no"/>
     <style>
 
-    /*NEED MEDIA FOR THIS PAGE*/
-      #voting-page{
-        min-height:100vh;
-        background-image:url(assets/images/voting.png);
-        background-size: cover;
-      }
-      #voting-page h1{
-        padding-top: 12vh;
-      }
-      #voting-page h2{
-        font-size: 4vh;
-        width:80vw;
-        margin: 0 auto;
-        text-align: left;
-        font-weight: 100;
-      }
-      #voting-page p{
-        text-align: left;
-        color:white;
-      }
-      #voting-page b{
-        color:#35e1a2;
-        font-family: Nanami-Bold;
-      }
-      #voting-page ul{
-        margin-left: 1vw;
-      }
-      #voting-page li{
-        text-align: left;
-        color:white;
-        /*list-style: none;*/
-        padding-bottom: .5vh;
-        padding-top: .5vh;
-      }
-      #voting-page li span{
-        color:#35e1a2;
-      }
-
-      #voting-page article{
-        margin-top: 5vh;
-        margin-left: 20vw;
-        margin-right: 20vw;
-
-      }
-      #button-section{
-        position: relative;
-        bottom:0;
-        left:0;
-        right:0;
-        margin: 0 auto;
-        width:30rem;
-
-      }
-      #voting-page .btn{
-        height:3em;
-        width:11em;
-        border: 2px solid #35e1a2;
-        margin: auto;
-        display:table-cell;
-        vertical-align:middle;
-        margin:0 auto;
-        text-align: center;
-        /*line-height: 10vh;*/
-        line-height: 7vh;
-        left: 0;
-        right: 0;
-        bottom: 7vh;
-        /*bottom: 50px;*/
-        /*margin: auto;*/
-        /*position: absolute;*/
-        color:#35e1a2;
-        font-size: 18px;
-        font-family: Nanami-Bold;
-        text-align: center;
-        text-decoration: none;
-        margin: 1vw;
-      }
-
-
-      #voting-page .btn:hover{
-        background-color: #35e1a2;
-        text-align: center;
-        color:black;
-      }
-      @media only screen and (max-width : 320px) {
-        #voting-page ul{
-          margin-left: 6vw;
-        }
-        #button-section{
-          width:100%;
-        }
-        #voting-page .btn{
-          width:36vw;
-        }
-      }
 
     </style>
     <title>The Green Man's Grants | Young Driver Safety Package</title>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-    <script type="text/javascript" src="assets/js/nav.js"></script>
-    <script type="text/javascript" src="assets/js/mobile-home.js"></script>
-
-
-
     <link rel="stylesheet" type="text/css" media="all" href="assets/css/app.css" />
     <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.css" />
     <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/voting.css">
     <!--***** Fonts ***** -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,700,100' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="assets/fonts/MyFontsWebfontsKit.css">
-
-    <!-- <script type="text/javascript" src="assets/js/mouse-scroll.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
   </head>
   <body>
     <nav id='top-bar'>
@@ -130,6 +29,7 @@
           <img src='assets/images/menu.png'></img>
         </a>
         <div class="nav" style="display:none;">
+          <a href='#' name='main-nav'><a>
           <ul>
             <li>
               <a href="about.html">WHAT ARE GREEN MAN GRANTS?</a>
@@ -164,11 +64,19 @@
         </div>
       </div>
     </nav>
-    <div id='voting-page'>
+      <ol class='sr-hidden'>
+        <li><a href='#main-nav'>Skip to Navigation</a></li>
+        <li><a href='#content'>Skip to Content</a></li>
+        <li><a href='#main-nav'>Skip to Footer</a></li>
+      </ol>
+    <section id='voting-page'>
       <div class='dotoverlay'>
-        <h1>PEDESTRIANS CHOICE</h1>
-        <div style='font-size:4vh; text-align:center;'><b>$1000 TO BE WON</b></div>
+        <header>
+          <h1>PEDESTRIANS CHOICE</h1>
+          <div><b>$1000 TO BE WON</b></div>
+        </header>
         <article>
+          <a href='#' name='content'><a>
           <p>The Pedestrian's Choice is an additional prize, rewarding the idea that gets the most votes in the online gallery - the crowd favourite.</p>
           <p>After moderation, each entry will be posted to the gallery where it can be viewed, voted on, and shared via URL directly to Facebook & Twitter, along with the #greenmangrants.</p>
           <p>The entry that receives the most votes will win $1000 prize money! There will also be a random draw for a further $1000 prize for all of the people who have voted - so get sharing and voting!</p>
@@ -184,9 +92,16 @@
           </div>
         </article>
       </div>
-    </div>
-    <footer>
+    </section>
+    <footer class='footer'>
+      <a href='#' name='footer'><a>
       <p><a href="https://www.tac.vic.gov.au/" target="_blank">TAC</a> / <a href="" target="_blank">VANESSA</a> / <a href="http://www.howsafeisyourcar.com.au/" target="_blank">HOW SAFE IS YOUR FIRST CAR?</a>  / <a href="https://www.towardszero.vic.gov.au/" target="_blank">TOWARDS ZERO</a> / <a href="termsandconditions.html" target="_blank">TERMS AND CONDITIONS</a> / <a href="privacypolicy.html" target="_blank">PRIVACY POLICY</a></p>
     </footer>
+    <script type="text/javascript" src="assets/js/vendor/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/vendor/foundation.js"></script>
+    <script type="text/javascript" src="assets/js/foundation-datepicker.js"></script>
+    <script type="text/javascript" src="assets/js/entry.js"></script>
+    <script type="text/javascript" src="assets/js/nav.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
   </body>
 </html>

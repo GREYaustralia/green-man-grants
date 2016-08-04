@@ -2,259 +2,16 @@
 <html>
   <head>
     <META NAME="viewport" CONTENT="width=device-width, height=device-height, initial-scale=1, user-scalable=no"/>
-    <style>
-        .dotoverlay{
-      height:auto !important;
-
-    }
-
-      body{
-        background-color: black;
-      }
-
-      #brief-page .dotoverlay {
-        position: absolute;
-      }
-
-      #brief-page .btn-btm{
-        position: absolute;
-      }
-
-
-      #brief-page{
-        height:130vh;
-        /*background-image: url(../images/about.png);*/
-        background-image: url(assets/images/shared_responsibilty_background.png);
-        background-size: cover;
-        /*background-size: 200%;*/
-      }
-      #brief-page h1{
-        padding-top: 12vh;
-      }
-      #brief-page h2{
-        font-size: 4vh;
-        width:80vw;
-        margin: 0 auto;
-        margin-bottom: 10vh;
-      }
-      #brief-page p{
-        color:white;
-        text-align: left;
-      }
-
-      #main-content ul li{
-        font-size: 1em;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 300;
-      }
-
-      li{
-        color:white;
-        font-size: 1em;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 300;
-      }
-
-
-      #main-content p{
-          text-align: left;
-      }
-      .left{
-        float:left;
-        width: 45vw;
-        margin-left: 10vw;
-      }
-      .right{
-        float:right;
-        width: 30vw;
-        margin-right: 10vw;
-      }
-
-      .download-btn{
-        font-family: Nanami-Bold;
-        color:#3cfdb6;
-        font-size: 1em;
-        padding-left:1vw;
-        margin-bottom: 5vh;
-        border:1vh dotted #3cfdb6;
-        height:4em;
-        line-height: 3.5em;
-        text-align: center
-      }
-      .download-btn:hover{
-        color:black;
-        background-color:#3cfdb6;
-      }
-
-      #side-bar{
-        background-color: #3cfdb6;
-        -webkit-box-shadow: 0px 0px 50px 0px rgba(60,253,182,1);
-        -moz-box-shadow: 0px 0px 50px 0px rgba(60,253,182,1);
-        box-shadow: 0px 0px 50px 0px rgba(60,253,182,1);
-      }
-      #side h3{
-        padding:4vh;
-        color:black;
-        text-align: center;
-      }
-      #side ul{
-        padding-left:1vw;
-        color:#000;
-      }
-      #side li{
-        padding-bottom:5vh;
-        font-size: 2vh;
-        /*padding-left:vw;*/
-        color:black;
-        padding-right:1vw;
-      }
-      #side-bar a{
-        color:black !important;
-        font-weight: bold;
-      }
-      #side-bar p{
-        color:black !important;
-        padding-left: 1em;
-      }
-
-
-      #entry-form h1{
-        padding-top: 12vh;
-        color:white;
-      }
-      #entry-form form{
-        width:33vw;
-        /*display:inline;*/
-        position: relative;
-        margin:0 auto;
-      }
-      #entry-form input{
-        position: absolute;
-        width:100%;
-        padding:2%;
-      }
-      #info-box{
-        border: 2px solid white;
-      }
-      #info-box input{
-        display:inline-block;
-      }
-      .med-input{
-        width:50%;
-      }
-      .download-mobile{
-        display: none;
-      }
-      .btn-try{
-        bottom:-7vh !important;
-      }
-
-      @media only screen and (min-device-width : 1439px){
-        .left{
-          float:left;
-          width: 40vw;
-          margin-left: 19vw;
-        }
-        .right{
-          float:right;
-          width: 20vw;
-          margin-right: 19vw;
-        }
-        #brief-page h2{
-        width:60vw;
-        margin: 0 auto;
-        margin-bottom: 10vh;
-      }
-      .download-mobile{
-        display: none;
-      }
-
-      }
-
-      @media only screen and (max-width: 873px){
-/*        #brief-page .dotoverlay{
-          height:300vh;
-        }
-        #brief-page{
-          height:300vh;
-        }*/
-      .download-mobile{
-        display: none;
-      }
-      }
-      /*@media only screen and (max-width : 684px) {*/
-      @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-        .left{
-          float:none;
-          width:80vw;
-          margin-left: 10vw;
-        }
-        .right{
-          float:none;
-          width:100vw;
-          margin-right: 0vw;
-        }
-         #brief-page .dotoverlay{
-          height:300vh;
-        }
-        .main-content p{
-          font-size: 1em;
-        }
-        #brief-page h2{
-          font-size: 1em;
-        }
-        #brief-page li{
-          font-size: 1em;
-        }
-        .download-btn{
-          height: 3em;
-          font-size: 1em;
-          line-height: 3em
-        }
-        .download-mobile{
-          display: none;
-        }
-        .download-mobile{
-          display: block;
-        }
-        .dotoverlay{
-          height:auto !important;
-        }
-        .btn-try{
-          bottom:-5vh !important;
-        }
-
-      }
-      @media only screen and (max-width : 684px) {
-        .download-btn{
-          height: 3em;
-          font-size: 1em;
-          line-height: 3em
-
-        }
-        .download{
-          display:none;
-        }
-      }
-
-
-
-
-    </style>
     <title>The Green Man's Grants | Young Driver Safety Package</title>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-    <script type="text/javascript" src="assets/js/nav.js"></script>
-
-
     <link rel="stylesheet" type="text/css" media="all" href="assets/css/app.css" />
     <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.css" />
     <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/sharedresponsibility.css">
     <!--***** Fonts *****-->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,700,100' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="assets/fonts/MyFontsWebfontsKit.css">
-
-    <!-- <script type="text/javascript" src="assets/js/mouse-scroll.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
   </head>
   <body>
     <nav id='top-bar'>
@@ -268,6 +25,7 @@
           <img src='assets/images/menu.png'></img>
         </a>
         <div class="nav" style="display:none;">
+          <a href='#' name='main-nav'><a>
           <ul>
             <li>
               <a href="about.html">WHAT ARE GREEN MAN GRANTS?</a>
@@ -302,14 +60,20 @@
         </div>
       </div>
     </nav>
-    <div id="brief-page">
+      <ol class='sr-hidden'>
+        <li><a href='#main-nav'>Skip to Navigation</a></li>
+        <li><a href='#content'>Skip to Content</a></li>
+        <li><a href='#main-nav'>Skip to Footer</a></li>
+      </ol>
+    <section id="brief-page">
       <div class='dotoverlay'>
-        <h1 class='brief-title'><a class='left-arrow' href="vulnerability.html"><img src='assets/images/arrow-left.png'></a>THE BRIEF - SHARED RESPONSIBILITY<a class='right-arrow' href="vehiclesafety.html"><img src='assets/images/arrow-right.png'></a></h1>
+        <header>
+          <h1 class='brief-title'><a class='left-arrow' href="vulnerability.html"><img src='assets/images/arrow-left.png' alt='Previous Brief - Vulnerability'></a>THE BRIEF - SHARED RESPONSIBILITY<a class='right-arrow' href="vehiclesafety.html"><img src='assets/images/arrow-right.png' alt='Next Brief - Vehicle Safety'></a></h1>
 
-        <h2>How would you convince your peers to believe that zero deaths and serious injuries on our roads could become a reality?</h2>
-        <div class='left main-content' >
-
-
+          <h2>How would you convince your peers to believe that zero deaths and serious injuries on our roads could become a reality?</h2>
+        </header>
+        <article class='left main-content' >
+          <a href='#' name='content'><a>
             <h3>Background Info</h3>
             <p>TAC wants you to highlight that road safety is a shared responsibility. A bold and fresh approach is needed that accepts:-</p>
             <ul>
@@ -326,8 +90,8 @@
               <li>Travel speeds</li>
               <li>Road users</li>
             </ul>
-          </div>
-          <div id='side' class='right'>
+          </article>
+          <aside id='side' class='right'>
             <a href='assets/files/Shared Responsibility Brief.pdf'>
             <div class='download-btn download'> DOWNLOAD THE PDF <img src='assets/images/pdf.png'> </div></a>
             <div id='side-bar'>
@@ -340,8 +104,8 @@
               </ul>
               <p class='left-align'><b>URL: </b><a href="http://www.towardszero.vic.gov.au">towardszero.vic.gov.au</a>
             </div>
-          </div>
-          <div class='left main-content'>
+          </aside>
+          <article class='left main-content'>
             <h3>Criteria</h3>
 
             <p>Your idea needs to highlight that everyone has the right to use our roads without threat to life or health.</p>
@@ -349,16 +113,16 @@
             <p>Your idea needs to be creative and have credibility among the target audience of 18 - 25 year olds, while not being too preachy. </p>
 
             <p>The judges are looking for a concept that is portrayed in a positive way rather than using graphic shock tactics.</p>
-          </div>
-           <div class='download-btn download-mobile'> DOWNLOAD THE PDF <img src='assets/images/pdf.png'> </div>
+          </article>
+           <a class='download-btn download-mobile'> DOWNLOAD THE PDF <img src='assets/images/pdf.png'> </a>
            <a class='btn-green btn-try btn-btm' href='entry.html'>ENTER HERE</a>
-
-
-
       </div>
-    </div>
-<!--     <footer>
-      <p><a href="https://www.tac.vic.gov.au/">TAC</a> / <a href="">VANESSA</a> / <a href="http://www.howsafeisyourcar.com.au/">HOW SAFE IS YOUR FIRST CAR?</a>  / <a href="https://www.towardszero.vic.gov.au/">TOWARDS ZERO</a> / <a href="termsandconditions.html">TERMS AND CONDITIONS</a> / <a href="privacypolicy.html" target="_blank">PRIVACY POLICY</a></p>
-    </footer> -->
+    </section>
+    <script type="text/javascript" src="assets/js/vendor/jquery.js"></script>
+    <script type="text/javascript" src="assets/js/vendor/foundation.js"></script>
+    <script type="text/javascript" src="assets/js/foundation-datepicker.js"></script>
+    <script type="text/javascript" src="assets/js/entry.js"></script>
+    <script type="text/javascript" src="assets/js/nav.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
   </body>
 </html>

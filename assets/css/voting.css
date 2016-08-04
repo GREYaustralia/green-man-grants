@@ -1,0 +1,89 @@
+#voting-page{
+  min-height:100vh;
+  background-image:url(../images/voting.png);
+  background-size: cover;
+}
+#voting-page header div{
+  font-size:4vh;
+  text-align:center;
+}
+#voting-page h1{
+  padding-top: 12vh;
+}
+#voting-page h2{
+  font-size: 4vh;
+  width:80vw;
+  margin: 0 auto;
+  text-align: left;
+  font-weight: 100;
+}
+#voting-page p{
+  text-align: left;
+  color:white;
+}
+#voting-page b{
+  color:#35e1a2;
+  font-family: Nanami-Bold;
+}
+#voting-page ul{
+  margin-left: 1vw;
+}
+#voting-page li{
+  text-align: left;
+  color:white;
+  padding-bottom: .5vh;
+  padding-top: .5vh;
+}
+#voting-page li span{
+  color:#35e1a2;
+}
+
+#voting-page article{
+  margin-top: 5vh;
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+#button-section{
+  position: relative;
+  bottom:0;
+  left:0;
+  right:0;
+  margin: 0 auto;
+  width:30rem;
+}
+#voting-page .btn{
+  height:3em;
+  width:11em;
+  border: 2px solid #35e1a2;
+  margin: auto;
+  display:table-cell;
+  vertical-align:middle;
+  margin:0 auto;
+  text-align: center;
+  line-height: 7vh;
+  left: 0;
+  right: 0;
+  bottom: 7vh;
+  color:#35e1a2;
+  font-size: 18px;
+  font-family: Nanami-Bold;
+  text-align: center;
+  text-decoration: none;
+  margin: 1vw;
+}
+#voting-page .btn:hover{
+  background-color: #35e1a2;
+  text-align: center;
+  color:black;
+}
+@media only screen and (max-width : 320px) {
+  #voting-page ul{
+    margin-left: 6vw;
+  }
+  #button-section{
+    width:100%;
+  }
+  #voting-page .btn{
+    width:36vw;
+  }
+}

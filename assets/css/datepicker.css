@@ -1,19 +1,3 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @Xenonate
- Watch 25
-  Star 359
- Fork 228 najlepsiwebdesigner/foundation-datepicker
- Code  Issues 36  Pull requests 5  Wiki  Pulse  Graphs
-Branch: master Find file Copy pathfoundation-datepicker/css/foundation-datepicker.css
-e41438a  on Apr 3
-@matthiaskomarek matthiaskomarek add disable css classes to month and year view, removed trailing whit…
-3 contributors @najlepsiwebdesigner @matthiaskomarek @Sopamo
-RawBlameHistory     Executable File  151 lines (143 sloc)  3.73 KB
 .datepicker {
   display: none;
   position: absolute;
@@ -162,7 +146,3 @@ RawBlameHistory     Executable File  151 lines (143 sloc)  3.73 KB
 .table-striped .datepicker table tr td,
 .table-striped .datepicker table tr th {
   background-color: transparent; }
-
-/*# sourceMappingURL=foundation-datepicker.css.map */
-Contact GitHub API Training Shop Blog About
-© 2016 GitHub, Inc. Terms Privacy Security Status Help
