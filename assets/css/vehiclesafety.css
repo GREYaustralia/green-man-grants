@@ -2,7 +2,7 @@
   height:auto !important;
 }
 body{
-  background-color: black;
+  background-color: #000;
 }
 
 #side-bar p{
@@ -74,7 +74,7 @@ body{
   text-align: center
 }
 .download-btn:hover{
-  color:black;
+  color:#000;
   background-color:#3cfdb6;
 }
 #side-bar{
@@ -85,7 +85,7 @@ body{
 }
 #side h3{
   padding:4vh;
-  color:black;
+  color:#000;
   text-align: center;
 }
 #side ul{

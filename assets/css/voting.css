@@ -74,7 +74,7 @@
 #voting-page .btn:hover{
   background-color: #35e1a2;
   text-align: center;
-  color:black;
+  color:#000;
 }
 @media only screen and (max-width : 320px) {
   #voting-page ul{

@@ -17,7 +17,7 @@
 
 
 #top-bar{
-  background-color: black;
+  background-color: #000;
 }
 #entry-form{
   min-height:100vh;
@@ -25,7 +25,7 @@
 }
 #entry-form h1{
   padding-top: 12vh;
-  color:black;
+  color:#000;
 }
 #entry-form form{
   width: 45vw;
@@ -73,7 +73,7 @@
 }
 
 #entry-form .btn{
-  background-color: black;
+  background-color: #000;
   color: white;
   font-size: 18px;
   font-family: Nanami-Bold !important;
@@ -94,7 +94,7 @@
 
 }
 #form-select select{
-  background-color: black;
+  background-color: #000;
   color: #35e1a2;
   font-size: 18px;
   font-family: Nanami-Bold;
@@ -170,11 +170,11 @@ input{
   }
   #entry-form h1{
     padding-top: 12vh;
-    color:black;
+    color:#000;
     margin-bottom: 0px
   }
   #entry-form p{
-    color:black;
+    color:#000;
   }
   #entry-form form{
     width:80vw;

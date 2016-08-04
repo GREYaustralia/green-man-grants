@@ -1,7 +1,6 @@
 $(document).ready(function(){
   $('.entries-box').find('.btn').hide();
   $('.entries-box').find('.box').on('mouseover', function(){
-    console.log('box found?')
     if($('.box').hasClass('video')){
         $(this).find('.icon').hide()
         $(this).find('.btn').toggle().show()

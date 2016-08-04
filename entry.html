@@ -12,7 +12,7 @@
     <!--***** Fonts *****-->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,700,100' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="assets/fonts/MyFontsWebfontsKit.css">
-    <link rel="stylesheet" type="text/css" href="href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
   </head>
   <body>
     <nav id='top-bar'>
@@ -77,58 +77,54 @@
           <form data-abide novalidate>
             <div class='row'>
               <div class='large-12 columns name-field'>
-                  <input type='text'  placeholder='FULL NAME' required >
+                  <input type='text'  placeholder='FULL NAME' required aria-label="Full Name">
                   <small class='form-error'>Full Name is required.</small>
               </div>
               <div class='large-12 columns'>
-                  <input type='text' placeholder='CONTACT PHONE NUMBER' required pattern="^0[0-9]{9}">
+                  <input type='text' placeholder='CONTACT PHONE NUMBER' aria-label="Phone Number" required pattern="^0[0-9]{9}">
                   <small class='form-error'>Phone Number must start with 0 and be 10 digits long.</small>
               </div>
               <div class='large-12 columns'>
-                <input type='email' placeholder='EMAIL ADDRESS' required>
+                <input type='email' placeholder='EMAIL ADDRESS' aria-label="Email" required>
                 <small class='form-error'>Must be a valid email.</small>
               </div>
               <div class='large-12 columns'>
-                <input type='text' placeholder='IDEA NAME (MAX 30 CHARACTERS)' maxlength='30' required >
+                <input type='text' placeholder='IDEA NAME (MAX 30 CHARACTERS)' aria-label="Idea Name" maxlength='30' required >
                 <small class='form-error'>Name is required and must be less then 30 characters</small>
               </div>
               <div class='large-6 columns'>
-                <input id="DOB" type='text' placeholder='DATE OF BIRTH' required>
+                <input id="DOB" type='text' placeholder='DATE OF BIRTH' aria-label="Date of Birth" required>
               </div>
               <div class='large-6 columns'>
-                <input type='text' placeholder='POSTCODE' required pattern="[0-9]{4}">
+                <input type='text' placeholder='POSTCODE' aria-label="Postcode" required pattern="[0-9]{4}">
                 <small class='form-error'>Must be a valid Postcode</small>
               </div>
               <div class='row borders'>
                 <div class='large-12 columns' id='info-box'>
-                  <input class="small-1 medium-1 columns" type='checkbox'>
-                  <p class="small-11 medium-11 columns checkbox-text">Check this box if you would like to receive further information about road safety</p>
+                  <input class="small-1 medium-1 columns" type='checkbox' aria-label="Email Information" aria-describedby="moreInfo">
+                  <p id='moreInfo' class="small-11 medium-11 columns checkbox-text">Check this box if you would like to receive further information about road safety</p>
                 </div>
                 <div class='large-12 columns' id='tandc'>
                   <small class='policy form-error'>Must agree to terms and conditions.</small>
-                  <input class="small-1 medium-1 columns" type='checkbox' required>
-                  <p class="policy small-11 medium-11 columns checkbox-text">Check this box if you agree to the <a class='policy' href='termsandconditions.html' target='_blank'>Terms and Conditions</a></p>
+                  <input class="small-1 medium-1 columns" type='checkbox' aria-label="Terms and Conditions" aria-describedby="tandc" required>
+                  <p id='tandc' class="policy small-11 medium-11 columns checkbox-text">Check this box if you agree to the <a class='policy' href='termsandconditions.html' target='_blank'>Terms and Conditions</a></p>
                 </div>
-
-
-
-
                 <div id='form-upload' class='large-12 columns '>
                   <h1>UPLOAD YOUR ENTRY</h1>
                   <div id='form-select' class='large-12 columns'>
-                  <select class='large-12 columns' id='brief-question'required>
-                      <option value=""> CHOOSE BRIEF</option>
-                      <option name='vehiclesafety' value="vehiclesafety">VEHICLE SAFETY</option>
-                      <option name='vulnerability'value="vulnerability">VULNERABLILITY</option>
-                      <option name='sharedresponsibility' value="sharedresponsibility">SHARED RESPONSIBILITY</option>
+                  <select class='large-12 columns' id='brief-question' aria-label="Choose Brief" required>
+                      <option value="0 disabled selected" aria-hidden> CHOOSE BRIEF</option>
+                      <option name='vehiclesafety' value="1">VEHICLE SAFETY</option>
+                      <option name='vulnerability'value="2">VULNERABLILITY</option>
+                      <option name='3' value="sharedresponsibility">SHARED RESPONSIBILITY</option>
                     </select>
 
-                    <select class='large-12 columns' id='upload' required>
-                      <option value=""> CHOOSE ENTRY TYPE</option>
-                      <option name='text' value="text">TEXT</option>
-                      <option name='audio'value="audio">AUDIO</option>
-                      <option name='video' value="video">VIDEO</option>
-                      <option name='photo' value="photo">PHOTO</option>
+                    <select class='large-12 columns' id='upload' aria-label="Choose Entry Type" required>
+                      <option value="0 disabled selected" aria-hidden> CHOOSE ENTRY TYPE</option>
+                      <option name='text' value="1">TEXT</option>
+                      <option name='audio'value="2">AUDIO</option>
+                      <option name='video' value="3">VIDEO</option>
+                      <option name='photo' value="4">PHOTO</option>
                     </select>
                     <small class='form-error'>Must select a Question and/or Entry type</small>
                   </div>
@@ -141,7 +137,11 @@
             </div>
           </form>
         </article>
-        <a data-open="submitPopup"> SAMPLE</a>
+
+        <!-- MODAL -->
+          <a data-open="submitPopup"> SAMPLE</a>
+        <!-- MODAL -->
+
       </div>
       </section>
       <footer>
@@ -150,6 +150,9 @@
           <p><a href="https://www.tac.vic.gov.au/" target="_blank">TAC</a> / <a href="" target="_blank">VANESSA</a> / <a href="http://www.howsafeisyourcar.com.au/" target="_blank">HOW SAFE IS YOUR FIRST CAR?</a>  / <a href="https://www.towardszero.vic.gov.au/" target="_blank">TOWARDS ZERO</a> / <a href="termsandconditions.html" target="_blank">TERMS AND CONDITIONS</a> / <a href="privacypolicy.html" target="_blank">PRIVACY POLICY</a></p>
         </div>
       </footer class='footer'>
+
+
+      <!-- **********MODAL********** -->
         <div class="reveal" id="submitPopup" data-reveal>
           <h1 id=''>Congratulations on entering the Green Man Grants!</h1>
           <p>Your submission is now with the team for moderation. You will receive an email to confirm when your entry is live in the online gallery.</p>
@@ -160,6 +163,9 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
+          <!-- ********MODAL******** -->
+
+
     <script type="text/javascript" src="assets/js/vendor/jquery.js"></script>
     <script type="text/javascript" src="assets/js/vendor/foundation.js"></script>
     <script type="text/javascript" src="assets/js/app.js"></script>

@@ -1,30 +1,24 @@
 .dotoverlay{
-  height:auto !important;
 }
 body{
   background-color: #000;
-}
-#brief-page .dotoverlay {
+}#shared-responsibility .dotoverlay {
+  position: absolute;
+}#shared-responsibility .btn-btm{
   position: absolute;
 }
-#brief-page .btn-btm{
-  position: absolute;
-}
-#brief-page{
-  height:130vh;
+#shared-responsibility{
+  min-height: 100%;
   background-image: url(../images/shared_responsibilty_background.png);
   background-size: cover;
-}
-#brief-page h1{
+}#shared-responsibility h1{
   padding-top: 12vh;
-}
-#brief-page h2{
+}#shared-responsibility h2{
   font-size: 4vh;
   width:80vw;
   margin: 0 auto;
   margin-bottom: 10vh;
-}
-#brief-page p{
+}#shared-responsibility p{
   color:white;
   text-align: left;
 }
@@ -141,7 +135,7 @@ li{
       width: 20vw;
       margin-right: 19vw;
     }
-    #brief-page h2{
+    #shared-responsibilty h2{
     width:60vw;
     margin: 0 auto;
     margin-bottom: 10vh;
@@ -168,16 +162,16 @@ li{
     width:100vw;
     margin-right: 0vw;
   }
-   #brief-page .dotoverlay{
+   #shared-responsibilty .dotoverlay{
     height:300vh;
   }
   .main-content p{
     font-size: 1em;
   }
-  #brief-page h2{
+  #shared-responsibilty h2{
     font-size: 1em;
   }
-  #brief-page li{
+  #shared-responsibilty li{
     font-size: 1em;
   }
   .download-btn{

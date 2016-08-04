@@ -19,28 +19,28 @@ $(document).ready(function(){
   $('#upload').change(function(){
     if ($(this).find(':selected').val() === 'text'){
       $('#upload-field').empty();
-      $('#upload-field').append('<textarea class="large-12 columns" id="text-submission" name="text-submission" placeholder="IDEA DESCRIPTION (MAX 140 CHARACTERS LINKS OK)" required></textarea>')
+      $('#upload-field').append('<textarea class="large-12 columns" id="text-submission" name="text-submission" placeholder="IDEA DESCRIPTION (MAX 1000 CHARACTERS LINKS OK)" aria-label="Text Entry Field - Max 1000 Characters" required></textarea>')
     } else if($(this).find(':selected').val() === 'video'){
       $(function() {
         $(document).scrollTop( $("#form-upload").offset().top + (-75) );
       });
       $('#upload-field').empty();
-      $('#upload-field').append('<input name="file" type="file" required/>');
-      $('#upload-field').append('<textarea class="large-12 columns" id="description" name="description" placeholder="VIDEO DESCRIPTION (MAX 1000 CHARACTERS LINKS OK)" required></textarea>')
+      $('#upload-field').append('<input name="file" type="file" aria-label="Video Upload" required/>');
+      $('#upload-field').append('<textarea class="large-12 columns" id="description" name="description" placeholder="VIDEO DESCRIPTION (MAX 1000 CHARACTERS LINKS OK)" aria-label="Video Description - Max 140 Characters" required></textarea>')
     }else if($(this).find(':selected').val() === 'audio'){
       $(function() {
         $(document).scrollTop( $("#form-upload").offset().top + (-75) );
       });
       $('#upload-field').empty();
-      $('#upload-field').append('<input name="file" type="file" required/>');
-      $('#upload-field').append('<textarea class="large-12 columns" id="description" name="description" placeholder="AUDIO DESCRIPTION (MAX 140 CHARACTERS LINKS OK)" required></textarea>')
+      $('#upload-field').append('<input name="file" type="file" aria-label="Audio Upload" required/>');
+      $('#upload-field').append('<textarea class="large-12 columns" id="description" name="description" placeholder="AUDIO DESCRIPTION (MAX 140 CHARACTERS LINKS OK)" aria-label="Audio Description - Max 140 Characters" required></textarea>')
     }else if($(this).find(':selected').val() === 'photo'){
       $(function() {
         $(document).scrollTop( $("#form-upload").offset().top + (-75) );
       });
       $('#upload-field').empty();
-      $('#upload-field').append('<input name="file" type="file" required/>');
-      $('#upload-field').append('<textarea class="large-12 columns" id="description" name="description" placeholder="PHOTO DESCRIPTION (MAX 1000 CHARACTERS LINKS OK)" required></textarea>')
+      $('#upload-field').append('<input name="file" type="file" aria-label="Photo Upload" required/>');
+      $('#upload-field').append('<textarea class="large-12 columns" id="description" name="description" placeholder="PHOTO DESCRIPTION (MAX 1000 CHARACTERS LINKS OK)" aria-label="Photo Description - Max 1000 Characters" required></textarea>')
     }else{
       $('#upload-field').empty();
       $(document).scrollTop();

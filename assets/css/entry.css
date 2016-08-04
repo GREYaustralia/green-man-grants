@@ -16,7 +16,7 @@
 }
 .entry-page h1{
   padding-top: 1vh;
-  color:black;
+  color:#000;
 }
 .entry-page h2{
   font-size: 3vh;
@@ -24,7 +24,7 @@
   margin: 0 auto;
   margin-bottom: 2vh;
   text-align: left;
-  color:black;
+  color:#000;
   text-align: center;
 }
 .entry-page p{
@@ -51,7 +51,7 @@
   padding-top: 1em;
   height: 18em;
   width: 4em;
-  background-color: black;
+  background-color: #000;
   position: fixed;
   right:0;
   top:20vh;
@@ -74,7 +74,7 @@
 }
 
 .ped{
-  color:black;
+  color:#000;
   font-size: 3vh;
 }
 
@@ -86,7 +86,7 @@
 }
 
 b{
-  color: black;
+  color: #000;
 }
   .entry-box{
     width:45vw;
@@ -94,7 +94,7 @@ b{
   }
 
 video{
-  background-color:black;
+  background-color:#000;
   /*margin-left: 20vw;*/
   margin-top:2vh;
   margin: 0 auto;

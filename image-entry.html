@@ -11,7 +11,7 @@
     <!--***** Fonts ***** -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,700,100' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="assets/fonts/MyFontsWebfontsKit.css">
-    <link rel="stylesheet" type="text/css" href="href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
   </head>
   <body>
     <nav id='top-bar'>
@@ -130,23 +130,23 @@
     <form data-abide>
     <div class='row'>
       <div class="medium-6 columns">
-        <input type="text" placeholder="FULL NAME" required>
+        <input type="text" placeholder="FULL NAME" aria-label="Full Name" required>
         <small class='form-error'>Full Name is required.</small>
       </div>
       <div class="medium-6 columns">
-        <input id='DOB' type="text" placeholder="DATE OF BIRTH" required>
+        <input id='DOB' type="text" placeholder="DATE OF BIRTH" aria-label="Date of Birth" required>
       </div>
       <div class="medium-6 columns">
-        <input type='email' placeholder='EMAIL ADDRESS' required>
+        <input type='email' placeholder='EMAIL ADDRESS'  aria-label="Email"required>
         <small class='form-error'>Must be a valid email.</small>
       </div>
       <div class="medium-6 columns">
-        <input type='text' placeholder='POSTCODE' required pattern="[0-9]{4}">
+        <input type='text' placeholder='POSTCODE' aria-label="Postcode" required pattern="[0-9]{4}">
         <small class='form-error'>Must be a valid Postcode</small>
       </div>
       <div class="medium-6 columns">
-        <input class='small-2 medium-2 columns' type='checkbox'>
-        <p class='small-10 medium-10 columns checkbox-text'>Check this box if you would like to receive further information about road safety</p>
+        <input class='small-2 medium-2 columns' type='checkbox' aria-label="More Info" aria-describedby="moreInfo">
+        <p id='moreInfo' class='small-10 medium-10 columns checkbox-text'>Check this box if you would like to receive further information about road safety</p>
       </div>
       <div class="medium-6 columns">
         <input class='btn' type='submit' value='VOTE NOW'>

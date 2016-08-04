@@ -92,11 +92,11 @@
       }
       #filter .btn-try{
         background-color: transparent;
-        border:2px solid black;
+        border:2px solid #000;
         float:right;
       }
       #filter select{
-        background-color: black;
+        background-color: #000;
         color: #35e1a2;
         font-size: 18px;
         font-family: Nanami-Bold;
