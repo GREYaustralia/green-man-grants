@@ -212,6 +212,12 @@ figure {
   margin: 0;
 }
 
+video{
+  height:100vh;
+  width: 100vw;
+  object-fit:cover;
+}
+
 
 
 /*INPUTS*/
@@ -334,9 +340,22 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
   width: 100%;
   padding-left: 0;
   padding-right: 0;
+  height:34vh;
 
   position: absolute;
 }
+
+.header-dotoverlay{
+    background-image: url(../images/dots2.png);
+  min-height:100vh;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  height:auto;
+  position: absolute;
+  top:0;
+}
+
 
 .black-back{
   background-color: #000;
@@ -426,10 +445,10 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
 .btn-box{
   height:8vh;
   width:15vw;
-  border: 2px solid #35e1a2;
+  border: 2px solid #000;
   text-align: center;
   line-height: 8vh;
-  background-color: #3cfdb6;
+  background-color: transparent;
   color:#35e1a2;
   font-size: 18px;
   font-family: Nanami-Bold;
@@ -441,6 +460,13 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
   right:0;
   margin:0 auto;
   top:40%;
+}
+
+.btn-box:hover{
+/*border: 2px solid #000;*/
+background-color: #000;
+color: #35e1a2;
+
 }
 .btn-white{
   background-color: transparent;
@@ -910,6 +936,24 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
   width: calc(50% - 8px);
   margin-right: 8px;
   text-align: center;
+}
+
+
+
+
+.endbox{
+background-color: #000;
+border:2px solid #35e1a2;
+display:block;
+height:100%;
+}
+.endbox span{
+  left:0;
+  right:0;
+  color:#35e1a2;
+  position: absolute;
+  bottom: 13vh;
+  font-size: 3vh;
 }
 
 
