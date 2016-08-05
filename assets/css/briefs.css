@@ -2,23 +2,41 @@
 }
 body{
   background-color: #000;
-}#shared-responsibility .dotoverlay {
-  position: absolute;
-}#shared-responsibility .btn-btm{
+}
+.brief .dotoverlay {
   position: absolute;
 }
-#shared-responsibility{
-  min-height: 100%;
+.brief .btn-btm{
+  position: relative;
+  margin-bottom: 2em;
+}
+
+#sharedresponsibility{
+  min-height: 130vh;
   background-image: url(../images/shared_responsibilty_background.png);
   background-size: cover;
-}#shared-responsibility h1{
+}
+#vulnerability{
+  min-height:130vh;
+  background-image: url(../images/vulnerability_background.png);
+  background-size: cover;
+}
+
+#vehiclesafety{
+  min-height:130vh;
+  background-image: url(../images/vehicle_safety_background.png);
+  background-size: cover;
+}
+.brief h1{
   padding-top: 12vh;
-}#shared-responsibility h2{
+}
+.brief h2{
   font-size: 4vh;
   width:80vw;
   margin: 0 auto;
   margin-bottom: 10vh;
-}#shared-responsibility p{
+}
+.brief p{
   color:white;
   text-align: left;
 }
@@ -33,6 +51,16 @@ li{
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
+
+.brief a{
+  color: #3cfdb6;
+  font-weight: bold;
+}
+.brief a:hover{
+  color:white;
+  text-decoration: underline;
+}
+
 #main-content p{
     text-align: left;
 }
@@ -120,103 +148,51 @@ li{
 .download-mobile{
   display: none;
 }
-.btn-try{
-  bottom:-7vh !important;
+footer p{
+  text-align: center !important;
+}
+
+footer a {
+  font-weight: normal !important;
 }
 
 @media only screen and (min-device-width : 1439px){
-    .left{
-      float:left;
-      width: 40vw;
-      margin-left: 19vw;
-    }
-    .right{
-      float:right;
-      width: 20vw;
-      margin-right: 19vw;
-    }
-    #shared-responsibilty h2{
+
+    #brief h2{
     width:60vw;
     margin: 0 auto;
     margin-bottom: 10vh;
   }
-  .download-mobile{
-    display: none;
-  }
 }
 
 @media only screen and (max-width: 873px){
-  .download-mobile{
-    display: none;
-  }
+
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  .left{
-    float:none;
-    width:80vw;
-    margin-left: 10vw;
-  }
-  .right{
-    float:none;
-    width:100vw;
-    margin-right: 0vw;
-  }
-   #shared-responsibilty .dotoverlay{
+
+/*  .brief .dotoverlay{
     height:300vh;
-  }
+  }*/
   .main-content p{
     font-size: 1em;
   }
-  #shared-responsibilty h2{
+  .brief h2{
     font-size: 1em;
   }
-  #shared-responsibilty li{
+  .brief li{
     font-size: 1em;
-  }
-  .download-btn{
-    height: 3em;
-    font-size: 1em;
-    line-height: 3em
-  }
-  .download-mobile{
-    display: none;
-  }
-  .download-mobile{
-    display: block;
   }
   .dotoverlay{
     height:auto !important;
   }
-  .btn-try{
-    bottom:-5vh !important;
-  }
 }
 @media only screen and (max-width : 684px) {
-  .download-btn{
-    height: 3em;
-    font-size: 1em;
-    line-height: 3em
-  }
-  .download{
-    display:none;
-  }
 }
 @media only screen and (max-width : 1100px) {
-  .left{
-    margin-left: 12vw;
-  }
-  .right{
-    margin-right: 12vw;
-  }
+
 }
 
 @media only screen and (max-width : 768px){
-    .left{
-    margin-left: 7vw;
-  }
-  .right{
-    margin-right: 7vw;
-  }
 
 }
