@@ -255,10 +255,22 @@ textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
  color:    #555555;
 }
 
+.caps{
+  text-transform: uppercase;
+}
+
 .footer{
   width:100vw;
   height:10vh;
   background-color: #000;
+  text-align: center
+}
+.footer ul li{
+display: inline;
+}
+.footer li + li::before{
+  margin:0 auto;
+  content:'|';
 }
 .footer p{
   color:#35e1a2;
@@ -527,6 +539,7 @@ color: #35e1a2;
 }
 .nav{
  display:none;
+ text-transform: uppercase;
 }
 
 
@@ -557,7 +570,6 @@ color: #35e1a2;
   right:0;
   padding-right:1vw;
   height:3em;
-  /*margin-top: 1vh;*/
 }
 
 
