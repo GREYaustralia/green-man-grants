@@ -21,7 +21,7 @@
   text-align: left;
   color:white;
 }
-#voting-page b{
+#voting-page strong{
   color:#35e1a2;
   font-family: Nanami-Bold;
 }
@@ -39,37 +39,34 @@
 }
 
 #voting-page article{
-  margin-top: 5vh;
-  margin-left: 20vw;
-  margin-right: 20vw;
+  width:70%;
+  margin:0 auto;
 }
-#button-section{
+#voting-button-section{
   position: relative;
   bottom:0;
   left:0;
   right:0;
   margin: 0 auto;
-  width:30rem;
+  width:80vw;
 }
 #voting-page .btn{
   height:3em;
-  width:11em;
+
   border: 2px solid #35e1a2;
-  margin: auto;
-  display:table-cell;
-  vertical-align:middle;
-  margin:0 auto;
+
+
+
   text-align: center;
   line-height: 7vh;
-  left: 0;
-  right: 0;
-  bottom: 7vh;
+
+
   color:#35e1a2;
   font-size: 18px;
   font-family: Nanami-Bold;
   text-align: center;
   text-decoration: none;
-  margin: 1vw;
+  margin-top: 1em;
 }
 #voting-page .btn:hover{
   background-color: #35e1a2;
@@ -79,11 +76,5 @@
 @media only screen and (max-width : 320px) {
   #voting-page ul{
     margin-left: 6vw;
-  }
-  #button-section{
-    width:100%;
-  }
-  #voting-page .btn{
-    width:36vw;
   }
 }

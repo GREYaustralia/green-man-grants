@@ -1,18 +1,31 @@
 <!DOCTYPE html>
-<html lang="en" xml:lang="en">
-  <head>
-    <META NAME="viewport" CONTENT="width=device-width, height=device-height, initial-scale=1, user-scalable=no"/>
-    <title>The Green Man's Grants | Young Driver Safety Package</title>
-    <link rel="stylesheet" type="text/css" media="all" href="assets/css/app.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.min.css" />
+<html lang="en">
+<head>
+  <title>The Green Man's Grants | Jane's Idea | Nullam libero tellus | Video Entry</title>
+  <meta charset="UTF-8">
+  <meta name="Description" content="Video Entry">
+  <meta http-equiv="content-type" content="text/html">
+  <META NAME="viewport" CONTENT="width=device-width, height=device-height, initial-scale=1, user-scalable=no"/>
+  <!--****** Carousel ***********-->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"/>
+  <!--***** Fonts ***** -->
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,700,100' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="assets/fonts/MyFontsWebfontsKit.css">
+  <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <!--******* Foundation **********-->
+  <link rel="stylesheet" type="text/css" media="all" href="assets/css/app.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.min.css" />
+
+  <!-- *********Video Player********** -->
+    <link href="http://vjs.zencdn.net/5.10.8/video-js.css" rel="stylesheet">
+    <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+  <!--******* Custom *********-->
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
     <link rel="stylesheet" type="text/css" href="assets/css/entry.css">
-    <!--***** Fonts ***** -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,700,100' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="assets/fonts/MyFontsWebfontsKit.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-  </head>
+
+</head>
   <body>
     <nav id='top-bar'>
       <div class=''id='logo'>
@@ -42,7 +55,6 @@
             <li>
               <a href="guidelines.html">ENTRY GUIDELINES</a>
             </li>
-
             <li>
               <a href="judging.html">JUDGING</a>
             </li>
@@ -65,6 +77,7 @@
         <li><a href='#content'>Skip to Content</a></li>
         <li><a href='#main-nav'>Skip to Footer</a></li>
       </ol>
+      <main>
     <section class='entry-page' id='video-entry-page'>
       <div class='dotoverlay'>
         <aside id='side'>
@@ -91,8 +104,14 @@
             </header>
             <article class='entry-box'>
               <a href='#' name='content'></a>
-              <video controls id='video_id' style='width:100%; max-height: 40vh;'>
-                 <source src="assets/video/greenmangrants_webwicdeo_720p_low.webm" type="video/webm">
+                <video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
+              poster="assets/images/gmg_header_logo.png" data-setup="{}" style=''>
+                <!-- <source src="MY_VIDEO.mp4" type='video/mp4'> -->
+                <source src="assets/video/greenmangrants_webwicdeo_720p_low.webm" type='video/webm'>
+                <p class="vjs-no-js">
+                  To view this video please enable JavaScript, and consider upgrading to a web browser that
+                  <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                </p>
               </video>
               <div id='description' class='center'>
                 <strong>Description: </strong>
@@ -117,10 +136,17 @@
         </article>
       </div>
     </section>
-  <footer class='footer'>
-    <a href='#' name='footer'></a>
-      <p><a href="https://www.tac.vic.gov.au/" target="_blank">TAC</a> / <a href="" target="_blank">VANESSA</a> / <a href="http://www.howsafeisyourcar.com.au/" target="_blank">HOW SAFE IS YOUR FIRST CAR?</a>  / <a href="https://www.towardszero.vic.gov.au/" target="_blank">TOWARDS ZERO</a> / <a href="termsandconditions.html" target="_blank">TERMS AND CONDITIONS</a> / <a href="privacypolicy.html" target="_blank">PRIVACY POLICY</a></p>
-  </footer>
+    <footer class='footer'>
+      <a name='footer'></a>
+      <ul>
+        <li><a href="https://www.tac.vic.gov.au/" target="_blank">TAC</a></li>
+        <li><a href="" target="_blank">VANESSA</a></li>
+        <li><a href="http://www.howsafeisyourcar.com.au/" target="_blank">HOW SAFE IS YOUR FIRST CAR?</a></li>
+        <li><a href="https://www.towardszero.vic.gov.au/" target="_blank">TOWARDS ZERO</a></li>
+        <li><a href="termsandconditions.html" target="_blank">TERMS AND CONDITIONS</a></li>
+        <li><a href="privacypolicy.html" target="_blank">PRIVACY POLICY</a></li>
+      </ul>
+    </footer>
 
 
 
@@ -160,11 +186,13 @@
     <span aria-hidden="true">&times;</span>
   </button>
 </div>
+</main>
      <script type="text/javascript" src="assets/js/vendor/jquery.js"></script>
     <script type="text/javascript" src="assets/js/vendor/foundation.js"></script>
     <script type="text/javascript" src="assets/js/foundation-datepicker.js"></script>
     <script type="text/javascript" src="assets/js/entry.js"></script>
     <script type="text/javascript" src="assets/js/nav.js"></script>
     <script type="text/javascript" src="assets/js/app.js"></script>
+    <script src="http://vjs.zencdn.net/5.10.8/video.js"></script>
   </body>
 </html>
