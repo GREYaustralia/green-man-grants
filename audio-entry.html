@@ -23,12 +23,12 @@
 </head>
   <body>
     <nav id='top-bar'>
-      <div class=''id='logo'>
+      <div id='logo'>
         <a href='index.html'>
           <img src='assets/images/gmg_header_logo.png' draggable="false" alt="Green Man Grants Navigation Logo">
         </a>
       </div>
-      <div class='' id='menu'>
+      <div id='menu'>
         <a href='#'>
           <img src="assets/images/menu.png" alt="Menu Button">
         </a>
@@ -88,7 +88,6 @@
             <p>VOTES</p>
           </div>
         </aside>
-        <article>
         <header>
           <div>
            <p id='name'><span id='name_id'>Jane's</span> Idea</p>
@@ -97,13 +96,12 @@
           <h2 id='question_id'>How would you stop people from texting while driving?</h2>
         </header>
         <article>
-          <a href='#' name='content'></a>
-            <div class='entry-box'>
-              <div id='audio-play-box'style=''>
-                <img src='assets/images/audio-black.png'>
-              </div>
-              <audio controls id='audio_id' style='width:100%; max-height: 40vh;'>
-                 <source src="assets/audio/" type="audio/mpeg">
+          <a name='content'></a>
+            <div class='audio-player'>
+              <audio id="audio_example" class="video-js vjs-default-skin" controls
+                preload="auto" width="600" height="600"
+                poster="assets/image/gmg_logo_header.png" data-setup='{}'>
+                <source src="/audio/awesome-music.mp3" type='audio/mp3'/>
               </audio>
             </div>
             <div id='description' class='center'>

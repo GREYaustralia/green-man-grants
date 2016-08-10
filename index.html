@@ -19,7 +19,7 @@
   <!--******* Custom *********-->
   <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 </head>
-<body class='index'>
+<body>
   <nav aria-label="Green man grants hamburger" id='top-bar'>
     <div id='logo'>
       <a href='index.html'>
@@ -66,7 +66,7 @@
     <li><a href='#content'>Skip to Content</a></li>
     <li><a href='#main-nav'>Skip to Footer</a></li>
   </ol>
-  <main>
+  <main class='index'>
     <section id ='header'>
       <div class="header-video">
         <div class='header-content'>
@@ -261,7 +261,7 @@
   <section id='entries'>
     <div class='dotoverlay'>
       <a name='entries'></a>
-      <header class='' id='entries-header'>
+      <header id='entries-header'>
         <h1 class='caps'>Entries</h1>
         <p>Check out the Competition</p>
       </header>
@@ -414,15 +414,15 @@
         <form data-abide>
           <div class='row'>
             <div class='large-12 columns'>
-              <input type='text' placeholder='FULL NAME' aria-label="Full Name"  required >
+             <input title='Full Name' id='fullname' type='text' placeholder='FULL NAME' aria-label="Full Name"  required >
               <small class='form-error'>Full Name is required.</small>
             </div>
             <div class='large-12 columns'>
-              <input type='email' placeholder='YOUR EMAIL' aria-label="Email" required>
+             <input title='Email' id='email' type='email' placeholder='YOUR EMAIL' aria-label="Email" required>
               <small class='form-error'>Must be a valid email.</small>
             </div>
             <div class='large-12 columns'>
-              <textarea placeholder='YOUR MESSAGE' name='message' id='message' aria-label="Message" required></textarea>
+              <textarea title='Message' placeholder='YOUR MESSAGE' name='message' id='message' aria-label="Message" required></textarea>
               <small class='form-error'>You need a message.</small>
             </div>
           </div>
@@ -476,6 +476,7 @@
   <script type="text/javascript" src="assets/js/briefs.js"></script>
   <script type="text/javascript" src="assets/js/app.js"></script>
   <script type="text/javascript" src="assets/js/video.js"></script>
+  <script type="text/javascript" src="assets/js/entry-hover.js"></script>
   <script>
   $(document).ready(function() {
     $('.header-video').each(function(i, elem) {

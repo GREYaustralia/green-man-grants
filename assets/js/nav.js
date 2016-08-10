@@ -2,23 +2,23 @@ $(document).ready(function(){
   var start = 0;
   var change = $('#top-bar')
   var offset = change.offset();
-    if ($('body').hasClass('index')){
+    if ($('main').hasClass('index')){
       $('#logo').hide();
-      $('#top-bar').css('background-color', 'transparent');
       }else{
         $('#logo').show();
-        $('#top-bar').css('background-color', 'black');
+        $('#top-bar').addClass('active')
+
       }
-    $(window).scroll(function(){
-      if ($(this).scrollTop()>50){
+    $('main').scroll(function(){
+      if ($('main').scrollTop()>50){
         $('#logo').show();
-        $('#top-bar').css('background-color', 'black');
-      }else if (!$('body').hasClass('index')){
+        $('#top-bar').addClass('active')
+      }else if (!$('main').hasClass('index')){
         $('#logo').show();
-        $('#top-bar').css('background-color', 'black');
+        $('#top-bar').addClass('active')
       }else{
         $('#logo').hide();
-        $('#top-bar').css('background-color', 'transparent');
+        $('#top-bar').removeClass('active')
       }
     });
   $('#menu').on('click',function(e){

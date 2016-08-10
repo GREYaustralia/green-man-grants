@@ -28,12 +28,12 @@
 </head>
   <body>
     <nav id='top-bar'>
-      <div class=''id='logo'>
+      <div id='logo'>
         <a href='index.html'>
           <img src='assets/images/gmg_header_logo.png' draggable="false" alt="Green Man Grants Navigation Logo">
         </a>
       </div>
-      <div class='' id='menu'>
+      <div id='menu'>
         <a href='#'>
           <img src="assets/images/menu.png" alt="Menu Button">
         </a>
@@ -85,53 +85,53 @@
           <p>Tell us your idea here.</p>
         </header>
         <article>
-          <a href='#' name='content'></a>
+          <a name='content'></a>
           <form data-abide novalidate>
             <div class='row'>
               <div class='large-12 columns name-field'>
-                  <input type='text'  placeholder='FULL NAME' required aria-label="Full Name">
+                  <input title='Full Name' type='text'  placeholder='FULL NAME' required aria-label="Full Name">
                   <small class='form-error'>Full Name is required.</small>
               </div>
               <div class='large-12 columns'>
-                  <input type='text' placeholder='CONTACT PHONE NUMBER' aria-label="Phone Number" required pattern="^0[0-9]{9}">
+                  <input title='Phone Number' type='text' placeholder='CONTACT PHONE NUMBER' aria-label="Phone Number" required pattern="^0[0-9]{9}">
                   <small class='form-error'>Phone Number must start with 0 and be 10 digits long.</small>
               </div>
               <div class='large-12 columns'>
-                <input type='email' placeholder='EMAIL ADDRESS' aria-label="Email" required>
+                <input title='Email' type='email' placeholder='EMAIL ADDRESS' aria-label="Email" required>
                 <small class='form-error'>Must be a valid email.</small>
               </div>
               <div class='large-12 columns'>
-                <input type='text' placeholder='IDEA NAME (MAX 30 CHARACTERS)' aria-label="Idea Name" maxlength='30' required >
+                <input title='Idea Name' type='text' placeholder='IDEA NAME (MAX 30 CHARACTERS)' aria-label="Idea Name" maxlength='30' required >
                 <small class='form-error'>Name is required and must be less then 30 characters</small>
               </div>
               <div class='large-6 columns'>
-                <input id="DOB" type='text' placeholder='DATE OF BIRTH' aria-label="Date of Birth" required>
+                <input title='Date of Birth' id="DOB" type='text' placeholder='DATE OF BIRTH' aria-label="Date of Birth" required>
               </div>
               <div class='large-6 columns'>
-                <input type='text' placeholder='POSTCODE' aria-label="Postcode" required pattern="[0-9]{4}">
+                <input title='Postcode' type='text' placeholder='POSTCODE' aria-label="Postcode" required pattern="[0-9]{4}">
                 <small class='form-error'>Must be a valid Postcode</small>
               </div>
               <div class='row borders'>
                 <div class='large-12 columns' id='info-box'>
-                  <input class="small-1 medium-1 columns" type='checkbox' aria-label="Email Information" aria-describedby="moreInfo">
+                  <input title='More Information' class="small-1 medium-1 columns" type='checkbox' aria-label="Email Information" aria-describedby="moreInfo">
                   <p id='moreInfo' class="policy small-11 medium-11 columns checkbox-text">Check this box if you would like to receive further information about road safety</p>
                 </div>
                 <div class='large-12 columns' id='tandc'>
                   <small class='policy form-error'>Must agree to terms and conditions.</small>
-                  <input class="small-1 medium-1 columns" type='checkbox' aria-label="Terms and Conditions" aria-describedby="tandc" required>
+                  <input title='Terms and Conditions' class="small-1 medium-1 columns" type='checkbox' aria-label="Terms and Conditions" aria-describedby="tandc" required>
                   <p class="policy small-11 medium-11 columns checkbox-text">Check this box if you agree to the <a class='policy' href='termsandconditions.html' target='_blank'>Terms and Conditions</a></p>
                 </div>
                 <div id='form-upload' class='large-12 columns '>
                   <h1>UPLOAD YOUR ENTRY</h1>
                   <div id='form-select' class='large-12 columns'>
-                  <select class='large-12 columns' id='brief-question' aria-label="Choose Brief" required>
+                  <select title='Choose Brief' class='large-12 columns' id='brief-question' aria-label="Choose Brief" required>
                       <option value="0 disabled selected" aria-hidden> CHOOSE BRIEF</option>
                       <option name='vehiclesafety' value="1">VEHICLE SAFETY</option>
                       <option name='vulnerability'value="2">VULNERABLILITY</option>
-                      <option name='3' value="sharedresponsibility">SHARED RESPONSIBILITY</option>
+                      <option name='sharedresponsibility' value="3">SHARED RESPONSIBILITY</option>
                     </select>
 
-                    <select class='large-12 columns' id='upload' aria-label="Choose Entry Type" required>
+                    <select title='Entry Type' class='large-12 columns' id='upload' aria-label="Choose Entry Type" required>
                       <option value="0 disabled selected" aria-hidden> CHOOSE ENTRY TYPE</option>
                       <option name='text' value="1">TEXT</option>
                       <option name='audio'value="2">AUDIO</option>

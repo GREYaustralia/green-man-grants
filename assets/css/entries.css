@@ -110,11 +110,9 @@
       .filter-btn{
         height: 3em;
         width: 11em;
-        top: 17vh;
-        right: 5px;
         color: #35e1a2;
         border: 2px solid #35e1a2;
-        position: absolute;
+        position: relative;
         display: block;
         vertical-align: middle;
         text-align: center;
@@ -123,6 +121,8 @@
         font-family: Nanami-Bold;
         font-size: 18px;
         line-height: 3em;
+        margin:0 auto;
+        margin-bottom:1em;
       }
 
       .filter-btn:hover{
