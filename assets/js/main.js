@@ -6,8 +6,6 @@ $(document).ready(function(){
   var change = $('#top-bar')
   var offset = change.offset();
   // var pauseButton = document.querySelector("#polina button");
-  $(document).foundation();
-  $(document).foundation('abide', 'reflow');
   $('.entries-box').find('.btn-box').hide();
 
   $('input').change(validate);
