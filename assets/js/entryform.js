@@ -15,9 +15,6 @@ $(document).ready(function(){
       $('#question').empty();
     }
   })
-
-
-
   $('#upload').change(function(){
     if ($(this).find(':selected').val() === '1'){
       $('#upload-field').empty();
@@ -48,31 +45,6 @@ $(document).ready(function(){
       $(document).scrollTop();
     }
   });
-
-
-  //   console.log(invalid_fields);
-  // })
-  // .on('valid.fndtn.abide', function () {
-  //   console.log('valid!');
-  // });
-
-
-
-  // validate();
-  // $("input[title='Idea Name']").change(validate)
-  $('input').change(validate);
-
-  function validate(){
-    var invalid_fields = $('.form').has('[data-invalid]');
-    console.log(invalid_fields)
-    if(invalid_fields.length === 0){
-      console.log('herro')
-      $("input[type=submit]").prop("disabled", false);
-    }else{
-      console.log('nopes')
-      $("input[type=submit]").prop("disabled", true);
-    }
-  }
 });
 
 

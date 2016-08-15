@@ -839,6 +839,7 @@ color: #35e1a2;
 }
 
 
+
 #box-container{
   width:100%;
   text-align:center;
@@ -1172,11 +1173,13 @@ height:100%;
 /***********BRIEF PAGES*****************/
 .left-arrow{
   position: absolute;
-  left: 15vw;
+  top: 5em;
+  left: 2em;
 }
 .right-arrow{
   position: absolute;
-  right:15vw;
+  top: 5em;
+  right: 2em;
 }
 
 .brief-title{
@@ -1714,20 +1717,14 @@ height:100%;
 
 }
 
-
-
-
-
-@media only screen and (max-height : 700px ){
-  .test {
-    outline-color:blue;
+@media screen and (min-width: 810px){
+  .brief-break {
+    display: none;
   }
 }
 
-
 @media only screen and (max-width : 320px) {
   /* Smartphones (portrait) ----------- */
-
   #signoff{
     background-size:inherit;
   }
@@ -2152,7 +2149,7 @@ li{
     font-size: 1em;
   }
   .brief h2{
-    font-size: 1em;
+    font-size: 1.5em;
   }
   .brief li{
     font-size: 1em;

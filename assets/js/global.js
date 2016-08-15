@@ -6,8 +6,6 @@ $(document).ready(function(){
   $('.entries-box').find('.btn-box').hide();
 
 
-
-
 // BRIEFS HOVER (INDEX)
   $('#brief .box').on('mouseover', function(){
     $(this).find('.overlay').removeClass('dotoverlay');

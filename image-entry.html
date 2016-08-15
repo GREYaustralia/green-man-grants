@@ -6,9 +6,8 @@
   <meta name="Description" content="Image Entry">
   <meta http-equiv="content-type" content="text/html">
   <META NAME="viewport" CONTENT="width=device-width, height=device-height, initial-scale=1, user-scalable=no"/>
-  <script type="text/javascript" src='assets/js/jquery.js'></script>
-  <!--****** Carousel ***********-->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"/>
+  <script type="text/javascript" src='assets/js/vendor/jquery.js'></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   <!--***** Fonts ***** -->
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,700,100' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="assets/fonts/MyFontsWebfontsKit.css">
@@ -23,52 +22,48 @@
 
 </head>
   <body>
-    <ol class='sr-hidden'>
-      <li><a href='#main-nav'>Skip to Navigation</a></li>
-      <li><a href='#content'>Skip to Content</a></li>
-      <li><a href='#footer'>Skip to Footer</a></li>
-    </ol>
-    <nav id='top-bar' role='navigation'>
-      <a id='logo' role='logo' href='index.html'></a>
-      <div id='menu'>
-        <a href='#'>
-          <img src="assets/images/menu.png" alt="Menu Button">
-        </a>
-        <div class="nav" style="display:none;">
-          <a href='#' name='main-nav'><a>
-          <ul>
-            <li>
-              <a href="about.html">WHAT ARE GREEN MAN GRANTS?</a>
-            </li>
-            <li>
-              <a href="vehiclesafety.html">BRIEF: VEHICLE SAFETY</a>
-            </li>
-            <li>
-              <a href="vulnerability.html">BRIEF: VULNERABILITY</a>
-            </li>
-            <li>
-              <a href="sharedresponsibility.html">BRIEF: SHARED RESPONSIBILITY</a>
-            </li>
-            <li>
-              <a href="guidelines.html">ENTRY GUIDELINES</a>
-            </li>
-            <li>
-              <a href="judging.html">JUDGING</a>
-            </li>
-            <li>
-              <a href="voting.html">THE PEDESTRIAN'S CHOICE</a>
-            </li>
-            <li>
-              <a href="entry.html">ENTRY FORM</a>
-            </li>
-            <li>
-              <a href="index.html#contact">CONTACT US</a>
-            </li>
-          </ul>
-          <p></p>
-        </div>
-      </div>
-    </nav>
+  <ol class='sr-hidden'>
+    <li><a href='#main-nav'>Skip to Navigation</a></li>
+    <li><a href='#content'>Skip to Content</a></li>
+    <li><a href='#footer'>Skip to Footer</a></li>
+  </ol>
+  <nav aria-label="Green man grants hamburger" id='top-bar'>
+    <a id='logo' role='logo' href='index.html'></a>
+    <a name='main-nav' id='menu' tabindex="0">
+      <img src="assets/images/menu.png" alt="Menu Button">
+    </a>
+    <div class="nav">
+      <ul>
+        <li>
+          <a href="about.html">What are green man grants?</a>
+        </li>
+        <li>
+          <a href="vehiclesafety.html">Brief: Vehicle safety</a>
+        </li>
+        <li>
+          <a href="vulnerability.html">Brief: Vulnerability</a>
+        </li>
+        <li>
+          <a href="sharedresponsibility.html">Brief: Shared responsibility</a>
+        </li>
+        <li>
+          <a href="guidelines.html">Entry guidelines</a>
+        </li>
+        <li>
+          <a href="judging.html">Judging</a>
+        </li>
+        <li>
+          <a href="voting.html">The pedestrian's choice</a>
+        </li>
+        <li>
+          <a href="entry.html">Entry form</a>
+        </li>
+        <li>
+          <a href="index.html#contact">Contact us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
   <main>
     <section class='entry-page' id='image-entry-page'>
       <div class='dotoverlay'>
@@ -172,10 +167,10 @@
     </div>
   </main>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
   <script type="text/javascript" src="assets/js/foundation-datepicker.js"></script>
-  <script type="text/javascript" src="assets/js/vendor/foundation.js"></script>
-  <script type="text/javascript" src="assets/js/main.js"></script>
+  <script type="text/javascript" src="assets/js/vendor/foundation.min.js"></script>
+  <script type="text/javascript" src="assets/js/nav.js"></script>
   <script type="text/javascript" src="assets/js/foundation-enable.js"></script>
   </body>
 </html>
