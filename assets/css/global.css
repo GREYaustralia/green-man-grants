@@ -195,8 +195,9 @@ video {
     width: auto;
     height: auto;
     z-index: 0;
-    background: url(../images/background_hires.jpg) no-repeat;
-    background-size: cover;
+    /*background: url(../images/background_hires.jpg) no-repeat;*/
+    /*background-size: cover;*/
+    background-color: #000
     transition: 1s opacity;
 }
 
@@ -2660,6 +2661,10 @@ video{
   padding-left:9vh;
   height: 100%;
 }
+.video-js .vjs-big-play-button {
+    top: 5em;
+    left: 8.5em;
+  }
 
 .audio-player img{
   margin: 0 auto;

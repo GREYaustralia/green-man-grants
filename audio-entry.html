@@ -17,6 +17,9 @@
   <link rel="stylesheet" type="text/css" media="all" href="assets/css/app.css" />
   <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.css" />
   <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.min.css" />
+  <!--******* VideoJS ********-->
+  <link href="http://vjs.zencdn.net/5.10.8/video-js.css" rel="stylesheet">
+  <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
   <!--******* Custom *********-->
   <link rel="stylesheet" type="text/css" href="assets/css/global.css">
 </head>
@@ -91,11 +94,11 @@
 
 
             <div class='audio-player'>
-              <img src='assets/images/audio-black.png'></img>
+              <!-- <img src='assets/images/audio-black.png'></img> -->
               <audio id="audio_example" class="video-js vjs-default-skin" controls
-                preload="auto" width="600" height="600"
-                poster="assets/images/gmg_header_logo.png" data-setup='{}'>
-                <source src="/audio/awesome-music.mp3" type='audio/mp3'/>
+                preload="auto" width="600"
+                poster="assets/images/audio-background.png" data-setup='{}'>
+                <source src="assets/audio/Broke_For_Free_-_01_-_Night_Owl.mp3" type='audio/mp3'/>
               </audio>
             </div>
             <div id='description' class='center'>
@@ -173,6 +176,7 @@
   <script type="text/javascript" src="assets/js/foundation-datepicker.js"></script>
   <script type="text/javascript" src="assets/js/vendor/foundation.min.js"></script>
   <script type="text/javascript" src="assets/js/nav.js"></script>
+  <script src="http://vjs.zencdn.net/5.10.8/video.js"></script>
   <script type="text/javascript" src="assets/js/foundation-enable.js"></script>
   </body>
 </html>
