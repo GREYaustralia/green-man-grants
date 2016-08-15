@@ -14,6 +14,25 @@
 }
 
 /*SLIDER*/
+
+.btn-briefs-slider{
+    height: 3em;
+    width: 10em;
+    font-family: Nanami-Bold;
+    font-size: 18px;
+    line-height: 3em;
+    display: block;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    bottom: 23em;
+}
+
+.slick-list{
+  height:100%;
+}
+
 .slider{
   width: 100vw;
   margin-bottom: 0;
@@ -62,13 +81,13 @@
 /* Dots */
 .slick-dotted.slick-slider
 {
-  margin-bottom: 30px;
+  margin-bottom: -43px;
 }
 
 .slick-dots
 {
   position: relative !important;
-  bottom: 3em;
+  bottom: 5em;
 
   display: block;
 
@@ -502,7 +521,7 @@ line-height:4em;
   bottom: 10vh;
   left:0;
   right:0;
-  color:white;
+  color:#FFF;
   margin: auto;
   display:table-cell;
   vertical-align:middle;
@@ -520,7 +539,6 @@ line-height:4em;
   text-align: center;
   line-height: 8vh;
   background-color: transparent;
-  color:#35e1a2;
   font-size: 18px;
   font-family: Nanami-Bold;
   text-align: center;
@@ -760,11 +778,11 @@ color: #35e1a2;
   text-align: center;
 }
 .brief-text{
- color:white;
+ color:#FFF;
 }
 
 #briefs-box h1{
-  color:  white;
+  color:  #FFF;
   text-align: center;
   padding-top:5vh;
 
@@ -797,7 +815,7 @@ color: #35e1a2;
   color:#35e1a2;
 }
 .mobile-brief h1{
-  color:  white;
+  color:  #FFF;
   text-align: center;
   padding-top:18vh;
 
@@ -907,16 +925,19 @@ color: #35e1a2;
   height: 15vh;
 }
 
-#enter .hover{
-  color:#3cfdb6;
+#enter .hover img{
+
+  /*color:#3cfdb6;*/
   background-color:#000;
+  border-radius: 10px
 }
   #enter .hover figcaption{
-    color:#3cfdb6;
+    /*color:#3cfdb6;*/
   }
   #enter .hover p{
-    color:#3cfdb6;
+    /*color:#3cfdb6;*/
   }
+
 
 
 
@@ -981,6 +1002,11 @@ color: #35e1a2;
   right: 0;
   bottom: 0;
   margin: auto;
+  position: relative;
+  z-index:10;
+}
+.mobile-brief div{
+height:100%;
 }
 
 .box-container {
@@ -1983,7 +2009,7 @@ height:100%;
 }
 #about p{
   text-align: left;
-  color:white;
+  color:#FFF;
   margin: 0 auto;
   padding-bottom: 2vh;
 }
@@ -2043,11 +2069,11 @@ height:100%;
   margin-bottom: 10vh;
 }
 .brief p{
-  color:white;
+  color:#FFF;
   text-align: left;
 }
 li{
-  color:white;
+  color:#FFF;
   font-size: 1em;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -2170,7 +2196,7 @@ li{
 }
 #entries-page li{
   text-align: left;
-  color:white;
+  color:#FFF;
   list-style: none;
   padding-bottom: .5vh;
   padding-top: .5vh;
@@ -2313,7 +2339,7 @@ bottom:0;
   height:2em;
 }
 #info-box{
-  border: 2px solid white;
+  border: 2px solid #FFF;
 }
 #info-box input{
   position: absolute;
@@ -2340,7 +2366,7 @@ bottom:0;
 
 #entry-form .btn{
   background-color: #000;
-  color: white;
+  color: #FFF;
   font-size: 18px;
   font-family: Nanami-Bold !important;
   width:100%;
@@ -2351,7 +2377,7 @@ bottom:0;
 #form-upload{
 
   margin-top: 1vh;
-  border:1px solid white;
+  border:1px solid #FFF;
 
 
 }
@@ -2380,7 +2406,7 @@ input{
 }
 
 #tandc{
-  border: 2px solid white;
+  border: 2px solid #FFF;
 }
 #tandc input{
   /*display:inline-block;*/
@@ -2513,14 +2539,14 @@ input{
 }
 .entry-page li{
   text-align: left;
-  color:white;
+  color:#FFF;
   list-style: none;
   padding-bottom: .5vh;
   padding-top: .5vh;
 }
 
 .btn:hover{
-  color:white;
+  color:#FFF;
    border: 2px solid #FFF !important ;
 }
 
@@ -2540,14 +2566,14 @@ input{
   max-height: 3rem;
 }
 #side span{
-  color:white !important;
+  color:#FFF !important;
   font-size: .7rem;
   margin-left:2vw;
 }
 #side p{
   font-size: .6rem;
   margin:0 auto;
-  color:white;
+  color:#FFF;
 }
 
 .ped{
@@ -2734,12 +2760,12 @@ margin:0 auto;
 }
 #guidelines-page p{
   text-align: left;
-  color:white;
+  color:#FFF;
   margin-bottom: 0;
 }
 #guidelines-page li{
   text-align: left;
-  color:white;
+  color:#FFF;
   padding-bottom: .5vh;
 }
 #guidelines-page article {
@@ -2754,7 +2780,7 @@ margin:0 auto;
   }
   #guidelines-page p{
     text-align: left;
-    color:white;
+    color:#FFF;
   }
 }
 @media only screen and (max-width : 684px) {
@@ -2776,7 +2802,7 @@ margin:0 auto;
 }
 #judging p{
   text-align: left;
-  color:white;
+  color:#FFF;
 }
 #judging b{
   color:#2ec88f;
@@ -2935,7 +2961,7 @@ margin:0 auto;
 }
 #voting-page p{
   text-align: left;
-  color:white;
+  color:#FFF;
 }
 #voting-page strong{
   color:#35e1a2;
@@ -2946,7 +2972,7 @@ margin:0 auto;
 }
 #voting-page li{
   text-align: left;
-  color:white;
+  color:#FFF;
   padding-bottom: .5vh;
   padding-top: .5vh;
 }
