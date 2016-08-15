@@ -18,17 +18,17 @@
   <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.css" />
   <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.min.css" />
   <!--******* Custom *********-->
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/entry.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/global.css">
 
 </head>
   <body>
-    <nav id='top-bar'>
-      <div id='logo'>
-        <a href='index.html'>
-          <img src='assets/images/gmg_header_logo.png' draggable="false" alt="Green Man Grants Navigation Logo">
-        </a>
-      </div>
+    <ol class='sr-hidden'>
+      <li><a href='#main-nav'>Skip to Navigation</a></li>
+      <li><a href='#content'>Skip to Content</a></li>
+      <li><a href='#footer'>Skip to Footer</a></li>
+    </ol>
+    <nav id='top-bar' role='navigation'>
+      <a id='logo' role='logo' href='index.html'></a>
       <div id='menu'>
         <a href='#'>
           <img src="assets/images/menu.png" alt="Menu Button">
@@ -68,12 +68,7 @@
         </div>
       </div>
     </nav>
-      <ol class='sr-hidden'>
-        <li><a href='#main-nav'>Skip to Navigation</a></li>
-        <li><a href='#content'>Skip to Content</a></li>
-        <li><a href='#main-nav'>Skip to Footer</a></li>
-      </ol>
-      <main>
+  <main>
     <section class='entry-page' id='image-entry-page'>
       <div class='dotoverlay'>
       <aside id='side'>
@@ -100,7 +95,7 @@
             <div class='large-6 medium-6 columns'>
               <img src="assets/images/footer.jpg">
             </div>
-            <div class='large-6 medium-6 columns'>
+            <div class='large-6 medium-6 columns main-content'>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat sed nibh sed finibus. Nam id nulla vel ex vulputate maximus. In convallis libero vitae tincidunt venenatis. In hac habitasse platea dictumst. Ut ac consectetur quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec id magna justo.</p>
 
               <p>Pellentesque vitae placerat odio. Ut ac augue et tellus facilisis imperdiet. Aliquam vel luctus massa, eu bibendum arcu. Morbi sit amet purus accumsan mauris maximus volutpat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc eget commodo quam. Duis eget nunc vestibulum, accumsan neque non, laoreet diam. Suspendisse convallis justo quis magna dapibus, a varius massa auctor. Aliquam cursus dolor non auctor convallis. Donec porttitor pellentesque metus sed sollicitudin.</p>
@@ -110,7 +105,7 @@
           </div>
         </article>
         <footer>
-          <p><b class='ped'>PEDESTRIANS CHOICE - VOTE FOR THIS ENTRY</strong></p>
+          <p><strong class='ped caps'>The pedestrian's choice - Vote for this entry</strong></p>
           <p>You could win $1000 just for voting. <a href="voting.html"><strong>How?</strong></a></p>
 
             <div class='row entry-btn-section'>
@@ -143,7 +138,7 @@
     <h1 id='title_id'>Nullam libero tellus</h1>
     <p>BY <span>JANE</span> <span>SAMPLE</span></p>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat sed nibh sed finibus. Nam id nulla vel ex vulputate maximus. In convallis libero vitae tincidunt venenatis. In hac habitasse platea dictumst. Ut ac consectetur quam.</p>
-    <form data-abide>
+    <form class='form' data-abide>
     <div class='row'>
       <div class="medium-6 columns">
         <input type="text" placeholder="FULL NAME" aria-label="Full Name" required>
@@ -165,7 +160,7 @@
         <p id='moreInfo' class='small-10 medium-10 columns checkbox-text'>Check this box if you would like to receive further information about road safety</p>
       </div>
       <div class="medium-6 columns">
-        <input class='btn' type='submit' value='VOTE NOW'>
+        <input class='btn' type='submit' value='VOTE NOW' disabled>
       </div>
     </div>
   </form>
@@ -179,6 +174,7 @@
     <script type="text/javascript" src="assets/js/vendor/foundation.js"></script>
     <script type="text/javascript" src="assets/js/foundation-datepicker.js"></script>
     <script type="text/javascript" src="assets/js/entry.js"></script>
+    <script type="text/javascript" src="assets/js/entryform.js"></script>
     <script type="text/javascript" src="assets/js/nav.js"></script>
     <script type="text/javascript" src="assets/js/app.js"></script>
   </body>

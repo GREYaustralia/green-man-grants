@@ -28,26 +28,51 @@ $(document).ready(function(){
       });
       $('#upload-field').empty();
       $('#upload-field').append('<input name="file" type="file" aria-label="Video Upload" required/>');
-      $('#upload-field').append('<textarea class="large-12 columns" id="description" name="description" placeholder="VIDEO DESCRIPTION (MAX 140 CHARACTERS LINKS OK)" aria-label="Video Description - Max 140 Characters" required></textarea>')
+      $('#upload-field').append('<textarea class="large-12 columns" id="video_description" class="form-description" name="description" placeholder="VIDEO DESCRIPTION (MAX 140 CHARACTERS LINKS OK)" aria-label="Video Description - Max 140 Characters" required></textarea>')
     }else if($(this).find(':selected').val() === '2'){
       $(function() {
         $(document).scrollTop( $("#form-upload").offset().top + (-75) );
       });
       $('#upload-field').empty();
       $('#upload-field').append('<input name="file" type="file" aria-label="Audio Upload" required/>');
-      $('#upload-field').append('<textarea class="large-12 columns" id="description" name="description" placeholder="AUDIO DESCRIPTION (MAX 140 CHARACTERS LINKS OK)" aria-label="Audio Description - Max 140 Characters" required></textarea>')
+      $('#upload-field').append('<textarea class="large-12 columns" id="audio_description" class="form-description" name="description" placeholder="AUDIO DESCRIPTION (MAX 140 CHARACTERS LINKS OK)" aria-label="Audio Description - Max 140 Characters" required></textarea>')
     }else if($(this).find(':selected').val() === '4'){
       $(function() {
         $(document).scrollTop( $("#form-upload").offset().top + (-75) );
       });
       $('#upload-field').empty();
       $('#upload-field').append('<input name="file" type="file" aria-label="Photo Upload" required/>');
-      $('#upload-field').append('<textarea class="large-12 columns" id="description" name="description" placeholder="PHOTO DESCRIPTION (MAX 1000 CHARACTERS LINKS OK)" aria-label="Photo Description - Max 1000 Characters" required></textarea>')
+      $('#upload-field').append('<textarea class="large-12 columns" id="image-description" class="form-description" name="description" placeholder="PHOTO DESCRIPTION (MAX 1000 CHARACTERS LINKS OK)" aria-label="Photo Description - Max 1000 Characters" required></textarea>')
     }else{
       $('#upload-field').empty();
       $(document).scrollTop();
     }
   });
+
+
+  //   console.log(invalid_fields);
+  // })
+  // .on('valid.fndtn.abide', function () {
+  //   console.log('valid!');
+  // });
+
+
+
+  // validate();
+  // $("input[title='Idea Name']").change(validate)
+  $('input').change(validate);
+
+  function validate(){
+    var invalid_fields = $('.form').has('[data-invalid]');
+    console.log(invalid_fields)
+    if(invalid_fields.length === 0){
+      console.log('herro')
+      $("input[type=submit]").prop("disabled", false);
+    }else{
+      console.log('nopes')
+      $("input[type=submit]").prop("disabled", true);
+    }
+  }
 });
 
 

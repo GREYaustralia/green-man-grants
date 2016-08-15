@@ -18,16 +18,16 @@
   <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.css" />
   <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.min.css" />
   <!--******* Custom *********-->
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/privacypolicy.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/global.css">
 </head>
   <body>
-    <nav id='top-bar'>
-      <div id='logo'>
-        <a href='index.html'>
-          <img src='assets/images/gmg_header_logo.png' draggable="false" alt="Green Man Grants Navigation Logo">
-        </a>
-      </div>
+    <ol class='sr-hidden'>
+      <li><a href='#main-nav'>Skip to Navigation</a></li>
+      <li><a href='#content'>Skip to Content</a></li>
+      <li><a href='#footer'>Skip to Footer</a></li>
+    </ol>
+    <nav id='top-bar' role='navigation'>
+      <a id='logo' role='logo' href='index.html'></a>
       <div id='menu'>
         <a href='#'>
           <img src="assets/images/menu.png" alt="Menu Button">
@@ -67,18 +67,13 @@
         </div>
       </div>
     </nav>
-      <ol class='sr-hidden'>
-        <li><a href='#main-nav'>Skip to Navigation</a></li>
-        <li><a href='#content'>Skip to Content</a></li>
-        <li><a href='#main-nav'>Skip to Footer</a></li>
-      </ol>
-      <main>
+  <main>
     <section id="privacypolicy">
       <div class='dotoverlay'>
         <header>
           <h1>PRIVACY POLICY</h1>
         </header>
-          <article id="main-content">
+          <article class="main-content">
             <a href='#' name='content'></a>
             <h2>Privacy Statement</h2>
             <p>The TAC is committed to protecting your privacy. Any personal information collected, handled, stored or disclosed about you through our online services will be managed in accordance with the Transport Accident Act 1986, Privacy and Data Protection Act 2014 and the Health Records Act 2001.</p>

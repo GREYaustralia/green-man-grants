@@ -18,17 +18,17 @@
   <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.css" />
   <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.min.css" />
   <!--******* Custom *********-->
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/guidelines.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/global.css">
 
 </head>
   <body>
-    <nav id='top-bar'>
-      <div id='logo'>
-        <a href='index.html'>
-          <img src='assets/images/gmg_header_logo.png' draggable="false" alt="Green Man Grants Navigation Logo">
-        </a>
-      </div>
+    <ol class='sr-hidden'>
+      <li><a href='#main-nav'>Skip to Navigation</a></li>
+      <li><a href='#content'>Skip to Content</a></li>
+      <li><a href='#footer'>Skip to Footer</a></li>
+    </ol>
+    <nav id='top-bar' role='navigation'>
+      <a id='logo' role='logo' href='index.html'></a>
       <div id='menu'>
         <a href='#'>
           <img src="assets/images/menu.png" alt="Menu Button">
@@ -68,19 +68,14 @@
         </div>
       </div>
     </nav>
-      <ol class='sr-hidden'>
-        <li><a href='#main-nav'>Skip to Navigation</a></li>
-        <li><a href='#content'>Skip to Content</a></li>
-        <li><a href='#main-nav'>Skip to Footer</a></li>
-      </ol>
-      <main>
+  <main>
     <section id='guidelines-page'>
       <div class='dotoverlay'>
         <header>
         <h1>ENTRY GUIDELINES</h1>
         <p style='text-align:center;'>Each entry must meet the following criteria.</p>
       </header>
-          <article id='main-content'>
+          <article class='main-content'>
           <a href='#' name='content'></a>
           <h2 class='center'>SUBMISSION CRITERIA</h2>
             <ul>

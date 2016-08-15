@@ -18,16 +18,16 @@
   <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.css" />
   <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.min.css" />
   <!--******* Custom *********-->
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/voting.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/global.css">
 </head>
   <body>
-    <nav id='top-bar'>
-      <div id='logo'>
-        <a href='index.html'>
-          <img src='assets/images/gmg_header_logo.png' draggable="false" alt="Green Man Grants Navigation Logo">
-        </a>
-      </div>
+    <ol class='sr-hidden'>
+      <li><a href='#main-nav'>Skip to Navigation</a></li>
+      <li><a href='#content'>Skip to Content</a></li>
+      <li><a href='#footer'>Skip to Footer</a></li>
+    </ol>
+    <nav id='top-bar' role='navigation'>
+      <a id='logo' role='logo' href='index.html'></a>
       <div id='menu'>
         <a href='#'>
           <img src="assets/images/menu.png" alt="Menu Button">
@@ -67,32 +67,27 @@
         </div>
       </div>
     </nav>
-      <ol class='sr-hidden'>
-        <li><a href='#main-nav'>Skip to Navigation</a></li>
-        <li><a href='#content'>Skip to Content</a></li>
-        <li><a href='#main-nav'>Skip to Footer</a></li>
-      </ol>
-      <main>
+  <main>
     <section id='voting-page'>
       <div class='dotoverlay'>
         <header>
-          <h1>PEDESTRIANS CHOICE</h1>
-          <div><strong>$1000 TO BE WON</strong></div>
+          <h1 class='caps'>The Pedestrian's Choice</h1>
+          <div class='caps'><strong>$1000 to be won</strong></div>
         </header>
         <article>
           <a href='#' name='content'></a>
           <p>The Pedestrian's Choice is an additional prize, rewarding the idea that gets the most votes in the online gallery - the crowd favourite.</p>
           <p>After moderation, each entry will be posted to the gallery where it can be viewed, voted on, and shared via URL directly to Facebook & Twitter, along with the #greenmangrants.</p>
           <p>The entry that receives the most votes will win $1000 prize money! There will also be a random draw for a further $1000 prize for all of the people who have voted - so get sharing and voting!</p>
-          <strong>IMPORTANT DATES</strong>
+          <strong class='caps'>Important Dates</strong>
           <ul>
             <li><span>Shortlist announced:</span> 14th October, 2016 (TBC)</li>
             <li><span>Finalist presentation:</span> W/c 31st October, 2016 (TBC)</li>
             <li><span>Winners announced:</span> 14th November, 2016 (TBC)</li>
           </ul>
           <div class='row' id='voting-button-section'>
-            <a href="entries.html" style='float:left;'class='btn large-4 small-12 columns'>VOTE</a>
-            <a href="entry.html" style='float:right;'class='btn large-4 small-12 columns'>ENTER NOW</a>
+            <a href="entries.html" class='btn large-4 columns'>VOTE</a>
+            <a href="entry.html" class='btn large-4 columns'>ENTER NOW</a>
           </div>
         </article>
       </div>

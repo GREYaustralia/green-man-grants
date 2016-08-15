@@ -31,7 +31,7 @@ body{
   padding-top: 12vh;
 }
 .brief h2{
-  font-size: 4vh;
+  /*font-size: 4vh;*/
   width:80vw;
   margin: 0 auto;
   margin-bottom: 10vh;
@@ -52,14 +52,14 @@ li{
   font-weight: 300;
 }
 
-.brief a{
+/*.brief a{
   color: #3cfdb6;
   font-weight: bold;
 }
 .brief a:hover{
   color:white;
   text-decoration: underline;
-}
+}*/
 
 #main-content p{
     text-align: left;
@@ -186,8 +186,13 @@ footer a {
   .dotoverlay{
     height:auto !important;
   }
+
 }
-@media only screen and (max-width : 684px) {
+@media only screen and (min-width : 1824px) {
+  .main-content ul li{
+    font-size: 1.5em !important;
+  }
+
 }
 @media only screen and (max-width : 1100px) {
 

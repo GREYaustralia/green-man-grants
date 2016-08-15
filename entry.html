@@ -23,16 +23,16 @@
   <link rel="stylesheet" type="text/css" href="assets/css/datepicker.css">
 
   <!--******* Custom *********-->
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/entry-form.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/global.css">
 </head>
   <body>
-    <nav id='top-bar'>
-      <div id='logo'>
-        <a href='index.html'>
-          <img src='assets/images/gmg_header_logo.png' draggable="false" alt="Green Man Grants Navigation Logo">
-        </a>
-      </div>
+    <ol class='sr-hidden'>
+      <li><a href='#main-nav'>Skip to Navigation</a></li>
+      <li><a href='#content'>Skip to Content</a></li>
+      <li><a href='#footer'>Skip to Footer</a></li>
+    </ol>
+    <nav id='top-bar' role='navigation'>
+      <a id='logo' role='logo' href='index.html'></a>
       <div id='menu'>
         <a href='#'>
           <img src="assets/images/menu.png" alt="Menu Button">
@@ -72,12 +72,7 @@
         </div>
       </div>
     </nav>
-      <ol class='sr-hidden'>
-        <li><a href='#main-nav'>Skip to Navigation</a></li>
-        <li><a href='#content'>Skip to Content</a></li>
-        <li><a href='#main-nav'>Skip to Footer</a></li>
-      </ol>
-      <main>
+  <main>
     <section id='entry-form'>
       <div class='dotoverlay'>
         <header>
@@ -86,7 +81,7 @@
         </header>
         <article>
           <a name='content'></a>
-          <form data-abide novalidate>
+          <form class='form' data-abide novalidate>
             <div class='row'>
               <div class='large-12 columns name-field'>
                   <input title='Full Name' type='text'  placeholder='FULL NAME' required aria-label="Full Name">
@@ -101,7 +96,7 @@
                 <small class='form-error'>Must be a valid email.</small>
               </div>
               <div class='large-12 columns'>
-                <input title='Idea Name' type='text' placeholder='IDEA NAME (MAX 30 CHARACTERS)' aria-label="Idea Name" maxlength='30' required >
+                <input title='Idea Name' type='text' placeholder='Idea Name (Max 30 characters)' aria-label="Idea Name" maxlength='30' required >
                 <small class='form-error'>Name is required and must be less then 30 characters</small>
               </div>
               <div class='large-6 columns'>
@@ -142,7 +137,7 @@
                   </div>
                   <p><strong id='question'></strong></p>
                   <div id='upload-field'></div>
-                  <input class=' large-12 columns btn' type='submit' value='SUBMIT' data-open="">
+                  <input class=' large-12 columns btn' type='submit' value='SUBMIT' data-open="" disabled>
                   <p class='policy'>We are committed to protecting your privacy. Your e-mail address will not be disclosed, added to a mailing list, or used for any other purpose without your consent.</br> View our <a href="privacypolicy.html">Privacy Policy</a>.</p>
                 </div>
              </div>

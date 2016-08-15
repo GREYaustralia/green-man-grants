@@ -6,6 +6,7 @@
   <meta name="Description" content="Make the roads safer and you could get the green light for your project plus $5,000 cash prize and up to $50,000 funding">
   <meta http-equiv="content-type" content="text/html">
   <META NAME="viewport" CONTENT="width=device-width, height=device-height, initial-scale=1, user-scalable=no"/>
+  <script type="text/javascript" src="assets/js/vendor/jquery.js"></script>
   <!--****** Carousel ***********-->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"/>
   <!--***** Fonts ***** -->
@@ -17,15 +18,16 @@
   <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.css" />
   <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.min.css" />
   <!--******* Custom *********-->
-  <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/global.css">
 </head>
 <body>
+  <ol class='sr-hidden'>
+    <li><a href='#main-nav'>Skip to Navigation</a></li>
+    <li><a href='#content'>Skip to Content</a></li>
+    <li><a href='#footer'>Skip to Footer</a></li>
+  </ol>
   <nav aria-label="Green man grants hamburger" id='top-bar'>
-    <div id='logo'>
-      <a href='index.html'>
-        <img src='assets/images/gmg_header_logo.png' draggable="false" alt="Green Man Grants Navigation Logo">
-      </a>
-    </div>
+    <a id='logo' role='logo' href='index.html'></a>
     <a name='main-nav' id='menu' tabindex="0">
       <img src="assets/images/menu.png" alt="Menu Button">
     </a>
@@ -61,25 +63,20 @@
       </ul>
     </div>
   </nav>
-  <ol class='sr-hidden'>
-    <li><a href='#main-nav'>Skip to Navigation</a></li>
-    <li><a href='#content'>Skip to Content</a></li>
-    <li><a href='#main-nav'>Skip to Footer</a></li>
-  </ol>
   <main class='index'>
     <section id ='header'>
-      <div class="header-video">
+      <!-- <div class="header-video"> -->
         <div class='header-content'>
           <header id='header-logo'>
             <img src="assets/images/gmg_header_logo.png" draggable="false" alt='Green Man Grants Logo'>
           </header>
           <article>
             <a name='content'></a>
-            <h1 class='longer caps'>Make the roads safer and you could get the green light for your project plus $5,000 cash prize and up to $50,000 funding</h1>
-            <p class='longer'>Do you have an idea that could make the roads safer? Something outside the box, that'll make you and your mates look out for each other? If you're 18-25, simply answer one of the briefs in a creative way - it could be a film, a sculpture, an app, whatever you can dream up - and you could receive up to $50,000 funding.</p>
-            <p class='longer'>If you're successful, you'll be partnered with an industry expert to guide and mentor you through the process of bringing your idea to life.</p>
-            <p class='longer'>And to top it off, you'll receive a $5,000 cash prize for this major achievement.</p>
-            <p class='longer'>It would pretty awesome if you could make a positive difference to something as important as road safety.</p>
+            <h1 class='white longer caps'>Make the roads safer and you could get the green light for your project plus $5,000 cash prize and up to $50,000 funding</h1>
+            <p class='white longer'>Do you have an idea that could make the roads safer? Something outside the box, that'll make you and your mates look out for each other? If you're 18-25, simply answer one of the briefs in a creative way - it could be a film, a sculpture, an app, whatever you can dream up - and you could receive up to $50,000 funding.</p>
+            <p class='white longer'>If you're successful, you'll be partnered with an industry expert to guide and mentor you through the process of bringing your idea to life.</p>
+            <p class='white longer'>And to top it off, you'll receive a $5,000 cash prize for this major achievement.</p>
+            <p class='white longer'>It would pretty awesome if you could make a positive difference to something as important as road safety.</p>
           </article>
           <footer>
             <a class='btn-try btn-btm btn-green' href='#brief'>SEE THE BRIEFS</a>
@@ -89,16 +86,16 @@
              </a>
            </div>
          </footer>
+
        </div>
-       <img src="assets/images/background_hires.jpg"
-       class="header-video__media"
-       data-teaser="assets/video/greenmangrants_webwicdeo_720p_low"
-       data-video-width="560"
-       data-video-height="315"
-       alt="Green Man Grants Video Background">
-       <button type="button" class="header-video__close-trigger" id="header-video__close-trigger">Close video</button>
-     </div>
-     <div style='margin-top:-100vh;' class='dotoverlay black-back'></div>
+     <!-- </div> -->
+     <!-- <div style='margin-top:-100vh;' class='video-dotoverlay'></div> -->
+      <video poster="assets/images/background_hires.png" id="bgvid" playsinline autoplay muted>
+        <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+        <source src="assets/video/720p_LOW_dark.webm" type="video/webm">
+        <source src="assets/video/720p_LOWdark_1.mp4" type="video/mp4">
+      </video>
+
    </section>
    <section id='intro'>
     <div class='dotoverlay'>
@@ -108,14 +105,14 @@
       </header>
       <article>
         <p class='left-align longer'>Entering Green Man Grants is pretty simple. There are three briefs for you to choose from. Just pick the one that inspires you the most and get cracking on your concept. You can enter your idea in whichever manner best portrays your concept. Either by uploading a video, audio, image or a text entry. It can be anything from an app to an event; but importantly, it must answer the brief.</p>
-        <h2 class='center longer bold'>Entering</h2>
+        <h2 class='black center longer bold'>Entering</h2>
         <p class='left-align longer'>At this initial stage, you will only need to provide a summary of your concept. To make sure that our judging panel understands and shares your vision, be sure to articulate the idea as much as possible.</p>
-        <h2 class='center longer bold'>Shortlist</h2>
+        <h2 class='black center longer bold'>Shortlist</h2>
         <p class='left-align longer'>If your idea is shortlisted, you will be invited to present to our panel. At this time you will be required to present a more developed outline including a detailed breakdown of the funds you are requesting (up to $50,000).</p>
-        <h2 class='center longer bold'>Winners</h2>
+        <h2 class='black center longer bold'>Winners</h2>
         <p class='left-align longer'>There will be a selection of winners across the three categories below. Each winner will be partnered with an industry expert, who will guide and mentor you through the process of bringing your idea to life.</p>
         <br>
-        <p><strong>Entries close at 5pm on 15th September 2016.</strong></p>
+        <p class='bold'>Entries close at 5pm on 15th September 2016.</p>
       </article>
       <footer>
         <a class='caps btn-black btn-try btn-btm' href='guidelines.html'>Guidelines</a>
@@ -198,7 +195,7 @@
         <h1 class='caps'>How to enter</h1>
       </header>
       <article>
-        <p class='longer'>To enter the Green Man Grants, answer one of our briefs with a summary of your idea. Upload your idea in one of the following formats.</p>
+        <p class='longer center'>To enter the Green Man Grants, answer one of our briefs with a summary of your idea. Upload your idea in one of the following formats.</p>
         <div class='box-wrapper'>
           <div class='box-container'>
             <div class='box' id='video'>
@@ -258,132 +255,131 @@
   </section>
 
 
-  <section id='entries'>
+    <section id='entries'>
     <div class='dotoverlay'>
       <a name='entries'></a>
       <header id='entries-header'>
         <h1 class='caps'>Entries</h1>
-        <p>Check out the Competition</p>
+        <p class='white center longer'>Check out the Competition</p>
       </header>
       <article>
-
         <!-- ##############LIMIT TO 3 AT CERTAIN SCREEN WIDTH AND REMOVE THIS #################### -->
         <div class='box-container entries-box entries-mobile'>
-          <div class=' box video'>
+          <a href="video-entry.html" class='box video'>
             <div class='entries-dotoverlay'></div>
             <h1>Nullam libero tellus</h1>
-            <a class="btn-box btn" href="video-entry.html">VIEW ENTRY</a>
+            <div class="btn-box btn" href="video-entry.html">VIEW ENTRY</div>
             <img class='icon' src='assets/images/video-green.png' alt='Video Icon'>
             <div class='votes'>
               <span class='votes-left'><i class="fa fa-facebook" aria-hidden="true"></i> 3k</span>
               <span class='votes-center'><i class="fa fa-twitter" aria-hidden="true"></i> 250</span>
               <span class='votes-right'><i class="fa fa-blind" aria-hidden="true"></i> <span>6,997</span></span>
             </div>
-          </div>
-          <div class=' box text'>
+          </a>
+          <a href="text-entry.html" class='box text'>
             <div class='entries-dotoverlay'></div>
             <h1>Nullam libero tellus</h1>
-            <a class="btn-box btn" href="text-entry.html">VIEW ENTRY</a>
+            <div class="btn-box btn" href="text-entry.html">VIEW ENTRY</div>
             <img class='icon' src='assets/images/text-green.png' alt='Text Icon'>
             <div class='votes'>
               <span class='votes-left'><i class="fa fa-facebook" aria-hidden="true"></i> 3k</span>
               <span class='votes-center'><i class="fa fa-twitter" aria-hidden="true"></i> 250</span>
               <span class='votes-right'><i class="fa fa-blind" aria-hidden="true"></i> <span>6,997</span></span>
             </div>
-          </div>
-          <div class=' box audio'>
-            <div class='entries-dotoverlay'></div>
+          </a>
+          <a class='box audio'>
+            <div href="audio-entry.html" class='entries-dotoverlay'></div>
             <h1>Nullam libero tellus</h1>
-            <a class="btn-box btn" href="audio-entry.html">VIEW ENTRY</a>
+            <div class="btn-box btn" href="audio-entry.html">VIEW ENTRY</div>
             <img class='icon' src='assets/images/audio-green.png' alt='Audio Icon'>
             <div class='votes'>
               <span class='votes-left'><i class="fa fa-facebook" aria-hidden="true"></i> 3k</span>
               <span class='votes-center'><i class="fa fa-twitter" aria-hidden="true"></i> 250</span>
               <span class='votes-right'><i class="fa fa-blind" aria-hidden="true"></i> <span>6,997</span></span>
             </div>
-          </div>
+          </a>
           <a class='box endbox' href="entries.html">
             <span><strong>SEE MORE...</strong></span>
           </a>
         </div>
         <div class='box-container entries-box entries-home'>
-          <div class=' box video'>
+          <a href="video-entry.html" class='box video'>
             <div class='entries-dotoverlay'></div>
             <h1>Nullam libero tellus</h1>
-            <a class="btn-box" href="video-entry.html">VIEW ENTRY</a>
+            <div class="btn-box" href="video-entry.html">VIEW ENTRY</div>
             <img class='icon' src='assets/images/video-green.png' alt='Video Icon'>
             <div class='votes'>
               <span class='votes-left'><i class="fa fa-facebook" aria-hidden="true"></i> 3k</span>
               <span class='votes-center'><i class="fa fa-twitter" aria-hidden="true"></i> 250</span>
               <span class='votes-right'><i class="fa fa-blind" aria-hidden="true"></i> <span>6,997</span></span>
             </div>
-          </div>
-          <div class=' box audio'>
+          </a>
+          <a href="audio-entry.html" class='box audio'>
             <div class='entries-dotoverlay'></div>
             <h1>Nullam libero tellus</h1>
-            <a class="btn-box btn" href="audio-entry.html">VIEW ENTRY</a>
+            <div class="btn-box btn" href="audio-entry.html">VIEW ENTRY</div>
             <img class='icon' src='assets/images/audio-green.png' alt='Audio Icon'>
             <div class='votes'>
               <span class='votes-left'><i class="fa fa-facebook" aria-hidden="true"></i> 3k</span>
               <span class='votes-center'><i class="fa fa-twitter" aria-hidden="true"></i> 250</span>
               <span class='votes-right'><i class="fa fa-blind" aria-hidden="true"></i> <span>6,997</span></span>
             </div>
-          </div>
-          <div class=' box text'>
+          </a>
+          <a  href="text-entry.html" class='box text'>
             <div class='entries-dotoverlay'></div>
             <h1>Nullam libero tellus</h1>
-            <a class="btn-box btn" href="text-entry.html">VIEW ENTRY</a>
+            <div class="btn-box btn" href="text-entry.html">VIEW ENTRY</div>
             <img class='icon' src='assets/images/text-green.png' alt='Text Icon'>
             <div class='votes'>
               <span class='votes-left'><i class="fa fa-facebook" aria-hidden="true"></i> 3k</span>
               <span class='votes-center'><i class="fa fa-twitter" aria-hidden="true"></i> 250</span>
               <span class='votes-right'><i class="fa fa-blind" aria-hidden="true"></i> <span>6,997</span></span>
             </div>
-          </div>
-          <div class=' box image'>
+          </a>
+          <a href="image-entry.html" class='box image'>
             <div class='entries-dotoverlay'></div>
             <h1>Nullam libero tellus</h1>
-            <a class="btn-box btn" href="image-entry.html">VIEW ENTRY</a>
+            <div class="btn-box btn" href="image-entry.html">VIEW ENTRY</div>
             <img class='icon' src='assets/images/image-green.png' alt='Image Icon'>
             <div class='votes'>
-              <span class='votes-left'><i class="fa fa-facebook" aria-hidden="true"></i> 3k</span>
-              <span class='votes-center'><i class="fa fa-twitter" aria-hidden="true"></i> 250</span>
-              <span class='votes-right'><i class="fa fa-blind" aria-hidden="true"></i> <span>6,997</span></span>
+              <span class='shares'><i class="fa fa-facebook" aria-hidden="true"></i> 3k</span>
+              <span class='tweets'><i class="fa fa-twitter" aria-hidden="true"></i> 250</span>
+              <span class='gmgvotes'><i class="fa fa-blind" aria-hidden="true"></i> <span>6,997</span></span>
             </div>
-          </div>
-          <div class=' box video'>
+          </a>
+          <a href="video-entry.html" class='box video'>
             <div class='entries-dotoverlay'></div>
             <h1>Nullam libero tellus</h1>
-            <a class="btn-box btn" href="video-entry.html">VIEW ENTRY</a>
+            <div class="btn-box btn" href="video-entry.html">VIEW ENTRY</div>
             <img class='icon' src='assets/images/video-green.png' alt='Video Icon'>
             <div class='votes'>
               <span class='votes-left'><i class="fa fa-facebook" aria-hidden="true"></i> 3k</span>
               <span class='votes-center'><i class="fa fa-twitter" aria-hidden="true"></i> 250</span>
               <span class='votes-right'><i class="fa fa-blind" aria-hidden="true"></i> <span>6,997</span></span>
             </div>
-          </div>
-          <div class=' box video'>
+          </a>
+          <a href="video-entry.html" class='box video'>
             <div class='entries-dotoverlay'></div>
             <h1>Nullam libero tellus</h1>
-            <a class="btn-box btn" href="video-entry.html">VIEW ENTRY</a>
+            <div class="btn-box btn" href="video-entry.html">VIEW ENTRY</div>
             <img class='icon' src='assets/images/video-green.png' alt='Video Icon'>
             <div class='votes'>
               <span class='votes-left'><i class="fa fa-facebook" aria-hidden="true"></i> 3k</span>
               <span class='votes-center'><i class="fa fa-twitter" aria-hidden="true"></i> 250</span>
               <span class='votes-right'><i class="fa fa-blind" aria-hidden="true"></i> <span>6,997</span></span>
             </div>
-          </div>
-          <div class=' box video'>
+          </a>
+          <a href="video-entry.html" class='box video'>
             <div class='entries-dotoverlay'></div>
             <h1>Nullam libero tellus</h1>
-            <a class="btn-box btn" href="video-entry.html">VIEW ENTRY</a>
+            <div class="btn-box btn" href="video-entry.html">VIEW ENTRY</div>
             <img class='icon' src='assets/images/video-green.png' alt='Video Icon'>
             <div class='votes'>
               <span class='votes-left'><i class="fa fa-facebook" aria-hidden="true"></i> 3k</span>
               <span class='votes-center'><i class="fa fa-twitter" aria-hidden="true"></i> 250</span>
               <span class='votes-right'><i class="fa fa-blind" aria-hidden="true"></i> <span>6,997</span></span>
             </div>
-          </div>
+          </a>
 
 
           <!-- ############## -->
@@ -411,7 +407,7 @@
         <p>If you require more information about Green Man Grants please submit your details here.</p>
       </header>
       <article>
-        <form data-abide>
+        <form class='form' data-abide>
           <div class='row'>
             <div class='large-12 columns'>
              <input title='Full Name' id='fullname' type='text' placeholder='FULL NAME' aria-label="Full Name"  required >
@@ -428,7 +424,7 @@
           </div>
           <div class='row'>
             <div class='large-12 columns'>
-              <input class='large-12 columns btn' type='submit' value='SEND'>
+              <input class='large-12 columns btn' type='submit' value='SEND' disabled>
             </div>
             <p class='policy large-12 columns'>We are committed to protecting your privacy. Your e-mail address will not be disclosed, added to a mailing list, or used for any other purpose without your consent.<br> View our <a href="privacypolicy.html">Privacy Policy</a>.</p>
           </div>
@@ -466,28 +462,59 @@
       </ul>
     </footer>
   </main>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   <script type="text/javascript" src="assets/js/vendor/foundation.js"></script>
   <script type="text/javascript" src="assets/js/nav.js"></script>
-  <script type="text/javascript" src="assets/js/mobile-home.js"></script>
-  <script type="text/javascript" src="assets/js/entries.js"></script>
-  <script type="text/javascript" src="assets/js/briefs.js"></script>
-  <script type="text/javascript" src="assets/js/app.js"></script>
-  <script type="text/javascript" src="assets/js/video.js"></script>
-  <script type="text/javascript" src="assets/js/entry-hover.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+  <script type="text/javascript" src="assets/js/entry.js"></script>
+  <script type="text/javascript" src="assets/js/entryform.js"></script>
   <script>
-  $(document).ready(function() {
-    $('.header-video').each(function(i, elem) {
-      headerVideo = new HeaderVideo({
-        element: elem,
-        media: '.header-video__media',
-        playTrigger: '.header-video__play-trigger',
-        closeTrigger: '.header-video__close-trigger'
-      });
+    var vid = document.getElementById("bgvid");
+    var pauseButton = document.querySelector("#polina button");
+
+    function vidFade() {
+      vid.classList.add("stopfade");
+    }
+
+    vid.addEventListener('ended', function()
+    {
+    // only functional if "loop" is removed
+    vid.pause();
+    // to capture IE10
+    vidFade();
     });
-  });
+
+
+    pauseButton.addEventListener("click", function() {
+      vid.classList.toggle("stopfade");
+      if (vid.paused) {
+        vid.play();
+        pauseButton.innerHTML = "Pause";
+      } else {
+        vid.pause();
+        pauseButton.innerHTML = "Paused";
+      }
+    })
+
+
+
+// window.addEventListener("hashchange", function(event) {
+
+//     var element = document.getElementById(location.hash.substring(1));
+
+//     if (element) {
+
+//         if (!/^(?:a|select|input|button|textarea)$/i.test(element.tagName)) {
+//             element.tabIndex = -1;
+//         }
+
+//         element.focus();
+//     }
+
+// }, false);
+
   </script>
 </body>
 </html>

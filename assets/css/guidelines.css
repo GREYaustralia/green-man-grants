@@ -1,5 +1,5 @@
 #main-content{
-  padding-left:29vw;
+  /*padding-left:29vw;*/
   width:70vw;
 }
 #guidelines-page{
@@ -13,7 +13,7 @@
 #guidelines-page h2{
   font-size: 4vh;
   width:80vw;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   text-align: left;
   font-weight: 100;
 }
@@ -27,27 +27,30 @@
   color:white;
   padding-bottom: .5vh;
 }
+#guidelines-page article {
+    margin-left: 20vw;
+}
 @media only screen and (max-width : 1023px) {
   #guidelines-page h2{
     font-size: 4vh;
     width:80vw;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     text-align: left;
     font-weight: 100;
-    margin-left: 14vw;
+    /*margin-left: 14vw;*/
   }
   #guidelines-page p{
     text-align: left;
     color:white;
   }
   #main-content {
-      padding-left: 15vw;
-      width: 100vw;
+      /*padding-left: 15vw;*/
+      /*width: 100vw;*/
     }
 }
 @media only screen and (max-width : 684px) {
   #main-content{
   padding-left: 0vw;
-  width: 100vw;
+  /*width: 100vw;*/
   }
 }

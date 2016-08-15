@@ -6,30 +6,36 @@ $(document).ready(function(){
       $('#logo').hide();
       }else{
         $('#logo').show();
-        $('#top-bar').addClass('active')
-
+        $('#top-bar').addClass('black-top')
       }
+
     $('main').scroll(function(){
       if ($('main').scrollTop()>50){
         $('#logo').show();
-        $('#top-bar').addClass('active')
+        $('#top-bar').addClass('black-top')
       }else if (!$('main').hasClass('index')){
         $('#logo').show();
-        $('#top-bar').addClass('active')
+        $('#top-bar').addClass('black-top')
       }else{
         $('#logo').hide();
-        $('#top-bar').removeClass('active')
+        $('#top-bar').removeClass('black-top')
       }
     });
   $('#menu').on('click',function(e){
-    console.log('click')
+    // console.log('click')
     $('#top-bar').toggleClass('active');
+    $('#top-bar').addClass('black-top')
     $('.nav').fadeToggle('display')
+
+
     if ($('#top-bar').hasClass('active')){
-      // $('#logo').show();
+      $('#logo').show();
       $(this).find('img').attr('src','assets/images/exit.png')
     }else{
-      // $('#logo').hide();
+      if ($('main').scrollTop()<50 && $('main').hasClass('index')){
+        $('#logo').hide();
+        $('#top-bar').removeClass('black-top')
+      }
       $(this).find('img').attr('src','assets/images/menu.png')
     }
   })

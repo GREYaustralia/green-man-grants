@@ -18,16 +18,16 @@
   <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.css" />
   <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.min.css" />
   <!--******* Custom *********-->
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/entry.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/global.css">
 </head>
   <body>
-    <nav id='top-bar'>
-      <div id='logo'>
-        <a href='index.html'>
-          <img src='assets/images/gmg_header_logo.png' draggable="false" alt="Green Man Grants Navigation Logo">
-        </a>
-      </div>
+    <ol class='sr-hidden'>
+      <li><a href='#main-nav'>Skip to Navigation</a></li>
+      <li><a href='#content'>Skip to Content</a></li>
+      <li><a href='#footer'>Skip to Footer</a></li>
+    </ol>
+    <nav id='top-bar' role='navigation'>
+      <a id='logo' role='logo' href='index.html'></a>
       <div id='menu'>
         <a href='#'>
           <img src="assets/images/menu.png" alt="Menu Button">
@@ -67,12 +67,7 @@
         </div>
       </div>
     </nav>
-      <ol class='sr-hidden'>
-        <li><a href='#main-nav'>Skip to Navigation</a></li>
-        <li><a href='#content'>Skip to Content</a></li>
-        <li><a href='#main-nav'>Skip to Footer</a></li>
-      </ol>
-      <main>
+  <main>
     <section class='entry-page' id='audio-entry-page'>
       <div class='dotoverlay'>
         <aside id='side'>
@@ -95,12 +90,15 @@
           <h1 id='title_id'> <a class='left-arrow-entry'href='video-entry.html'><img src='assets/images/arrow-black-left.png'></a>Nullam libero tellus <a class='right-arrow-entry' href='image-entry.html'><img src='assets/images/arrow-black-right.png'></a></h1>
           <h2 id='question_id'>How would you stop people from texting while driving?</h2>
         </header>
-        <article>
+        <article class='entry-box'>
           <a name='content'></a>
+
+
             <div class='audio-player'>
+              <img src='assets/images/audio-black.png'></img>
               <audio id="audio_example" class="video-js vjs-default-skin" controls
                 preload="auto" width="600" height="600"
-                poster="assets/image/gmg_logo_header.png" data-setup='{}'>
+                poster="assets/images/gmg_header_logo.png" data-setup='{}'>
                 <source src="/audio/awesome-music.mp3" type='audio/mp3'/>
               </audio>
             </div>
@@ -110,7 +108,7 @@
             </div>
           </article>
             <footer>
-              <p><b class='ped'>PEDESTRIANS CHOICE - VOTE FOR THIS ENTRY</strong></p>
+              <p><strong class='ped caps'>The pedestrian's choice - Vote for this entry</strong></p>
               <p>You could win $1000 just for voting. <a href="voting.html"><strong>How?</strong></a></p>
               <div class='row entry-btn-section'>
                 <div class='large-4 columns'>
@@ -142,7 +140,7 @@
       <h1 id='title_id'>Nullam libero tellus</h1>
       <p>BY <span>JANE</span> <span>SAMPLE</span></p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat sed nibh sed finibus. Nam id nulla vel ex vulputate maximus. In convallis libero vitae tincidunt venenatis. In hac habitasse platea dictumst. Ut ac consectetur quam.</p>
-      <form data-abide>
+      <form class='form' data-abide>
         <div class='row'>
           <div class="medium-6 columns">
             <input type="text" placeholder="FULL NAME" aria-label="Full Name" required>

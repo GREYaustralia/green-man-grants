@@ -1,9 +1,9 @@
-.dotoverlay{
+/*.dotoverlay{
   position: relative !important;
   background-size: cover;
   height: 100%;
   min-height: 100vh;
-}
+}*/
 .entry-page{
   background-image: url(../images/green_background_new.png);
   background-size: cover;
@@ -12,7 +12,7 @@
   height: auto;
 }
 #name{
-  padding-top: 9vh;
+  padding-top: 4em;
 }
 .entry-page h1{
   padding-top: 1vh;
@@ -48,9 +48,9 @@
 }
 
 #side{
-  padding-top: 1em;
-  height: 18em;
-  width: 4em;
+  padding-top: 1rem;
+  height: 18rem;
+  width: 4rem;
   background-color: #000;
   position: fixed;
   right:0;
@@ -58,17 +58,17 @@
 }
 
 #side img{
-  margin-left:1vw;
-  max-width: 6vw;
-  max-height: 6vh;
+  margin-left:.6rem;
+  max-width: 3rem;
+  max-height: 3rem;
 }
 #side span{
   color:white !important;
-  font-size: 1.5vh;
+  font-size: .7rem;
   margin-left:2vw;
 }
 #side p{
-  font-size: 1.5vh;
+  font-size: .6rem;
   margin:0 auto;
   color:white;
 }
@@ -156,15 +156,31 @@ video{
 #title_id{
   line-height: 2em;
 }
+
+
+
+
+}
 #audio-play-box{
   background-image:url(assets/images/audio-play.png);
   background-size:cover;
   padding-left:9vh;
   height: 100%;
 }
-#audio-play-box img{
-  height: 100%;
+
+.audio-player img{
+  margin: 0 auto;
+  display: block;
+  height: 20vh;
+  margin-bottom: 2vh;
 }
+
+.audio-player audio{
+    /*width: 50%;*/
+    margin: 0 auto;
+    display: block;
+}
+
 #image-entry-page p{
   text-align: center;
   margin-bottom: 0;
@@ -182,7 +198,7 @@ margin:0 auto;
 
 @media only screen and (max-width : 320px) {
   .dotoverlay{
-    position: relative !important;
+    /*position: relative !important;*/
 /*    height:110vh;*/
   }
   .entry-page{

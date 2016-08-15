@@ -18,16 +18,16 @@
   <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.css" />
   <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.min.css" />
   <!--******* Custom *********-->
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/briefs.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/global.css">
 </head>
   <body>
-    <nav id='top-bar'>
-      <div id='logo'>
-        <a href='index.html'>
-          <img src='assets/images/gmg_header_logo.png' draggable="false" alt="Green Man Grants Navigation Logo">
-        </a>
-      </div>
+    <ol class='sr-hidden'>
+      <li><a href='#main-nav'>Skip to Navigation</a></li>
+      <li><a href='#content'>Skip to Content</a></li>
+      <li><a href='#footer'>Skip to Footer</a></li>
+    </ol>
+    <nav id='top-bar' role='navigation'>
+      <a id='logo' role='logo' href='index.html'></a>
       <div id='menu'>
         <a href='#'>
           <img src="assets/images/menu.png" alt="Menu Button">
@@ -67,12 +67,7 @@
         </div>
       </div>
     </nav>
-      <ol class='sr-hidden'>
-        <li><a href='#main-nav'>Skip to Navigation</a></li>
-        <li><a href='#content'>Skip to Content</a></li>
-        <li><a href='#main-nav'>Skip to Footer</a></li>
-      </ol>
-      <main>
+  <main>
     <section class='brief' id="sharedresponsibility">
       <div class='dotoverlay'>
         <header>
@@ -80,7 +75,7 @@
 
           <h2>How would you convince your peers to believe that zero deaths and serious injuries on our roads could become a reality?</h2>
         </header>
-        <article class='row main-content' >
+        <article class='row' >
         <a href='#' name='content'></a>
           <div class='large-8 medium-7 columns'>
             <div class='row'>
@@ -120,7 +115,7 @@
       </div>
       <div class='large-4 medium-5 columns'>
         <div class='row'>
-          <aside id='side' class='large-12'>
+          <aside id='brief-side' class='large-12'>
             <div id='side-bar'>
               <h3>HERE ARE SOME THOUGHT STARTERS TO GET YOU GOING</h3>
               <ul>

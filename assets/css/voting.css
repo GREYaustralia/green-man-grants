@@ -48,7 +48,7 @@
   left:0;
   right:0;
   margin: 0 auto;
-  width:80vw;
+  width:70vw;
 }
 #voting-page .btn{
   height:3em;
@@ -58,7 +58,7 @@
 
 
   text-align: center;
-  line-height: 7vh;
+  line-height: 3em;
 
 
   color:#35e1a2;
