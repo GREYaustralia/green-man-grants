@@ -595,6 +595,11 @@ color: #35e1a2;
   margin: auto;
 }
 
+#voting-button-section .btn:hover{
+border:2px solid #000;
+
+}
+
 
 
 #contact .btn{
@@ -2543,9 +2548,14 @@ input{
   padding-top: .5vh;
 }
 
-.btn:hover{
+.entries-btn:hover{
   color:#FFF;
    border: 2px solid #FFF !important ;
+}
+.entry-page p a:hover{
+  text-decoration: underline;
+  color:white;
+
 }
 
 #side{
