@@ -6,9 +6,12 @@ $(document).ready(function(){
   var change = $('#top-bar')
   var offset = change.offset();
   // var pauseButton = document.querySelector("#polina button");
+  $(document).foundation();
+  $(document).foundation('abide', 'reflow');
   $('.entries-box').find('.btn-box').hide();
+
   $('input').change(validate);
-  navbar();
+
 
 
 
@@ -176,7 +179,6 @@ $(document).ready(function(){
   }
 
 // NAV BAR (GLOBAL)
-function navbar(){
     if ($('main').hasClass('index')){
       $('#logo').hide();
       }else{
@@ -214,6 +216,5 @@ function navbar(){
       $(this).find('img').attr('src','assets/images/menu.png')
     };
   });
-};
 
 })
