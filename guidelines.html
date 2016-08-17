@@ -19,7 +19,41 @@
   <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.min.css" />
   <!--******* Custom *********-->
   <link rel="stylesheet" type="text/css" href="assets/css/global.css">
+<style>
+  #guidelines-page {
+    min-height: 94vh;
+    background-image: url(assets/images/about.png);
+    background-size: cover;
+}
+.footer {
+    width: 100vw;
+    background-color: #000;
+    /* padding-top: 1em; */
+    z-index: 100;
+    /* vertical-align: bottom; */
+    height: 6vh;
+    text-align: center;
+    position: relative;
+}
 
+.dotoverlay {
+    background-image: url(assets/images/dots2.png);
+    /* min-height: 90vh; */
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    height: auto;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+}
+ .footer ul{
+  margin:0;
+ }
+ .footer li{
+  line-height: 3em !important;
+ }
+</style>
 </head>
   <body>
   <ol class='sr-hidden'>
@@ -66,7 +100,7 @@
   </nav>
   <main>
     <section id='guidelines-page'>
-      <div class='dotoverlay'>
+      <div class='dotoverlay'></div>
         <header>
         <h1>ENTRY GUIDELINES</h1>
         <p style='text-align:center;'>Each entry must meet the following criteria.</p>
@@ -94,7 +128,7 @@
               <li>be able to be produced within your proposed budget (up to $50,000)</li>
             </ul>
         </article>
-      </div>
+
     </section>
     <footer class='footer'>
       <a name='footer'></a>

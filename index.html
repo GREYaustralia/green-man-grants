@@ -7,6 +7,7 @@
   <meta http-equiv="content-type" content="text/html">
   <META NAME="viewport" CONTENT="width=device-width, height=device-height, initial-scale=1, user-scalable=no"/>
   <script type="text/javascript" src="assets/js/vendor/jquery.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   <!--****** Carousel ***********-->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"/
@@ -30,9 +31,7 @@
   </ol>
   <nav aria-label="Green man grants hamburger" id='top-bar'>
     <a id='logo' role='logo' href='index.html'></a>
-    <a name='main-nav' id='menu' tabindex="0">
-      <img src="assets/images/menu.png" alt="Menu Button">
-    </a>
+    <div tabindex="0" name='main-nav' id='menu' role ='Menu Navigation Button'></div>
     <div class="nav">
       <ul>
         <li>
@@ -67,6 +66,7 @@
   </nav>
   <main class='index'>
     <section id ='header'>
+      <a class='section-anchor' name='header'></>
       <!-- <div class="header-video"> -->
         <div class='header-content'>
           <header id='header-logo'>
@@ -79,20 +79,15 @@
             <p class='white longer'>If you're successful, you'll be partnered with an industry expert to guide and mentor you through the process of bringing your idea to life.</p>
             <p class='white longer'>And to top it off, you'll receive a $5,000 cash prize for this major achievement.</p>
             <p class='white longer'>It would pretty awesome if you could make a positive difference to something as important as road safety.</p>
-          </article>
-          <footer>
             <a class='btn-try btn-btm btn-green' href='#brief'>SEE THE BRIEFS</a>
-            <div class='arrow'>
-              <a href='#intro'>
-               <img src="assets/images/arrow.png" alt='Continue down to the introduction.'>
-             </a>
-           </div>
-         </footer>
-
+          </article>
+          <a href='#intro' class='arrow'>
+           <img src="assets/images/arrow.png" alt='Continue down to the introduction.'>
+          </a>
        </div>
      <!-- </div> -->
      <!-- <div style='margin-top:-100vh;' class='video-dotoverlay'></div> -->
-      <video poster="assets/images/background_hires.png" id="bgvid" playsinline autoplay loop muted>
+      <video poster="assets/images/background_hires.png" id="bgvid" alt='Background Video for Green Man Grants Header'playsinline autoplay loop muted>
         <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
         <source src="assets/video/720p_LOW_dark.webm" type="video/webm">
         <source src="assets/video/720p_LOWdark_1.mp4" type="video/mp4">
@@ -101,7 +96,7 @@
    </section>
    <section id='intro'>
     <div class='dotoverlay'>
-      <a name='intro'></a>
+      <a class='section-anchor' name='intro'></a>
       <header>
         <h1 class='content caps'>Introduction</h1>
       </header>
@@ -115,20 +110,16 @@
         <p class='left-align longer'>There will be a selection of winners across the three categories below. Each winner will be partnered with an industry expert, who will guide and mentor you through the process of bringing your idea to life.</p>
         <br>
         <p class='bold'>Entries close at 5pm on 15th September 2016.</p>
-      </article>
-      <footer>
         <a class='caps btn-black btn-try btn-btm' href='guidelines.html'>Guidelines</a>
-        <div class='arrow'>
-          <a href='#brief'>
-            <img src="assets/images/arrow-black.png" alt='Continue down to the briefs.'>
-          </a>
-        </div>
-      </footer>
+      </article>
+      <a href='#brief' class='arrow'>
+        <img src="assets/images/arrow-black.png" alt='Continue down to the briefs.'>
+      </a>
     </div>
   </section>
   <section id='brief'>
     <div class='dotoverlay'>
-      <a name='brief'></a>
+      <a class='section-anchor' name='brief'></a>
       <header id='brief-header' class='content'>
         <h1 class='caps'>Briefs</h1>
       </header>
@@ -181,18 +172,14 @@
           </div>
         </div>
       </article>
-      <footer>
-        <div class='arrow'>
-          <a href='#enter'>
+          <a href='#enter' class='arrow'>
             <img src="assets/images/arrow.png" alt='Continue down to the enter.'>
           </a>
-        </div>
-      </footer>
     </div>
   </section>
   <section id='enter'>
     <div class='dotoverlay'>
-      <a name='enter'></a>
+      <a class='section-anchor' name='enter'></a>
       <header class='content'>
         <h1 class='caps'>How to enter</h1>
       </header>
@@ -246,20 +233,18 @@
             </div>
           </div>
         </div>
+        <a class='btn-black btn-try btn-btm' href='entry.html'>ENTER HERE</a>
       </article>
-      <a class='btn-black btn-try btn-btm' href='entry.html'>ENTER HERE</a>
-      <div class='arrow'>
-        <a href='#entries'>
+        <a href='#entries' class='arrow'>
           <img src="assets/images/arrow-black.png" alt='Continue down to the entries.'>
         </a>
-      </div>
     </div>
   </section>
 
 
     <section id='entries'>
     <div class='dotoverlay'>
-      <a name='entries'></a>
+      <a class='section-anchor' name='entries'></a>
       <header id='entries-header'>
         <h1 class='caps'>Entries</h1>
         <p class='white center longer'>Check out the Competition</p>
@@ -267,121 +252,121 @@
       <article>
         <!-- ##############LIMIT TO 3 AT CERTAIN SCREEN WIDTH AND REMOVE THIS #################### -->
         <div class='box-container entries-box entries-mobile'>
-          <a href="video-entry.html" class='box video'>
+          <div tabindex='0' class='box video'>
             <div class='entries-dotoverlay'></div>
             <h1>Nullam libero tellus</h1>
-            <div class="btn-box" href="video-entry.html">VIEW ENTRY</div>
+            <a class="btn-box" href="video-entry.html">VIEW ENTRY</a>
             <img class='icon' src='assets/images/video-green.png' alt='Video Icon'>
             <div class='votes'>
               <span class='votes-left'><i class="fa fa-facebook" aria-hidden="true"></i> 3k</span>
               <span class='votes-center'><i class="fa fa-twitter" aria-hidden="true"></i> 250</span>
               <span class='votes-right'><i class="fa fa-blind" aria-hidden="true"></i> <span>6,997</span></span>
             </div>
-          </a>
-          <a href="text-entry.html" class='box text'>
+          </div>
+          <div tabindex='0' class='box text'>
             <div class='entries-dotoverlay'></div>
             <h1>Nullam libero tellus</h1>
-            <div class="btn-box" href="text-entry.html">VIEW ENTRY</div>
+            <a class="btn-box" href="text-entry.html">VIEW ENTRY</a>
             <img class='icon' src='assets/images/text-green.png' alt='Text Icon'>
             <div class='votes'>
               <span class='votes-left'><i class="fa fa-facebook" aria-hidden="true"></i> 3k</span>
               <span class='votes-center'><i class="fa fa-twitter" aria-hidden="true"></i> 250</span>
               <span class='votes-right'><i class="fa fa-blind" aria-hidden="true"></i> <span>6,997</span></span>
             </div>
-          </a>
-          <a class='box audio'>
+          </div>
+          <div tabindex='0' class='box audio'>
             <div href="audio-entry.html" class='entries-dotoverlay'></div>
             <h1>Nullam libero tellus</h1>
-            <div class="btn-box" href="audio-entry.html">VIEW ENTRY</div>
+            <a class="btn-box" href="audio-entry.html">VIEW ENTRY</a>
             <img class='icon' src='assets/images/audio-green.png' alt='Audio Icon'>
             <div class='votes'>
               <span class='votes-left'><i class="fa fa-facebook" aria-hidden="true"></i> 3k</span>
               <span class='votes-center'><i class="fa fa-twitter" aria-hidden="true"></i> 250</span>
               <span class='votes-right'><i class="fa fa-blind" aria-hidden="true"></i> <span>6,997</span></span>
             </div>
-          </a>
+          </div>
           <a class='box endbox' href="entries.html">
             <span><strong>SEE MORE...</strong></span>
           </a>
         </div>
         <div class='box-container entries-box entries-home'>
-          <a href="video-entry.html" class='box video'>
+          <div tabindex='0' class='box video'>
             <div class='entries-dotoverlay'></div>
             <h1>Nullam libero tellus</h1>
-            <div class="btn-box" href="video-entry.html">VIEW ENTRY</div>
+            <a class="btn-box" href="video-entry.html">VIEW ENTRY</a>
             <img class='icon' src='assets/images/video-green.png' alt='Video Icon'>
             <div class='votes'>
               <span class='votes-left'><i class="fa fa-facebook" aria-hidden="true"></i> 3k</span>
               <span class='votes-center'><i class="fa fa-twitter" aria-hidden="true"></i> 250</span>
               <span class='votes-right'><i class="fa fa-blind" aria-hidden="true"></i> <span>6,997</span></span>
             </div>
-          </a>
-          <a href="audio-entry.html" class='box audio'>
+          </div>
+          <div tabindex='0' class='box audio'>
             <div class='entries-dotoverlay'></div>
             <h1>Nullam libero tellus</h1>
-            <div class="btn-box" href="audio-entry.html">VIEW ENTRY</div>
+            <a class="btn-box" href="audio-entry.html">VIEW ENTRY</a>
             <img class='icon' src='assets/images/audio-green.png' alt='Audio Icon'>
             <div class='votes'>
               <span class='votes-left'><i class="fa fa-facebook" aria-hidden="true"></i> 3k</span>
               <span class='votes-center'><i class="fa fa-twitter" aria-hidden="true"></i> 250</span>
               <span class='votes-right'><i class="fa fa-blind" aria-hidden="true"></i> <span>6,997</span></span>
             </div>
-          </a>
-          <a  href="text-entry.html" class='box text'>
+          </div>
+          <div tabindex='0' class='box text'>
             <div class='entries-dotoverlay'></div>
             <h1>Nullam libero tellus</h1>
-            <div class="btn-box" href="text-entry.html">VIEW ENTRY</div>
+            <a class="btn-box" href="text-entry.html">VIEW ENTRY</a>
             <img class='icon' src='assets/images/text-green.png' alt='Text Icon'>
             <div class='votes'>
               <span class='votes-left'><i class="fa fa-facebook" aria-hidden="true"></i> 3k</span>
               <span class='votes-center'><i class="fa fa-twitter" aria-hidden="true"></i> 250</span>
               <span class='votes-right'><i class="fa fa-blind" aria-hidden="true"></i> <span>6,997</span></span>
             </div>
-          </a>
-          <a href="image-entry.html" class='box image'>
+          </div>
+          <div tabindex='0' class='box image'>
             <div class='entries-dotoverlay'></div>
             <h1>Nullam libero tellus</h1>
-            <div class="btn-box" href="image-entry.html">VIEW ENTRY</div>
+            <a class="btn-box" href="image-entry.html">VIEW ENTRY</a>
             <img class='icon' src='assets/images/image-green.png' alt='Image Icon'>
             <div class='votes'>
               <span class='shares'><i class="fa fa-facebook" aria-hidden="true"></i> 3k</span>
               <span class='tweets'><i class="fa fa-twitter" aria-hidden="true"></i> 250</span>
               <span class='gmgvotes'><i class="fa fa-blind" aria-hidden="true"></i> <span>6,997</span></span>
             </div>
-          </a>
-          <a href="video-entry.html" class='box video'>
+          </div>
+          <div tabindex='0' class='box video'>
             <div class='entries-dotoverlay'></div>
             <h1>Nullam libero tellus</h1>
-            <div class="btn-box" href="video-entry.html">VIEW ENTRY</div>
+            <a class="btn-box" href="video-entry.html">VIEW ENTRY</a>
             <img class='icon' src='assets/images/video-green.png' alt='Video Icon'>
             <div class='votes'>
               <span class='votes-left'><i class="fa fa-facebook" aria-hidden="true"></i> 3k</span>
               <span class='votes-center'><i class="fa fa-twitter" aria-hidden="true"></i> 250</span>
               <span class='votes-right'><i class="fa fa-blind" aria-hidden="true"></i> <span>6,997</span></span>
             </div>
-          </a>
-          <a href="video-entry.html" class='box video'>
+          </div>
+          <div tabindex='0' class='box video'>
             <div class='entries-dotoverlay'></div>
             <h1>Nullam libero tellus</h1>
-            <div class="btn-box" href="video-entry.html">VIEW ENTRY</div>
+            <a class="btn-box" href="video-entry.html">VIEW ENTRY</a>
             <img class='icon' src='assets/images/video-green.png' alt='Video Icon'>
             <div class='votes'>
               <span class='votes-left'><i class="fa fa-facebook" aria-hidden="true"></i> 3k</span>
               <span class='votes-center'><i class="fa fa-twitter" aria-hidden="true"></i> 250</span>
               <span class='votes-right'><i class="fa fa-blind" aria-hidden="true"></i> <span>6,997</span></span>
             </div>
-          </a>
-          <a href="video-entry.html" class='box video'>
+          </div>
+          <div tabindex='0' class='box video'>
             <div class='entries-dotoverlay'></div>
             <h1>Nullam libero tellus</h1>
-            <div class="btn-box" href="video-entry.html">VIEW ENTRY</div>
+            <a class="btn-box" href="video-entry.html">VIEW ENTRY</a>
             <img class='icon' src='assets/images/video-green.png' alt='Video Icon'>
             <div class='votes'>
               <span class='votes-left'><i class="fa fa-facebook" aria-hidden="true"></i> 3k</span>
               <span class='votes-center'><i class="fa fa-twitter" aria-hidden="true"></i> 250</span>
               <span class='votes-right'><i class="fa fa-blind" aria-hidden="true"></i> <span>6,997</span></span>
             </div>
-          </a>
+          </div>
 
 
           <!-- ############## -->
@@ -391,8 +376,7 @@
         </div>
       </article>
       <footer>
-        <div class='arrow'>
-          <a href='#contact'>
+          <a href='#contact' class='arrow'>
             <img src="assets/images/arrow.png" alt='Continue down to the contact.'>
           </a>
         </div>
@@ -403,7 +387,7 @@
 
   <section id='contact'>
     <div class='dotoverlay'>
-      <a name='contact'></a>
+      <a class='section-anchor' name='contact'></a>
       <header>
         <h1 class='content caps'>Contact us</h1>
         <p>If you require more information about Green Man Grants please submit your details here.</p>
@@ -434,7 +418,7 @@
       </article>
       <footer>
         <div class='arrow'>
-          <a href='#signoff'>
+          <a class='section-anchor' href='#signoff'>
             <img src="assets/images/arrow-black.png" alt='Continue down to the signoff.'>
           </a>
         </div>
@@ -471,5 +455,8 @@
   <script type="text/javascript" src="assets/js/main.js"></script>
   <script type="text/javascript" src="assets/js/nav.js"></script>
   <script type="text/javascript" src="assets/js/foundation-enable.js"></script>
+  <script type="text/javascript">
+
+  </script>
 </body>
 </html>
