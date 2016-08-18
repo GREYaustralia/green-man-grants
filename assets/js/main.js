@@ -24,27 +24,36 @@ $(document).ready(function(){
   })
 
 // ENTER HOVER (INDEX)
-  $('#enter').find('.box').on('mouseover',function(){
-    $(this).addClass('hover')
+  $('.enter-icons').on('mouseover',function(){
+    // $(this).addClass('.')
     if($(this).is('#image')){
-      $(this).find('img').attr('src','assets/images/image-green.png')
+      console.log($(this))
+      $('#image').removeClass('image-black')
+      $('#image').addClass('image-hover')
     }else if($(this).is('#audio')){
-      $(this).find('img').attr('src','assets/images/audio-green.png')
+      $('#audio').removeClass('audio-black')
+      $('#audio').addClass('audio-hover')
     }else if($(this).is('#video')){
-      $(this).find('img').attr('src','assets/images/video-green.png')
+      $('#video').removeClass('video-black')
+      $('#video').addClass('video-hover')
     }else{
-      $(this).find('img').attr('src','assets/images/text-green.png')
+      $(this).removeClass('text-black')
+      $(this).addClass('text-hover')
     }
   }).on('mouseout', function(){
-    $(this).removeClass('hover')
+    // $(this).removeClass('hover')
     if($(this).is('#image')){
-      $(this).find('img').attr('src','assets/images/image-black.png')
+      $('#image').removeClass('image-hover')
+      $('#image').addClass('image-black')
     }else if($(this).is('#audio')){
-      $(this).find('img').attr('src','assets/images/audio-black.png')
+       $(this).removeClass('audio-hover')
+      $(this).addClass('audio-black')
     }else if($(this).is('#video')){
-      $(this).find('img').attr('src','assets/images/video-black.png')
+       $(this).removeClass('video-hover')
+      $(this).addClass('video-black')
     }else{
-      $(this).find('img').attr('src','assets/images/text-black.png')
+       $(this).removeClass('text-hover')
+      $(this).addClass('text-black')
     }
   })
 

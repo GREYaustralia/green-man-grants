@@ -22,6 +22,7 @@
   <link rel="stylesheet" type="text/css" media="all" href="assets/css/foundation.min.css" />
   <!--******* Custom *********-->
   <link rel="stylesheet" type="text/css" href="assets/css/global.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/sprites.css">
 </head>
 <body>
   <ol class='sr-hidden'>
@@ -31,7 +32,7 @@
   </ol>
   <nav aria-label="Green man grants hamburger" id='top-bar'>
     <a id='logo' role='logo' href='index.html'></a>
-    <div tabindex="0" name='main-nav' id='menu' role ='Menu Navigation Button'></div>
+    <div tabindex="0" name='main-nav' id='menu' class='menu' role ='Menu Navigation Button'></div>
     <div class="nav">
       <ul>
         <li>
@@ -66,7 +67,7 @@
   </nav>
   <main class='index'>
     <section id ='header'>
-      <a class='section-anchor' name='header'></>
+      <a class='section-anchor' name='header'></a>
       <!-- <div class="header-video"> -->
         <div class='header-content'>
           <header id='header-logo'>
@@ -81,10 +82,11 @@
             <p class='white longer'>It would pretty awesome if you could make a positive difference to something as important as road safety.</p>
             <a class='btn-try btn-btm btn-green' href='#brief'>SEE THE BRIEFS</a>
           </article>
-          <a href='#intro' class='arrow'>
-           <img src="assets/images/arrow.png" alt='Continue down to the introduction.'>
-          </a>
+
+           <!-- <img src="assets/images/arrow.png" alt='Continue down to the introduction.'> -->
+
        </div>
+
      <!-- </div> -->
      <!-- <div style='margin-top:-100vh;' class='video-dotoverlay'></div> -->
       <video poster="assets/images/background_hires.png" id="bgvid" alt='Background Video for Green Man Grants Header'playsinline autoplay loop muted>
@@ -92,10 +94,13 @@
         <source src="assets/video/720p_LOW_dark.webm" type="video/webm">
         <source src="assets/video/720p_LOWdark_1.mp4" type="video/mp4">
       </video>
-
+        <div class='arrow-break'></div>
+        <a data-scroll href='#intro'>
+         <div class='arrow arrow-bottom'></div>
+        </a>
    </section>
    <section id='intro'>
-    <div class='dotoverlay'>
+    <div class='dotoverlay'></div>
       <a class='section-anchor' name='intro'></a>
       <header>
         <h1 class='content caps'>Introduction</h1>
@@ -112,12 +117,13 @@
         <p class='bold'>Entries close at 5pm on 15th September 2016.</p>
         <a class='caps btn-black btn-try btn-btm' href='guidelines.html'>Guidelines</a>
       </article>
-      <a href='#brief' class='arrow'>
-        <img src="assets/images/arrow-black.png" alt='Continue down to the briefs.'>
+
+      <div class='arrow-break'></div>
+      <a data-scroll href='#brief'>
+        <div class='arrow-black arrow-bottom'></div>
       </a>
-    </div>
   </section>
-  <section id='brief'>
+  <section id='brief'></div>
     <div class='dotoverlay'>
       <a class='section-anchor' name='brief'></a>
       <header id='brief-header' class='content'>
@@ -128,57 +134,52 @@
           <div class='mobile-box' style='background-image: url(assets/images/vehicle_safety2.png); background-size:cover;'>
             <h1>Vehicle Safety</h1>
             <p><strong>How would you get your peers to understand the importance of buying a safe affordable car?</strong></p>
-            <div style=' margin:0 auto'>
-              <a class='btn-green btn-briefs-slider' href='vehiclesafety.html'>BRIEF IN FULL</a>
-            </div>
+            <a class='btn-green btn-briefs-slider' href='vehiclesafety.html'>BRIEF IN FULL</a>
           </div>
           <div class='mobile-box' style='background-image: url(assets/images/mistakes_vulnerability.png); background-size:cover;'>
             <h1>Vulnerability</h1>
             <p><strong>The human body has not evolved as fast as cars have, therefore we are very vulnerable when on the roads. How would you highlight this to your peers to help reduce risk taking behaviour?</strong></p>
-            <div style='margin:0 auto'>
-              <a class='btn-green btn-briefs-slider' href='vulnerability.html'>BRIEF IN FULL</a>
-            </div>
+            <a class='btn-green btn-briefs-slider' href='vulnerability.html'>BRIEF IN FULL</a>
           </div>
           <div class='mobile-box' style='background-image: url(assets/images/shared_responsibilty.png); background-size:cover;'>
             <h1>Shared Responsibilty</h1>
             <p><strong>How would you inspire your generation to unite in a belief that zero deaths and serious injuries on our roads could become a reality?</strong></p>
-            <div style='margin:0 auto'>
               <a class='btn-green btn-briefs-slider' href='vulnerability.html'>BRIEF IN FULL</a>
-            </div>
           </div>
         </div>
         <!-- <div id='theBriefs'> -->
         <div class='box-container' id='briefs-box'>
           <div class='box' id='vehicle-safety'>
-            <div  class='overlay dotoverlay'>
+            <!-- <div  class='overlay dotoverlay'> -->
               <h1>Vehicle Safety</h1>
               <p>How would you get your peers to understand the importance of buying a safe affordable car?</p>
               <a class='btn-green btn-try btn-briefs' href='vehiclesafety.html'>BRIEF IN FULL</a>
-            </div>
+            <!-- </div> -->
           </div>
           <div class='box' id='mistakes-vulnerability'>
-            <div  class='overlay dotoverlay'>
+            <!-- <div  class='overlay dotoverlay'> -->
               <h1>Vulnerability</h1>
               <p>The human body has not evolved as fast as cars have, therefore we are very vulnerable when on the roads. How would you highlight this to your peers to help reduce risk taking behaviour?</p>
               <a class='btn-green btn-try btn-briefs' href='vulnerability.html'>BRIEF IN FULL</a>
-            </div>
+            <!-- </div> -->
           </div>
           <div class='box' id='shared-responsibilty'>
-            <div  class='overlay dotoverlay'>
+            <!-- <div class='overlay dotoverlay'> -->
               <h1>Shared Responsibilty</h1>
               <p>How would you inspire your generation to unite in a belief that zero deaths and serious injuries on our roads could become a reality?</p>
               <a class='btn-green btn-try btn-briefs' href='sharedresponsibility.html'>BRIEF IN FULL</a>
-            </div>
+            <!-- </div> -->
           </div>
         </div>
       </article>
-          <a href='#enter' class='arrow'>
-            <img src="assets/images/arrow.png" alt='Continue down to the enter.'>
-          </a>
-    </div>
+
+    <div class='arrow-break'></div>
+    <a data-scroll href='#enter'>
+      <div class='arrow arrow-bottom'></div>
+    </a>
   </section>
   <section id='enter'>
-    <div class='dotoverlay'>
+    <div class='dotoverlay'></div>
       <a class='section-anchor' name='enter'></a>
       <header class='content'>
         <h1 class='caps'>How to enter</h1>
@@ -187,10 +188,10 @@
         <p class='longer center'>To enter the Green Man Grants, answer one of our briefs with a summary of your idea. Upload your idea in one of the following formats.</p>
         <div class='box-wrapper'>
           <div class='box-container'>
-            <div class='box' id='video'>
+            <div class='box' >
               <figure>
                 <a href='entry.html'>
-                  <img src="assets/images/video-black.png" alt='Video Icon'>
+                  <div id='video' class='video-black center enter-icons'></div>
                 </a>
                 <figcaption>
                   <strong class='caps'>Video</strong>
@@ -198,10 +199,10 @@
                 </figcaption>
               </figure>
             </div>
-            <div class='box' id='audio'>
+            <div class='box' >
               <figure>
                 <a href='entry.html'>
-                  <img src="assets/images/audio-black.png" alt='Audio Icon'>
+                  <div id='audio' class='audio-black center enter-icons'></div>
                 </a>
                 <figcaption>
                   <strong class='caps'>Audio</strong>
@@ -209,10 +210,10 @@
                 </figcaption>
               </figure>
             </div>
-            <div class='box' id='image'>
+            <div class='box' >
               <figure>
                 <a href='entry.html'>
-                  <img src="assets/images/image-black.png" alt='Image Icon'>
+                 <div id='image' class='image-black center enter-icons'></div>
                 </a>
                 <figcaption>
                   <strong class='caps'>Image</strong>
@@ -220,10 +221,10 @@
                 </figcaption>
               </figure>
             </div>
-            <div class='box' id='text'>
+            <div class='box'>
               <figure>
                 <a href='entry.html'>
-                  <img src="assets/images/text-black.png" alt='Text Icon'>
+                  <div id='text' class='text-black center enter-icons'></div>
                 </a>
                 <figcaption>
                   <strong class='caps'>Text</strong>
@@ -235,15 +236,17 @@
         </div>
         <a class='btn-black btn-try btn-btm' href='entry.html'>ENTER HERE</a>
       </article>
-        <a href='#entries' class='arrow'>
-          <img src="assets/images/arrow-black.png" alt='Continue down to the entries.'>
-        </a>
-    </div>
+
+
+    <div class='arrow-break'></div>
+    <a data-scroll href='#entries'>
+      <div class='arrow-black arrow-bottom'></div>
+    </a>
   </section>
 
 
     <section id='entries'>
-    <div class='dotoverlay'>
+    <div class='dotoverlay'></div>
       <a class='section-anchor' name='entries'></a>
       <header id='entries-header'>
         <h1 class='caps'>Entries</h1>
@@ -375,18 +378,15 @@
           </a>
         </div>
       </article>
-      <footer>
-          <a href='#contact' class='arrow'>
-            <img src="assets/images/arrow.png" alt='Continue down to the contact.'>
-          </a>
-        </div>
-      </footer>
-    </div>
+    <div class='arrow-break'></div>
+    <a data-scroll href='#contact'>
+     <div class='arrow arrow-bottom'></div>
+    </a>
   </section>
 
 
   <section id='contact'>
-    <div class='dotoverlay'>
+    <div class='dotoverlay'></div>
       <a class='section-anchor' name='contact'></a>
       <header>
         <h1 class='content caps'>Contact us</h1>
@@ -416,17 +416,14 @@
           </div>
         </form>
       </article>
-      <footer>
-        <div class='arrow'>
-          <a class='section-anchor' href='#signoff'>
-            <img src="assets/images/arrow-black.png" alt='Continue down to the signoff.'>
-          </a>
-        </div>
-      </footer>
-    </div>
+      <div class='arrow-break'></div>
+      <a data-scroll href='#signoff'>
+        <div class='arrow-black arrow-bottom'>
+      </a>
+
   </section>
   <section id='signoff'>
-    <div class='dotoverlay'>
+    <div class='dotoverlay'></div>
       <a name='share'></a>
       <div style="display:table;width:100vw;height:90vh;">
         <div style="display:table-cell;vertical-align:middle;">
@@ -434,7 +431,6 @@
             Thanks for checking out the green man grants.<br>Now go have some fun.</h1></div>
           </div>
         </div>
-      </div>
     </section>
     <footer class='footer'>
       <a name='footer'></a>
@@ -455,8 +451,5 @@
   <script type="text/javascript" src="assets/js/main.js"></script>
   <script type="text/javascript" src="assets/js/nav.js"></script>
   <script type="text/javascript" src="assets/js/foundation-enable.js"></script>
-  <script type="text/javascript">
-
-  </script>
 </body>
 </html>
