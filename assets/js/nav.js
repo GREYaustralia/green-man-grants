@@ -111,6 +111,13 @@ $(document).ready(function(){
       $(this).find('.icon').show()
   })
 
+  $('#dob').fdatepicker({
+    closeButton: true
+  });
+
+
+
+
   function navOpen(){
     $('.nav').show()
     $('#menu').removeClass('menu')

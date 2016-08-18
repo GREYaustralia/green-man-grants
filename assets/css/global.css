@@ -11,7 +11,7 @@
 }
 
 .exit{
-  background-position: 0px -4px;
+  background-position: -65px -2px;
   width: 42px;
   height: 49px;
   transform:scale(0.9px);
@@ -788,7 +788,7 @@ border:2px solid #000;
   }*/
 
   .active {
-    background-image: url(../images/exit.png) !important;
+    /*background-image: url(../images/exit.png) !important;*/
   }
 
 #logo{
@@ -2257,12 +2257,12 @@ li{
   width: 45vw;
   margin-left: 10vw;
 }
-.right{
+/*.right{
   float:right;
   width: 30vw;
   margin-right: 10vw;
   min-width: 15em;
-}
+}*/
 .download-btn{
   font-family: Nanami-Bold;
   color:#3cfdb6;
