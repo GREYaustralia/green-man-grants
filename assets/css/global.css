@@ -2252,11 +2252,11 @@ li{
   font-weight: 300;
 }
 
-.left{
+/*.left{
   float:left;
   width: 45vw;
   margin-left: 10vw;
-}
+}*/
 /*.right{
   float:right;
   width: 30vw;
@@ -2269,9 +2269,9 @@ li{
   font-size: 1em;
   padding-left:1vw;
   margin-bottom: 5vh;
-  border:1vh dotted #3cfdb6;
+  border:8px dotted #3cfdb6;
   height:4em;
-  line-height: 3.5em;
+  line-height: 3.3em;
   text-align: center
 }
 .download-btn:hover{
