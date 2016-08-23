@@ -940,10 +940,6 @@ border:2px solid #000;
   background-size: cover;
 }
 
-.mobile #something{
-  width:100vw;
-  height:100vh;
-}
 
 #brief h1{
 
@@ -2233,6 +2229,13 @@ height:100%;
   background-image: url(../images/vehicle_safety_background.png);
   background-size: cover;
 }
+
+.brief header{
+  position: relative;
+}
+.brief article{
+  position: relative;
+}
 .brief h1{
   padding-top: 3em;
 }
@@ -2245,24 +2248,17 @@ height:100%;
   color:#FFF;
   text-align: left;
 }
-li{
+
+
+.brief li{
   color:#FFF;
   font-size: 1em;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
 
-/*.left{
-  float:left;
-  width: 45vw;
-  margin-left: 10vw;
-}*/
-/*.right{
-  float:right;
-  width: 30vw;
-  margin-right: 10vw;
-  min-width: 15em;
-}*/
+
+
 .download-btn{
   font-family: Nanami-Bold;
   color:#3cfdb6;
@@ -2295,7 +2291,7 @@ li{
 }
 #brief-side li{
   padding-bottom:5vh;
-  font-size: 2vh;
+  font-size: 1em;
   color:#000;
   padding-right:1vw;
 }
