@@ -1,3 +1,40 @@
+@import url("https://hello.myfonts.net/count/3190c7");
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+
+
+@font-face {font-family: 'Nanami-Bold';src: url('../fonts/3190C7_0_0.eot');src: url('../fonts/3190C7_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/3190C7_0_0.woff2') format('woff2'),url('../fonts/3190C7_0_0.woff') format('woff'),url('../fonts/3190C7_0_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'Nanami-ExtraLight';src: url('../fonts/3190C7_1_0.eot');src: url('../fonts/3190C7_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/3190C7_1_0.woff2') format('woff2'),url('../fonts/3190C7_1_0.woff') format('woff'),url('../fonts/3190C7_1_0.ttf') format('truetype');}
+
+@font-face {
+  font-family: 'gmg';
+  src:  url('../fonts/gmg.eot?cep7sh');
+  src:  url('../fonts/gmg.eot?cep7sh#iefix') format('embedded-opentype'),
+    url('../fonts/gmg.ttf?cep7sh') format('truetype'),
+    url('../fonts/gmg.woff?cep7sh') format('woff'),
+    url('../fonts/gmg.svg?cep7sh#gmg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'gmg' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-gmg:before {
+  content: "\e900";
+}
+
 .menu, .exit, .image-black, .image-green, .image-icon, .text-black, .text-green, .text-icon, .audio-black, .audio-green, .audio-icon, .video-black, .video-green, .video-icon, .arrow-black, .arrow-right, .arrow, .image-hover, .video-hover, .text-hover, .audio-hover{
   background: url(../images/sprites.png) no-repeat;
 }

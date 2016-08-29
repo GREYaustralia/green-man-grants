@@ -27,18 +27,18 @@
 @import url("//hello.myfonts.net/count/3190c7");
 
 
-@font-face {font-family: 'Nanami-Bold';src: url('webfonts/3190C7_0_0.eot');src: url('webfonts/3190C7_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3190C7_0_0.woff2') format('woff2'),url('webfonts/3190C7_0_0.woff') format('woff'),url('webfonts/3190C7_0_0.ttf') format('truetype');}
+@font-face {font-family: 'Nanami-Bold';src: url('../fonts/3190C7_0_0.eot');src: url('../fonts/3190C7_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/3190C7_0_0.woff2') format('woff2'),url('../fonts/3190C7_0_0.woff') format('woff'),url('../fonts/3190C7_0_0.ttf') format('truetype');}
 
 
-@font-face {font-family: 'Nanami-ExtraLight';src: url('webfonts/3190C7_1_0.eot');src: url('webfonts/3190C7_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3190C7_1_0.woff2') format('woff2'),url('webfonts/3190C7_1_0.woff') format('woff'),url('webfonts/3190C7_1_0.ttf') format('truetype');}
+@font-face {font-family: 'Nanami-ExtraLight';src: url('../fonts/3190C7_1_0.eot');src: url('../fonts/3190C7_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/3190C7_1_0.woff2') format('woff2'),url('../fonts/3190C7_1_0.woff') format('woff'),url('../fonts/3190C7_1_0.ttf') format('truetype');}
 
 @font-face {
   font-family: 'gmg';
-  src:  url('gmg.eot?cep7sh');
-  src:  url('gmg.eot?cep7sh#iefix') format('embedded-opentype'),
-    url('gmg.ttf?cep7sh') format('truetype'),
-    url('gmg.woff?cep7sh') format('woff'),
-    url('gmg.svg?cep7sh#gmg') format('svg');
+  src:  url('../fonts/gmg.eot?cep7sh');
+  src:  url('../fonts/gmg.eot?cep7sh#iefix') format('embedded-opentype'),
+    url('../fonts/gmg.ttf?cep7sh') format('truetype'),
+    url('../fonts/gmg.woff?cep7sh') format('woff'),
+    url('../fonts/gmg.svg?cep7sh#gmg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
