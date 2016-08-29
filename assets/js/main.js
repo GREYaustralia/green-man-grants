@@ -2,7 +2,6 @@ $(document).ready(function(){
   var height = $(window).height();
   var width = $(window).width();
   var vid = document.getElementById("bgvid");
-  // var pauseButton = document.querySelector("#polina button");
   $('.entries-box').find('.btn-box').hide();
     if ($(window).width() < 800) {
     carosel();
@@ -13,8 +12,6 @@ $(document).ready(function(){
 
   $(window).on('resize', carosel);
 
-
-// BRIEFS HOVER (INDEX)
   $('#brief .box').on('mouseover', function(){
     $(this).find('.overlay').removeClass('dotoverlay');
     $(this).css('border','2px solid #35e1a2')
@@ -23,11 +20,8 @@ $(document).ready(function(){
     $(this).css('border','0px solid #35e1a2')
   })
 
-// ENTER HOVER (INDEX)
   $('.enter-icons').on('mouseover',function(){
-    // $(this).addClass('.')
     if($(this).is('#image')){
-      console.log($(this))
       $('#image').removeClass('image-black')
       $('#image').addClass('image-hover')
     }else if($(this).is('#audio')){
@@ -41,7 +35,6 @@ $(document).ready(function(){
       $(this).addClass('text-hover')
     }
   }).on('mouseout', function(){
-    // $(this).removeClass('hover')
     if($(this).is('#image')){
       $('#image').removeClass('image-hover')
       $('#image').addClass('image-black')
@@ -57,29 +50,30 @@ $(document).ready(function(){
     }
   })
 
-  // VIDEO HEADER (INDEX)
-    function vidFade() {
+  function vidFade() {
     vid.classList.add("stopfade");
   }
 
-// CAROSEL (INDEX)
-    function carosel(){
-      if ($(window).width() < 800 ) {
-      console.log('FIRE')
-      $('#briefs-box').hide();
-      $('.mobile-brief').show();
-        $('.single-item').slick({
-          dots: true,
-          infinite: true,
-          draggable: true,
-          speed: 500,
-          slidesToShow: 1,
-          slidesToScroll: 1
-        });
+  function carosel(){
+    if ($(window).width() < 800 ) {
+    $('#briefs-box').hide();
+    $('.mobile-brief').show();
+      $('.single-item').slick({
+        dots: true,
+        infinite: true,
+        draggable: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
     }else{
-      console.log('large')
       $('.mobile-brief').hide();
       $('#briefs-box').show();
     }
-  }
-})
+  };
+    carosel();
+});
+
+
+
+

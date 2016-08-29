@@ -81,6 +81,9 @@
   width: 115px;
   height: 113px;
 }
+.gmg-vote{
+  background-image:url(../images/gmg-icon-black.png);
+}
 
 .video-icon{
   background-position: -233px -451px ;
@@ -154,6 +157,7 @@
   text-align: center;
   position: relative;
   margin: 0 auto;
+  margin-top: 1em;
 }
 
 .slick-list{
@@ -444,6 +448,9 @@ select::-ms-expand{
   display:none;
 }
 
+article{
+  position: relative;
+}
 
 .stopfade {
   opacity: .0;
@@ -1034,12 +1041,6 @@ select::-ms-expand{
 }
 #enter .hover p{
 }
-
-
-
-
-
-
 #signoff{
   height:100vh;
   width: 100vw;
@@ -1149,16 +1150,18 @@ select::-ms-expand{
 
 #entries-header{
   top:0;
+  height: 13em;
   width: 100%;
   padding-top:3em;
-  background-image: url(../images/entries_header.png);
-  background-size: cover;
+  position: relative;
 }
 
 #entries{
   width:100vw;
   min-height:100vh;
   background-color: #000;
+  background-image: url(../images/entries_header.png);
+  background-size: cover;
 }
 
 #entries .box{
@@ -1467,7 +1470,7 @@ select::-ms-expand{
   }
   .mobile-brief{
     display:block;
-    height:100%;
+    /*height:100%;*/
   }
   #voting-page .btn {
   }
@@ -1745,9 +1748,6 @@ select::-ms-expand{
   #votePopup {
     width:inherit;
   }
-  #votePopup .checkbox-text{
-    font-size: 1em;
-  }
   .left-arrow{
     position: absolute;
     left: 0;
@@ -2014,7 +2014,6 @@ select::-ms-expand{
 
 #votePopup .form-error {
   display: none;
-  margin-bottom: 1em !important;
   font-size: .75rem;
   font-weight: 700;
   background-color: #000;
@@ -2187,9 +2186,6 @@ select::-ms-expand{
   }
   .brief li{
     font-size: 1em;
-  }
-  .dotoverlay{
-    height:auto !important;
   }
 }
 @media only screen and (min-width : 1824px) {
@@ -2546,7 +2542,6 @@ input{
 }
 .entry-page h2{
   font-size: 1.5em;
-  width:80vw;
   margin: 0 auto;
   margin-bottom: 2vh;
   text-align: left;
@@ -2596,12 +2591,13 @@ input{
 #side span{
   color:#FFF !important;
   font-size: .7rem;
-  margin-left:2vw;
+  margin-left:2em;
 }
 #side p{
   font-size: .6rem;
   margin:0 auto;
   color:#FFF;
+  width:100% !important;
 }
 
 .ped{
@@ -2615,12 +2611,14 @@ input{
   margin-bottom: 2vh;
 }
 
+
+
+
 b{
   color: #000;
 }
-.entry-box{
-  width:45vw;
-  margin:0 auto;
+#audio{
+margin:0 auto;
 }
 
 video{
@@ -2655,13 +2653,12 @@ video{
 }
 #votePopup input{
   border:2px solid #000;
-
 }
 #votePopup h1{
   color: #000;
 }
 #votePopup .row{
-  margin-bottom: 5%;
+  margin-bottom: .5em;
 }
 #votePopup .btn{
   border: 2px solid #000 !important ;
@@ -2691,9 +2688,15 @@ video{
   padding-left:9vh;
   height: 100%;
 }
+.video-js{
+  width: 100%;
+  max-height: 40vh;
+  max-width: 600px;
+  margin: 0 auto;
+}
 .video-js .vjs-big-play-button {
-  top: 5em;
-  left: 8.5em;
+  top: calc(50% - 1.5em / 2);
+  left: calc(50% - 3em / 2);
 }
 
 .audio-player img{
@@ -2713,11 +2716,14 @@ video{
   margin-bottom: 0;
   padding-right: 4em;
 }
-#text-entry{
+#text-entry p{
   width:70vw;
   margin:0 auto;
 }
 
+.text-choice{
+  margin-top: 2vh !important;
+}
 .entry-page footer{
   width:100%;
   margin-top:6vh;
@@ -2742,7 +2748,6 @@ video{
     right: 0;
   }
   .entry-box{
-    width:90vw;
     margin:0 auto;
   }
   #votePopup{
@@ -2750,7 +2755,7 @@ video{
     margin-top: 0;
   }
   #image-entry-page p{
-    padding-right: 0;
+    padding-right: 0 !important;
   }
 
 }
@@ -3036,5 +3041,3 @@ video{
     margin-left: 6vw;
   }
 }
-
-
